@@ -1,5 +1,31 @@
 ._Footer {
   height: 48px;
   padding-top: 0 !important;
-  padding: 0 20px;
+	padding: 0 20px 0 20px;
+	text-transform: uppercase;
+	box-shadow: 0 -1px 4px -1px rgba(0, 0, 0, 0.3);
+	line-height: 48px;
+}
+
+._Footer .copyright {
+	padding: 0 !important;
+	min-height: 48px !important;
+}
+
+._Footer .credit-logo {
+	margin-top: 9px;
+	height: 30px;	
+}
+
+._Footer .credit-text {	
+	padding: 0 10px;
+	color: #fff;	
+}
+
+@media only screen and (max-width: 600px) {
+	._Footer,
+	._Footer .copyright {
+		text-align: center;
+		padding: 0;
+	}
 }
