@@ -8,7 +8,7 @@ const XComponentOne = (props) => {
     <div className="XComponentClass" {...props}>
     XComponentOne
       {props.string}
-      {props.array}
+      {props.array}      
     </div>
   );
 }

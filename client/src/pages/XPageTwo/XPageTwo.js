@@ -12,7 +12,8 @@ class XPageTwo extends Component {
   componentDidMount() {
     API.getDocuments()
       .then((res) => { console.log(res.data) })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err)); 
+
   }
 
   render() {
@@ -20,6 +21,7 @@ class XPageTwo extends Component {
       <Link to={"/"}>
         <strong>Go to XPageOne</strong>
       </Link>
+
       <XComponentOne array={this.state.array} string={this.state.string} />
       <XComponentTwo array={this.state.array} string={this.state.string} />
     </div>);

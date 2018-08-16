@@ -20,6 +20,7 @@ class XPage extends Component {
       <Link to={"/XPageTwo"}>
         <strong>Go to XPageTwo</strong>
       </Link>
+      <a className="waves-effect waves-light btn">button</a>
       <XComponentOne array={this.state.array} string={this.state.string} />
       <XComponentTwo array={this.state.array} string={this.state.string} />
     </div>);

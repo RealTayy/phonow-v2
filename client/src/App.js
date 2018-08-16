@@ -4,12 +4,12 @@ import XPage from './pages/XPage';
 import XPageTwo from './pages/XPageTwo'
 import XCollection from './pages/XCollection'
 import XNoMatch from './pages/XNoMatch';
-import { XNav } from './components/XNav';
+import { Navbar } from './components/Navbar';
 
 const App = () => (
   <Router>
-    <div>
-      <XNav />
+    <div>      
+      <Navbar />
       <Switch>
         <Route exact path='/' component={XPage} />
         <Route exact path='/XPageTwo' component={XPageTwo} />
