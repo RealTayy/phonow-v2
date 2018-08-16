@@ -5,12 +5,12 @@ import './Sidenav.css';
 
 export class Sidenav extends Component {
 	componentDidMount = () => {
-		var elems = document.querySelectorAll('#_Sidenav');
-		var instances = M.Sidenav.init(elems);
+		// Initializes _Sidenav
+		M.Sidenav.init(document.querySelectorAll('#_Sidenav'));
 	};
 	render() {
 		return (
-			<ul className="sidenav _Sidenav" id="_Sidenav">
+			<ul className="_Sidenav sidenav" id="_Sidenav">
 				<div className="sidenav-header center-align">
 					<img className="sidenav-img" src="http://via.placeholder.com/128x128" />
 				</div>

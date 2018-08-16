@@ -14,9 +14,9 @@ export class Navbar extends Component {
 							<img className="logo-img" src="http://via.placeholder.com/128x128" />
 						</Link>
 						<a href="#" data-target="_Sidenav" className="sidenav-trigger">
-							<i class="material-icons">menu</i>
+							<i className="material-icons">menu</i>
 						</a>
-						<ul class="right hide-on-med-and-down">
+						<ul className="right hide-on-med-and-down">
 							<li><Link to={"/"}>Home</Link></li>
 							<li><Link to={"menu"}>Menu</Link></li>
 							<li><Link to={"info"}>Store Info</Link></li>

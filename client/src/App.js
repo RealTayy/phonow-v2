@@ -15,12 +15,12 @@ const App = () => (
       <main>
         <Switch>
           <Route exact path='/' component={XPage} />
-          <Route exact path='/XPageTwo' component={XPageTwo} />          
+          <Route exact path='/XPageTwo' component={XPageTwo} />
           <Route component={XPage} />
         </Switch>
       </main>
-      <footer class="page-footer">
-        <Footer />>
+      <footer>
+        <Footer />
       </footer>
     </div>
   </Router>
