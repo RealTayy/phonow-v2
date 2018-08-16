@@ -8,14 +8,21 @@ import { Navbar } from './components/Navbar';
 
 const App = () => (
   <Router>
-    <div>      
-      <Navbar />
-      <Switch>
-        <Route exact path='/' component={XPage} />
-        <Route exact path='/XPageTwo' component={XPageTwo} />
-        <Route exact path='/XCollection/:id' component={XCollection} />
-        <Route component={XNoMatch} />
-      </Switch>
+    <div>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Switch>
+          <Route exact path='/' component={XPage} />
+          <Route exact path='/XPageTwo' component={XPageTwo} />
+          <Route exact path='/XCollection/:id' component={XCollection} />
+          <Route component={XNoMatch} />
+        </Switch>
+      </main>
+      <footer class="page-footer">
+
+      </footer>
     </div>
   </Router>
 );
