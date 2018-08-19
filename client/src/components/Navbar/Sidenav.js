@@ -15,10 +15,10 @@ export class Sidenav extends Component {
 					<img className="sidenav-img" src="http://via.placeholder.com/128x128" />
 				</div>
 				<li><Link to={"/"} className="sidenav-close">Home</Link></li>
-				<li><Link to={"menu"} className="sidenav-close">Menu</Link></li>
-				<li><Link to={"info"} className="sidenav-close">Store Info</Link></li>
-				<li><Link to={"about"} className="sidenav-close">About Us</Link></li>
-				<li><Link to={"contact"} className="sidenav-close">Contact</Link></li>
+				<li><Link to={"/menu"} className="sidenav-close">Menu</Link></li>
+				<li><Link to={"/info"} className="sidenav-close">Store Info</Link></li>
+				<li><Link to={"/about"} className="sidenav-close">About Us</Link></li>
+				<li><Link to={"/contact"} className="sidenav-close">Contact</Link></li>
 			</ul>
 		)
 	}

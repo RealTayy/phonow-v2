@@ -18,10 +18,10 @@ export class Navbar extends Component {
 						</a>
 						<ul className="right hide-on-med-and-down">
 							<li><Link to={"/"}>Home</Link></li>
-							<li><Link to={"menu"}>Menu</Link></li>
-							<li><Link to={"info"}>Store Info</Link></li>
-							<li><Link to={"about"}>About Us</Link></li>
-							<li><Link to={"contact"}>Contact</Link></li>
+							<li><Link to={"/menu"}>Menu</Link></li>
+							<li><Link to={"/info"}>Store Info</Link></li>
+							<li><Link to={"/about"}>About Us</Link></li>
+							<li><Link to={"/contact"}>Contact</Link></li>
 						</ul>
 					</div>
 				</nav>
