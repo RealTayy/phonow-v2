@@ -17,12 +17,12 @@ const App = () => (
       </header>
       <main>
         <Switch>
-          {/* <Route exact path='/' component={Home} />          
+          <Route exact path='/' component={Home} />          
           <Route exact path='/menu' component={Menu} />
           <Route exact path='/info' component={Info} />
           <Route exact path='/about' component={About} />
           <Route exact path='/contact' component={Contact} />
-          <Route component={Home} /> */}
+          <Route component={Home} />
         </Switch>
       </main>
       <footer>
