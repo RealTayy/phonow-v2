@@ -1,1 +1,1 @@
-export { default as TwoColContainer } from './TwoColContainer';
+export { default as ContentContainer } from './ContentContainer';
