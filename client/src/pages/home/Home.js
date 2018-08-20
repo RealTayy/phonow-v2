@@ -5,7 +5,14 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <ContentContainer />
+        <ContentContainer
+          leftContainerContent={
+            <div>hi</div>
+          }
+          rightContainerContent={
+            <div>hi</div>
+          }
+        />
       </div>
     )
   }
