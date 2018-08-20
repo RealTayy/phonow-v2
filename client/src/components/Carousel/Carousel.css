@@ -1,0 +1,25 @@
+/* components/Carousel/Carousel.css */
+
+._Carousel {	
+  position: relative;  
+}
+
+._Carousel .slick-slide,
+._Carousel .slick-slide * {
+  /* Get rid of blue outline for chrome */
+  outline: none !important;
+}
+
+._Carousel,
+._Carousel .slick-list,
+._Carousel .slick-track,
+._Carousel .slick-slide,
+._Carousel .slick-slide * {
+  height: 100% !important;
+}
+
+._Carousel .slick-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

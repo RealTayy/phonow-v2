@@ -1,13 +1,19 @@
 import React, { Component } from 'react'
 import { ContentContainer } from '../../components/Container';
+import { Carousel } from '../../components/Carousel/Carousel';
 
 export class Home extends Component {
   render() {
+    const images = [
+      "http://via.placeholder.com/2048x1365",      
+      "http://via.placeholder.com/2048x1365",      
+      "http://via.placeholder.com/2048x1365",      
+    ]
     return (
-      <div>
+      <div className="_Home">
         <ContentContainer
           leftContainerContent={
-            <div>hi</div>
+            <Carousel images={images} />
           }
           rightContainerContent={
             <div>hi</div>
