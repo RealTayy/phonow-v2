@@ -1,4 +1,8 @@
-/* ./Navbar/Navbar Component */
+/* components/Navbar/Navbar.CSS */
+
+._Navbar {
+  position: relative;
+}
 
 ._Navbar .logo-img {
   padding: 0 20px;

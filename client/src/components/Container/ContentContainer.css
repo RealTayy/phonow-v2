@@ -1,0 +1,31 @@
+/* components/Container/ContentContainer.css */
+
+._ContentContainer {
+	position: relative;
+  /* 100vh - navbar height - footer height */
+  height: calc(100vh - 56px - 48px);
+  overflow: auto;
+}
+
+._ContentContainer .cc-row {
+	margin-bottom: 0;
+}
+
+._ContentContainer .left-container,
+._ContentContainer .right-container {
+  /* 100vh - navbar height - footer height */
+  height: calc(100vh - 56px - 48px);
+  /* background-color: red; */
+}
+
+@media only screen and (min-width: 601px) {
+  ._ContentContainer {
+    /* 100vh - navbar height - footer height */
+    height: calc(100vh - 64px - 48px);
+  }
+  ._ContentContainer .left-container,
+  ._ContentContainer .right-container {
+    /* 100vh - navbar height - footer height */
+    height: calc(100vh - 64px - 48px);
+  }
+}

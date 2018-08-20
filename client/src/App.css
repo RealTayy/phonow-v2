@@ -1,4 +1,19 @@
+/* src/App.css */
+
+main,
+header,
+footer {
+  position: relative;
+}
+
+header,
+footer {
+  z-index: 999;
+  position: relative;
+}
+
 main {
+  z-index: 0;
   height: calc(100vh - 56px - 48px);
 }
 
