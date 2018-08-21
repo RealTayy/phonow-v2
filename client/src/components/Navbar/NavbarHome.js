@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Sidenav } from './Sidenav';
-import './Navbar.css'
+import './NavbarHome.css'
 
 
 export class Navbar extends Component {
 	render() {
 		return (
-			<div className="_Navbar">
+			<div className="_Navbar _NavbarHome">
 				<nav>
 					<div className="nav-wrapper container">
 						<Link to={"#!"} className="brand-logo">

@@ -5,7 +5,7 @@ import { Menu } from './pages/Menu';
 import { Info } from './pages/Info';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
-import { Navbar } from './components/Navbar';
+import { Navbar, NavbarHome } from './components/Navbar';
 import { Footer } from './components/Footer';
 import './App.css';
 
@@ -13,7 +13,11 @@ const App = () => (
   <Router>
     <div>
       <header>
-        <Navbar />
+        {/* <Navbar /> */}
+        <Switch>
+          <Route exact path='/' component={NavbarHome} />          
+          <Route component={Navbar} />
+        </Switch>
       </header>
       <main>
         <Switch>

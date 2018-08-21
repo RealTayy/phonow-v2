@@ -18,6 +18,10 @@
   padding: 0 !important;
 }
 
+._ContentContainer .section {
+  height: 100%;
+}
+
 @media only screen and (min-width: 601px) {
   ._ContentContainer {
     /* 100vh - navbar height - footer height */

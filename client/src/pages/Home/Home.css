@@ -1,0 +1,28 @@
+/* pages/Home/Home.css */
+
+._Home {	
+	position: relative;
+	color: #fff;
+  background-color: #000;
+}
+
+._Home .footer-image {
+	position: absolute;
+	bottom: 0;
+}
+
+._Home .header-image {
+	position: absolute;
+	margin-top: 20px;
+	transform: translateX(-50%);
+	max-height: calc(300px);
+	max-width: calc(100vw - 40px);
+}
+
+/* Medium and up */
+
+@media only screen and (min-width: 601px) {
+	._Home .header-image {
+		margin-top: 60px;
+	}
+}
