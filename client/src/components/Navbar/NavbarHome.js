@@ -7,7 +7,7 @@ import './NavbarHome.css'
 export class Navbar extends Component {
 	render() {
 		return (
-			<div className="_Navbar _NavbarHome">
+			<div className="_NavbarHome">
 				<nav>
 					<div className="nav-wrapper container">
 						<Link to={"#!"} className="brand-logo">

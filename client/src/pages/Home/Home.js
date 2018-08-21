@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ContentContainer } from '../../components/Container';
 import { Carousel } from '../../components/Carousel/Carousel';
-import bigLogo from '../../images/bigLogo2.png';
+import bigLogo from '../../images/bigLogo3.png';
 import './Home.css';
 
 export class Home extends Component {
@@ -15,7 +15,7 @@ export class Home extends Component {
       <div className="_Home">
         <ContentContainer
           leftContainerContent={
-            <div className="section home-section">
+            <div className="content-section home-section">
               <div className="section-header center-align">
                 <img className="header-image" src={bigLogo} alt="" />
               </div>

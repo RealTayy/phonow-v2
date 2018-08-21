@@ -6,14 +6,13 @@ import { Info } from './pages/Info';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Navbar, NavbarHome } from './components/Navbar';
-import { Footer } from './components/Footer';
+import { Footer, FooterHome } from './components/Footer';
 import './App.css';
 
 const App = () => (
   <Router>
     <div>
-      <header>
-        {/* <Navbar /> */}
+      <header>        
         <Switch>
           <Route exact path='/' component={NavbarHome} />          
           <Route component={Navbar} />
@@ -29,8 +28,11 @@ const App = () => (
           <Route component={Home} />
         </Switch>
       </main>
-      <footer>
-        <Footer />
+      <footer>        
+        <Switch>
+          <Route exact path='/' component={FooterHome} />          
+          <Route component={Footer} />
+        </Switch>
       </footer>
     </div>
   </Router>

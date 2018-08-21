@@ -1,17 +1,17 @@
 /* components/Navbar/Navbar.CSS */
 
-._Navbar {
+._NavbarHome {
   position: relative;
 }
 
-._Navbar .logo-img {
+._NavbarHome .logo-img {
   padding: 0 20px;
   position: relative;
   top: 4px;
   height: 48px;
 }
 
-._Navbar ul>li>a {
+._NavbarHome ul>li>a {
   padding: 0 20px;
   text-transform: uppercase;
 }
@@ -19,7 +19,7 @@
 /* Medium and up */
 
 @media only screen and (min-width: 601px) {
-  ._Navbar .logo-img {
+  ._NavbarHome .logo-img {
     position: relative;
     height: 56px;
   }
