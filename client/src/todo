@@ -3,8 +3,11 @@ MVP:
 > Get origin image for _Home footer-image (Also add max height?)
 > Clean up materialize-src js/jsz
 > make container of nav/footer better
+> Make hamburger positioned better on mobile view
+> Make clicking on logo go to homepage
 
 
 For Funsies:
 > Make Madeby change to maiCoding when hover in footer
 > Make cool slide animation for slick
+> Add maiCoding to _SideNav

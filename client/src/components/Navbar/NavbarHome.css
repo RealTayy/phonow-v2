@@ -1,4 +1,4 @@
-/* components/Navbar/Navbar.CSS */
+/* components/Navbar/NavbarHome.CSS */
 
 ._NavbarHome {
   position: relative;
@@ -14,6 +14,16 @@
 ._NavbarHome ul>li>a {
   padding: 0 20px;
   text-transform: uppercase;
+}
+
+/* NavbarHome Specific */
+._NavbarHome nav {  
+  background-color: #fff;
+}
+
+._NavbarHome nav ul a {
+  color: #222;
+  background-color: #fff;
 }
 
 /* Medium and up */

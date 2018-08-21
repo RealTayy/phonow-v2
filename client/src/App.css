@@ -6,10 +6,12 @@ footer {
   position: relative;
 }
 
-header,
+header {
+  z-index: 999;  
+}
+
 footer {
-  z-index: 999;
-  position: relative;
+  z-index: 998;  
 }
 
 main {

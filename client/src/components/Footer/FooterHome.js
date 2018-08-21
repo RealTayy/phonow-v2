@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import './Footer.css';
 import logo from '../../images/maicoding.png';
+import './FooterHome.css';
 
 export class Footer extends Component {
 	render() {
 		return (
-			<div className="_Footer page-footer">
+			<div className="_FooterHome page-footer">
 				<div className="container">
 					<div className="copyright">
 						© 2018. Company Name.	All Rights Reserved.
