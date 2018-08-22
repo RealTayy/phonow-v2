@@ -1,28 +1,49 @@
 /* pages/Home/Home.css */
 
-._Home {	
-	position: relative;
-	color: #fff;
+._Home {
+  position: relative;
+  color: #fff;
   background-color: #fff;
 }
 
+._Home .home-section {
+  height: inherit;
+}
+
 ._Home .footer-image {
-	position: absolute;
-	bottom: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+._Home .home-header {
+  position: relative;
+  height: 40%;
+  padding-top: .75rem;
 }
 
 ._Home .header-image {
-	position: absolute;
-	margin-top: 20px;
-	transform: translateX(-50%);
-	max-height: calc(300px);
-	max-width: calc(100vw - 40px);
+  position: relative;
+  height: 100%;
+  -webkit-filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.60));
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.60));
+}
+
+._Home .home-nav {
+	position: relative;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #222;
+}
+
+._Home .carousel {
+	position: relative;
+	height: 50%;
 }
 
 /* Medium and up */
 
 @media only screen and (min-width: 601px) {
-	._Home .header-image {
-		margin-top: 60px;
-	}
+  ._Home .header-image {}
 }

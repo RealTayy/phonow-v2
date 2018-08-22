@@ -17,13 +17,22 @@
 }
 
 /* NavbarHome Specific */
-._NavbarHome nav {  
+
+._NavbarHome nav {
   background-color: #fff;
 }
 
-._NavbarHome nav ul a {
-  color: #222;
-  background-color: #fff;
+._NavbarHome nav ul a,
+._NavbarHome nav i {
+  color: #222;  
+}
+
+/* Small only */
+
+@media only screen and (max-width: 600px) {
+  ._NavbarHome .nav-wrapper {
+    width: 100%;
+  }
 }
 
 /* Medium and up */

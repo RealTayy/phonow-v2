@@ -15,11 +15,21 @@ export class Home extends Component {
       <div className="_Home">
         <ContentContainer
           singleContainerContent={
-            <div className="content-section home-section">
-              <div className="section-header center-align">
+            <div className="home-section">
+              <div className="home-header center-align">
                 <img className="header-image" src={bigLogo} alt="" />
               </div>
-              <img className="footer-image" src="https://phosho-phonow-production.herokuapp.com/img/main/what-square.png" alt="" />
+              <div className="home-nav">
+                <div className="nav-list center-align">
+                  <span> Food </span> •
+                  <span> Restaurant </span> •
+                  <span> Story </span> •
+                  <span> Contact  </span>
+                </div>
+              </div>
+              <div className="home-carousel center-align">
+                {/* <img className="carousel-image" src="https://phosho-phonow-production.herokuapp.com/img/main/what-square.png" alt="" /> */}
+              </div>
             </div>
           }
         />

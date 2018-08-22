@@ -1,14 +1,21 @@
 /* components/Container/ContentContainer.css */
 
 ._ContentContainer {
-	position: relative;
+  position: relative;
   /* 100vh - navbar height - footer height */
   height: calc(100vh - 56px - 48px);
   overflow: auto;
 }
 
+._ContentContainer .cc-row,
+._ContentContainer .left-container,
+._ContentContainer .right-container,
+._ContentContainer .single-container {
+  height: inherit;
+}
+
 ._ContentContainer .cc-row {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 ._ContentContainer .left-container,

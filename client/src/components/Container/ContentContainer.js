@@ -6,13 +6,13 @@ export class ContentContainer extends Component {
 		return (
 			<div className="_ContentContainer" >
 				{(this.props.singleContainerContent)
-					?
+					? // Only renders single-container
 					<div className="cc-row row">
 						<div className="single-container col s12">
 							{this.props.singleContainerContent}
 						</div>
 					</div>
-					:
+					: // Renders two containers
 					<div className="cc-row row">
 						<div className="left-container col s12 m6">
 							{this.props.leftContainerContent}

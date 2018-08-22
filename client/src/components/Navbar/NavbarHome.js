@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Sidenav } from './Sidenav';
+import smallLogo from '../../images/smallLogo2.png'
 import './NavbarHome.css'
 
 
@@ -11,7 +12,7 @@ export class Navbar extends Component {
 				<nav>
 					<div className="nav-wrapper container">
 						<Link to={"#!"} className="brand-logo">
-							<img className="logo-img" src="http://via.placeholder.com/128x128" />
+							<img className="logo-img" src={smallLogo} />
 						</Link>
 						<a href="#" data-target="_Sidenav" className="sidenav-trigger">
 							<i className="material-icons">menu</i>
