@@ -7,9 +7,9 @@ import './Home.css';
 export class Home extends Component {
   render() {
     const imagesPath = [
-      "http://via.placeholder.com/2048x1365",
-      "http://via.placeholder.com/2048x1365",
-      "http://via.placeholder.com/2048x1365",
+      "http://via.placeholder.com/701x701",
+      "http://via.placeholder.com/902x702",
+      "http://via.placeholder.com/803x703"
     ]
     return (
       <div className="_Home">
@@ -28,7 +28,8 @@ export class Home extends Component {
                 </div>
               </div>
               <div className="home-carousel center-align">
-                {/* <img className="carousel-image" src="https://phosho-phonow-production.herokuapp.com/img/main/what-square.png" alt="" /> */}
+                <img className="carousel-slide" src="http://via.placeholder.com/701x701" alt="" />
+                <img className="carousel-slide" src="http://via.placeholder.com/901x701" alt="" />
               </div>
             </div>
           }

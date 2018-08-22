@@ -17,11 +17,11 @@
 
 ._Home .home-header {
   position: relative;
-  height: 40%;
-  padding-top: .75rem;
+  height: 30%;
+  padding-top: 1.5rem;
 }
 
-._Home .header-image {
+._Home .home-header .header-image {
   position: relative;
   height: 100%;
   -webkit-filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.60));
@@ -37,9 +37,15 @@
 	color: #222;
 }
 
-._Home .carousel {
+._Home .home-carousel {
 	position: relative;
-	height: 50%;
+	height: 60%;
+}
+
+._Home .home-carousel .carousel-image{
+	position: absolute;
+	height: 100%;
+	transform: translateX(-50%);
 }
 
 /* Medium and up */
