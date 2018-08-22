@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Sidenav } from './Sidenav';
-import './Navbar.css'
+import './Navbar.css';
 
 
 export class Navbar extends Component {

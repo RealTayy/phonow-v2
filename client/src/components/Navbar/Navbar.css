@@ -16,8 +16,12 @@
   text-transform: uppercase;
 }
 
-._Navbar {
-  
+/* Small only */
+
+@media only screen and (max-width: 600px) {
+  ._Navbar .nav-wrapper {
+    width: 100%;
+  }
 }
 
 /* Medium and up */
