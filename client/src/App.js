@@ -12,6 +12,7 @@ import './App.css';
 const App = () => (
   <Router>
     <div>
+      <div className="background-image"></div>
       <header>        
         <Switch>
           <Route exact path='/' component={NavbarHome} />          
