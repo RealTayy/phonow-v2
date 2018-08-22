@@ -14,17 +14,16 @@ export class AnimatedCarousel extends Component {
 			slidesToScroll: 1,
 			fade: true,
 			pauseOnHover: false,
+			draggable: false,
+			swipe: false,
 			beforeChange: (oldIndex, newIndex) => {
 				let $allImg = $(`.${this.props.parentClass} ._AnimatedCarousel .slick-slide img`);
-				let $newImg = $(`.${this.props.parentClass} ._AnimatedCarousel .slick-slide[data-index=${newIndex}] img`);
-				console.log(oldIndex);
+				let $newImg = $(`.${this.props.parentClass} ._AnimatedCarousel .slick-slide[data-index=${newIndex}] img`);				
 				$allImg.removeClass('fadeInRight');
 				$allImg.addClass('fadeOutLeft');
 				$newImg.removeClass('fadeOutLeft');
 				$newImg.addClass('fadeInRight');
 			},
-			draggable: false,
-			swipe: false,
 		}
 		return (
 			<Slider className="_AnimatedCarousel" {...settings}>

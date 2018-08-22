@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { ContentContainer } from '../../components/Container';
 import bigLogo from '../../images/bigLogo2.png';
+import rice from '../../images/home/rice.png';
+import pho from '../../images/home/pho.png';
+import eggroll from '../../images/home/eggroll.png';
 import './Home.css';
 import { AnimatedCarousel } from '../../components/AnimatedCarousel/AnimatedCarousel';
 
 export class Home extends Component {
   render() {
     const imagesPath = [
-      "http://via.placeholder.com/800x700",
-      "http://via.placeholder.com/1001x701",
-      "http://via.placeholder.com/602x702"
+      pho,      
+      rice,
+      eggroll,
     ]
     return (
       <div className="_Home">
@@ -21,10 +24,10 @@ export class Home extends Component {
               </div>
               <div className="home-nav">
                 <div className="nav-list center-align">
-                  <span> Food </span> •
-                  <span> Restaurant </span> •
-                  <span> Story </span> •
-                  <span> Contact  </span>
+                  <span> FOOD </span> •
+                  <span> RESTAURANT </span> •
+                  <span> STORY </span> •
+                  <span> CONTACT </span>
                 </div>
               </div>
               <div className="home-carousel center-align">

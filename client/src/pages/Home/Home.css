@@ -17,7 +17,7 @@
 
 ._Home .home-header {
   position: relative;
-  height: 30%;
+  height: 35%;
   padding-top: 1.5rem;
 }
 
@@ -29,17 +29,27 @@
 }
 
 ._Home .home-nav {
-	position: relative;
-	height: 10%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #222;
+  position: relative;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
 }
 
 ._Home .home-carousel {
-	position: relative;
-	height: 60%;
+  position: relative;
+  height: 55%;
+  padding-bottom: 5px;
+}
+
+._Home .home-carousel img {
+  position: relative;
+  padding-top: 5px;
+  /* top: -5px; */
+  z-index: 1001;
+  -webkit-filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.60));
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.60));  
 }
 
 /* Medium and up */
