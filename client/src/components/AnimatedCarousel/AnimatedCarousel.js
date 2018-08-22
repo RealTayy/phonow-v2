@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import './Carousel.css';
+import './AnimatedCarousel.css';
 
-export class Carousel extends Component {
+export class AnimatedCarousel extends Component {
 	render() {
 		const settings = this.props.settings || {
-			autoplay: true,
+			autoplay: false,
 			autoplaySpeed: 4000,
-			arrows: false,			
-		}		
+			arrows: false,
+		}
 		return (
-			<Slider className="_Carousel" {...settings}>
+			<Slider className="_AnimatedCarousel" {...settings}>
 				{this.props.imagesPath.map((src, i) => {
 					return <img key={i} src={src} alt="" />
 				})}
@@ -19,4 +19,4 @@ export class Carousel extends Component {
 	}
 }
 
-export default Carousel
+export default AnimatedCarousel

@@ -1,0 +1,12 @@
+._AnimatedCarousel,
+._AnimatedCarousel .slick-list,
+._AnimatedCarousel .slick-track,
+._AnimatedCarousel .slick-slide,
+._AnimatedCarousel .slick-slide * {
+  height: 100% !important;
+}
+
+/* Unforces image to fill out width */
+._AnimatedCarousel .slick-slide img {
+	width: unset !important;
+}

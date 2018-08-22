@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { ContentContainer } from '../../components/Container';
-import { Carousel } from '../../components/Carousel/Carousel';
 import bigLogo from '../../images/bigLogo2.png';
 import './Home.css';
+import { AnimatedCarousel } from '../../components/AnimatedCarousel/AnimatedCarousel';
 
 export class Home extends Component {
   render() {
     const imagesPath = [
-      "http://via.placeholder.com/701x701",
+      "http://via.placeholder.com/401x701",
       "http://via.placeholder.com/902x702",
-      "http://via.placeholder.com/803x703"
+      "http://via.placeholder.com/603x703"
     ]
     return (
       <div className="_Home">
@@ -28,8 +28,8 @@ export class Home extends Component {
                 </div>
               </div>
               <div className="home-carousel center-align">
-                <img className="carousel-slide" src="http://via.placeholder.com/701x701" alt="" />
-                <img className="carousel-slide" src="http://via.placeholder.com/901x701" alt="" />
+                <AnimatedCarousel
+                  imagesPath={imagesPath} />
               </div>
             </div>
           }
