@@ -1,12 +1,23 @@
+/* components/AnimatedCarousel/AnimatedCarousel.css */
+
 ._AnimatedCarousel,
 ._AnimatedCarousel .slick-list,
 ._AnimatedCarousel .slick-track,
 ._AnimatedCarousel .slick-slide,
-._AnimatedCarousel .slick-slide * {
-  height: 100% !important;
+._AnimatedCarousel .slick-slide>div {
+  height: 100%;  
 }
 
-/* Unforces image to fill out width */
+._AnimatedCarousel .slick-slide>div {
+	display: flex;	
+	justify-content: center;
+ align-items: center;
+}
+
 ._AnimatedCarousel .slick-slide img {
-	width: unset !important;
+	/* Unforces image to fill out width */
+	position: relative;
+  width: unset !important;
+  max-height: 100%;
+	max-width: 100%;	
 }

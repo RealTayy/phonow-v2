@@ -7,9 +7,9 @@ import { AnimatedCarousel } from '../../components/AnimatedCarousel/AnimatedCaro
 export class Home extends Component {
   render() {
     const imagesPath = [
-      "http://via.placeholder.com/401x701",
-      "http://via.placeholder.com/902x702",
-      "http://via.placeholder.com/603x703"
+      "http://via.placeholder.com/800x700",
+      "http://via.placeholder.com/1001x701",
+      "http://via.placeholder.com/602x702"
     ]
     return (
       <div className="_Home">
@@ -29,7 +29,9 @@ export class Home extends Component {
               </div>
               <div className="home-carousel center-align">
                 <AnimatedCarousel
-                  imagesPath={imagesPath} />
+                  imagesPath={imagesPath}
+                  parentClass="home-carousel"
+                />
               </div>
             </div>
           }
