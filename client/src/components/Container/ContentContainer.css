@@ -1,5 +1,10 @@
 /* components/Container/ContentContainer.css */
 
+/* DELTE ME SOON BOY */
+._ContentContainer .right-container {
+  background-color: #fff;
+}
+
 ._ContentContainer {
   position: relative;
   /* 100vh - navbar height - footer height */

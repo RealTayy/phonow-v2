@@ -11,7 +11,7 @@
 }
 
 ._FooterHome .copyright {
-	color: #222 !important;	
+	/* color: #222 !important;	 */
 	padding: 0 !important;
 	min-height: 48px !important;
 }
@@ -23,7 +23,7 @@
 
 ._FooterHome .credit-text {	
 	padding: 0 10px;
-	color: #222;	
+	color: #fff;	
 }
 
 @media only screen and (max-width: 600px) {

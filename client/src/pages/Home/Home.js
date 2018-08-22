@@ -24,10 +24,10 @@ export class Home extends Component {
               </div>
               <div className="home-nav">
                 <div className="nav-list center-align">
-                  <span> FOOD </span> •
-                  <span> RESTAURANT </span> •
-                  <span> STORY </span> •
-                  <span> CONTACT </span>
+                  <span>FOOD</span><span>  •  </span>
+                  <span>RESTAURANT</span><span>  •  </span>
+                  <span>STORY</span><span>  •  </span>
+                  <span>CONTACT</span>
                 </div>
               </div>
               <div className="home-carousel center-align">
