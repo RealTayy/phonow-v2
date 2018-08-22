@@ -11,10 +11,10 @@ export class Navbar extends Component {
 			<div className="_NavbarHome">
 				<nav>
 					<div className="nav-wrapper container">
-						<Link to={"#!"} className="brand-logo">
-							<img className="logo-img" src={smallLogo} />
+						<Link to="#!" className="brand-logo">
+							<img className="logo-img" src={smallLogo} alt="" />
 						</Link>
-						<a href="#" data-target="_Sidenav" className="sidenav-trigger">
+						<a href="#!" data-target="_Sidenav" className="sidenav-trigger">
 							<i className="material-icons">menu</i>
 						</a>
 						<ul className="right hide-on-med-and-down">

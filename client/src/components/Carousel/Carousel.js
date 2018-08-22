@@ -13,7 +13,7 @@ export class Carousel extends Component {
 		return (
 			<Slider className="_Carousel" {...settings}>
 				{this.props.imagesPath.map((src, i) => {
-					return <img key={i} src={src} />
+					return <img key={i} src={src} alt="" />
 				})}
 			</Slider>
 		)
