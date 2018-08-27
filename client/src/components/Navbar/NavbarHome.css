@@ -19,12 +19,13 @@
 /* NavbarHome Specific */
 
 ._NavbarHome nav {
-  background-color: #111;
+  background-color: transparent;
+  box-shadow: none !important;
 }
 
 ._NavbarHome nav ul a,
 ._NavbarHome nav i {
-  color: #fff;  
+  color: #fff;
 }
 
 /* Small only */
