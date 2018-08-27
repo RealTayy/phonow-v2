@@ -37,12 +37,12 @@
 
 ._Home .home-header .header-text .text-main {
   position: relative;
-  height: 75%;  
+  height: 75%;
 }
 
 ._Home .home-header .header-text .text-sub {
   position: relative;
-  height: 25%;  
+  height: 25%;
 }
 
 ._Home .home-nav {
@@ -70,5 +70,7 @@
 /* Medium and up */
 
 @media only screen and (min-width: 601px) {
-  ._Home .header-image {}
+  ._Home .home-nav {
+    font-size: 20px;
+  }
 }
