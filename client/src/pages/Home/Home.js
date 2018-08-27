@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ContentContainer } from '../../components/Container';
-import bigLogo from '../../images/bigLogo2.png';
+import logo from '../../images/home/sLogo.png';
 import rice from '../../images/home/rice.png';
 import pho from '../../images/home/pho.png';
 import eggroll from '../../images/home/eggroll.png';
@@ -10,7 +10,7 @@ import { AnimatedCarousel } from '../../components/AnimatedCarousel/AnimatedCaro
 export class Home extends Component {
   render() {
     const imagesPath = [
-      pho,      
+      pho,
       rice,
       eggroll,
     ]
@@ -20,7 +20,11 @@ export class Home extends Component {
           singleContainerContent={
             <div className="home-section">
               <div className="home-header center-align">
-                <img className="header-image" src={bigLogo} alt="" />
+                <img className="header-image" src={logo} alt="" />
+                <div className="header-text">
+                  <div className="text-main mai-textdyn">PHO NOW</div>
+                  <div className="text-sub mai-textdyn">VIETNAMESE NOODLE & GRILL</div>
+                </div>
               </div>
               <div className="home-nav">
                 <div className="nav-list center-align">
