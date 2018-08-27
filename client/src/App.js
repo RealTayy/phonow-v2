@@ -11,11 +11,11 @@ import './App.css';
 
 class App extends Component {
   state = {
-    currentTab = 'asdf'
+    currentTab: 'asdf'
   }
 
   render() {
-    < Router>
+    return < Router>
       <div>
         <div className="background-image"></div>
         <header>
