@@ -6,8 +6,13 @@ import pho from '../../images/home/pho.png';
 import eggroll from '../../images/home/eggroll.png';
 import './Home.css';
 import { AnimatedCarousel } from '../../components/AnimatedCarousel/AnimatedCarousel';
+import { maiTextDyn } from '../../assets/javascript/maiHelpers';
 
 export class Home extends Component {
+  componentDidMount = () => {
+    maiTextDyn();
+  }
+
   render() {
     const imagesPath = [
       pho,

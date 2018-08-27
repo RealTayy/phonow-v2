@@ -1,1 +1,1 @@
-export { default as maiTextDyn } from './MCTextDyn.js';
+export { maiTextDyn } from './maiTextDyn.js';
