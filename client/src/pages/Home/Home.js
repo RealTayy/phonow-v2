@@ -9,9 +9,20 @@ import { AnimatedCarousel } from '../../components/AnimatedCarousel/AnimatedCaro
 import { maiTextDyn } from '../../assets/javascript/maiHelpers';
 
 export class Home extends Component {
+
+  componentWillMount = () => {
+    this.props.setIsHome(true);
+  }
+
   componentDidMount = () => {
+    this.props.setIsHome(true);
     maiTextDyn();
   }
+
+  componentWillUnmount = () => {
+    this.props.setIsHome(false);
+  }
+
 
   render() {
     const imagesPath = [

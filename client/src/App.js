@@ -11,19 +11,24 @@ import './App.css';
 
 class App extends Component {
   state = {
-    currentTab: 'asdf'
+    isHome: false
+  }
+
+  setIsHome = (isHome) => {
+    this.setState({ isHome: isHome });
   }
 
   render() {
+    const isHome = this.state.isHome;
     return < Router>
       <div>
         <div className="background-image"></div>
         <header>
-          <Route component={Navbar} />
+          <Navbar isHome={isHome} />
         </header>
         <main>
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path='/' render={() => <Home setIsHome={this.setIsHome} />} />
             <Route exact path='/menu' component={Menu} />
             <Route exact path='/info' component={Info} />
             <Route exact path='/about' component={About} />
@@ -32,7 +37,7 @@ class App extends Component {
           </Switch>
         </main>
         <footer>
-          <Route component={Footer} />
+          <Footer isHome={isHome} />
         </footer>
       </div>
     </Router >

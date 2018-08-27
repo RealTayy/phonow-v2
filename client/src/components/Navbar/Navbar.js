@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import { Sidenav } from './Sidenav';
 import smallLogo from '../../images/smallLogo2.png'
 import './Navbar.css';
+import './NavbarHome.css';
 
 
 export class Navbar extends Component {
 	render() {
+		console.log(this.props);
 		return (
-			<div className="_Navbar">
+			<div className={`_Navbar${(this.props.isHome) ? 'Home' : ''}`}>
 				<nav>
 					<div className="nav-wrapper container">
 						<Link to="#!" className="brand-logo">

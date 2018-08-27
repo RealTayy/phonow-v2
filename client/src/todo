@@ -5,10 +5,11 @@ MVP:
 > make container of nav/footer better
 > Make hamburger positioned better on mobile view
 > Make clicking on logo go to homepage
-
+> Delete Footer/NavbarHome components
 
 For Funsies:
 > Make background of root move around with mouse position
 > Make Madeby change to maiCoding when hover in footer
 > Make cool slide animation for slick
 > Add maiCoding to _SideNav
+
