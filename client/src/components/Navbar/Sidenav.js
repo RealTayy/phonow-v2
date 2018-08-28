@@ -12,7 +12,9 @@ export class Sidenav extends Component {
 		return (
 			<ul className="_Sidenav sidenav" id="_Sidenav">
 				<div className="sidenav-header center-align">
-					<img className="sidenav-img" src="http://via.placeholder.com/128x128" alt="" />
+					<Link to="/" className="sidenav-close">
+						<img className="sidenav-img" src="http://via.placeholder.com/128x128" alt="" />
+					</Link>
 				</div>
 				<li><Link to={"/"} className="sidenav-close">Home</Link></li>
 				<li><Link to={"/menu"} className="sidenav-close">Menu</Link></li>

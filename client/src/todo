@@ -1,11 +1,10 @@
 MVP:
 > Change company name in footer
-> Get origin image for _Home footer-image (Also add max height?)
 > Clean up materialize-src js/jsz
 > make container of nav/footer better
-> Make hamburger positioned better on mobile view
-> Make clicking on logo go to homepage
 > Delete Footer/NavbarHome components
+> Change logo on nabvar
+> Change Logo on footer
 
 For Funsies:
 > Make background of root move around with mouse position

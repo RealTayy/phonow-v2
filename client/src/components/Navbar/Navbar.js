@@ -13,7 +13,7 @@ export class Navbar extends Component {
 			<div className={`_Navbar${(this.props.isHome) ? 'Home' : ''}`}>
 				<nav>
 					<div className="nav-wrapper container">
-						<Link to="/" className="brand-logo">
+						<Link to="/" className="brand-logo hide-on-med-and-down">
 							<img className="logo-img" src={smallLogo} alt="" />
 						</Link>
 						<a href="#!" data-target="_Sidenav" className="sidenav-trigger">

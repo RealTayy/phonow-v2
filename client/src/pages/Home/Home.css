@@ -17,7 +17,6 @@
 ._Home .home-header {
   position: relative;
   height: 35%;
-  padding-top: 1.5rem;
 }
 
 ._Home .home-header .header-image {
@@ -72,5 +71,13 @@
 @media only screen and (min-width: 601px) {
   ._Home .home-nav {
     font-size: 20px;
+  }
+}
+
+/* Large and up */
+
+@media only screen and (min-width: 993px) {
+  ._Home .home-header {
+    padding-top: 10px;
   }
 }
