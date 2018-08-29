@@ -29,10 +29,10 @@ class App extends Component {
         <main>
           <Switch>
             <Route exact path='/' render={() => <Home setIsHome={this.setIsHome} />} />
-            <Route exact path='/menu' component={Menu} />
-            <Route exact path='/info' component={Info} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/menu' render={() => <Menu />} />
+            <Route exact path='/info' render={() => <Info />} />
+            <Route exact path='/about' render={() => <About />} />
+            <Route exact path='/contact' render={() => <Contact />} />
             <Route component={Home} />
           </Switch>
         </main>

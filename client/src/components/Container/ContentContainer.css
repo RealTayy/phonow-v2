@@ -6,9 +6,10 @@
 }
 
 ._ContentContainer {
-  position: relative;
+  position: fixed;    
   /* 100vh - navbar height - footer height */
   height: calc(100vh - 56px - 48px);
+  width: 100%;
   overflow: auto;
 }
 
