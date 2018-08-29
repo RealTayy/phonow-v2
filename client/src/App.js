@@ -20,7 +20,7 @@ class App extends Component {
 
   render() {
     const isHome = this.state.isHome;
-    return < Router>
+    return <Router forceRefresh={!'pushState' in window.history}>
       <div>
         <div className="background-image"></div>
         <header>
