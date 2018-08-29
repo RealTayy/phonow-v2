@@ -3,6 +3,11 @@ import { ContentContainer } from '../../components/Container';
 import { Carousel } from '../../components/Carousel/Carousel';
 
 export class Menu extends Component {
+
+  componentDidMount = () => {
+    this.props.setIsHome(false);
+  }
+
   render() {
     const imagesPath = [
       "http://via.placeholder.com/2047x1365",

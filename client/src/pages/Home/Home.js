@@ -10,10 +10,6 @@ import { maiTextDyn } from '../../assets/javascript/maiHelpers';
 
 export class Home extends Component {
 
-  componentWillMount = () => {
-    this.props.setIsHome(true);
-  }
-
   componentDidMount = () => {
     this.props.setIsHome(true);
     maiTextDyn();
@@ -22,6 +18,7 @@ export class Home extends Component {
   componentWillUnmount = () => {
     this.props.setIsHome(false);
   }
+
 
 
   render() {
