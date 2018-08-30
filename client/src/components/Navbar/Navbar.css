@@ -4,6 +4,12 @@
   position: relative;
 }
 
+._Navbar nav {
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
 ._Navbar .logo-img {
   padding: 0 20px;
   position: relative;
