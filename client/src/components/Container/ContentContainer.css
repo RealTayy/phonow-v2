@@ -1,12 +1,12 @@
 /* components/Container/ContentContainer.css */
 
-/* DELTE ME SOON BOY */
-._ContentContainer .right-container {
+._ContentContainer .right-container,
+._ContentContainer .left-container {
   background-color: #fff;
 }
 
 ._ContentContainer {
-  position: fixed;    
+  position: fixed;
   /* 100vh - navbar height - footer height */
   height: calc(100vh - 56px - 48px);
   width: 100%;
@@ -33,6 +33,10 @@
 
 ._ContentContainer .section {
   height: 100%;
+}
+
+._ContentContainer .scrollable {
+  overflow: auto;
 }
 
 @media only screen and (min-width: 601px) {

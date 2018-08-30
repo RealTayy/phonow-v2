@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { ContentContainer } from '../../components/Container';
 import { Carousel } from '../../components/Carousel/Carousel';
+import { ContentTitle } from '../../components/Content';
 
 export class Menu extends Component {
 
@@ -21,8 +22,14 @@ export class Menu extends Component {
             <Carousel imagesPath={imagesPath} />
           }
           rightContainerContent={
-            <div>Menu</div>
+            <div>
+              <ContentTitle
+                title="The Menu"
+              />
+              <div>asdf</div>
+            </div>
           }
+          rightClasses={"scrollable"}
         />
       </div>
     )

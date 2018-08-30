@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { ContentContainer } from '../../components/Container';
 import { Carousel } from '../../components/Carousel/Carousel';
+import { ContentTitle } from '../../components/Content';
 
 export class Info extends Component {
   render() {
@@ -13,10 +14,14 @@ export class Info extends Component {
       <div className="_Info">
         <ContentContainer
           leftContainerContent={
-            <Carousel imagesPath={imagesPath} />
+            <div className="container">
+              <ContentTitle
+                title="The Restaurant"
+              />
+            </div>
           }
           rightContainerContent={
-            <div>Info</div>
+            <Carousel imagesPath={imagesPath} />
           }
         />
       </div>

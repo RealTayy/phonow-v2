@@ -4,7 +4,7 @@ import './ContentContainer.css';
 export class ContentContainer extends Component {
 	render() {
 		return (
-			<div className="_ContentContainer" >
+			<div className="_ContentContainer">
 				{(this.props.singleContainerContent)
 					? // Only renders single-container
 					<div className="cc-row row">
@@ -14,10 +14,10 @@ export class ContentContainer extends Component {
 					</div>
 					: // Renders two containers
 					<div className="cc-row row">
-						<div className="left-container col s12 m6">
+						<div className={`left-container col s12 m6 ${(this.props.leftClasses) ? this.props.leftClasses : ''}`}>
 							{this.props.leftContainerContent}
 						</div>
-						<div className="right-container col s12 m6">
+						<div className={`right-container col s12 m6 ${(this.props.rightClasses) ? this.props.rightClasses : ''}`}>
 							{this.props.rightContainerContent}
 						</div>
 					</div>}
