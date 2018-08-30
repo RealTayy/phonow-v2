@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Sidenav } from './Sidenav';
 import $ from 'jquery';
-
-import smallLogo from '../../images/smallLogo2.png';
 import './Navbar.css';
 import './NavbarHome.css';
 
+import smallLogo from '../../images/smallLogo2.png';
 
 export class Navbar extends Component {
 
@@ -34,7 +33,7 @@ export class Navbar extends Component {
 						</ul>
 					</div>
 				</nav>
-				<Sidenav />
+				<Sidenav setIsHome={this.props.setIsHome} />
 			</div>
 		)
 	}

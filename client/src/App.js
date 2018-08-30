@@ -20,8 +20,7 @@ class App extends Component {
   }
 
 
-  render() {
-    console.log(this.props)
+  render() {    
     const isHome = this.state.isHome;
     return <Router forceRefresh={!('pushState' in window.history)}>
       <div>
