@@ -12,6 +12,7 @@ export class Sidenav extends Component {
 	};
 
 	handleClick = (e) => {
+		console.log($(".page-container").children())
 		this.props.setIsHome($(e.target).hasClass('link-home'));
 	}
 

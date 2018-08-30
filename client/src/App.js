@@ -33,7 +33,7 @@ class App extends Component {
             render={({ location }) => {
               const { pathname } = location;
               return (
-                <TransitionGroup>
+                <TransitionGroup className="page-container">
                   <Transition
                     key={pathname}
                     timeout={{

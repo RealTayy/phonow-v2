@@ -10,7 +10,8 @@ import smallLogo from '../../images/smallLogo2.png';
 export class Navbar extends Component {
 
 	handleClick = (e) => {
-		this.props.setIsHome($(e.target).hasClass('link-home'));
+		if ($(".page-container").children().length > 1) e.preventDefault()
+		else this.props.setIsHome($(e.target).hasClass('link-home'));
 	}
 
 	render() {
