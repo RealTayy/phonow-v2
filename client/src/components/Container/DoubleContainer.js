@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ContentContainer.css';
+import './Content.css';
 
 export class DoubleContainer extends Component {
 	render() {

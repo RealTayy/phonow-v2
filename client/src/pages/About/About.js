@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
-import { ContentContainer } from '../../components/Container';
+import { SingleContainer } from '../../components/Container';
 import { Carousel } from '../../components/Carousel/Carousel';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
+import bg from '../../images/about/bg.jpg';
 
 export class About extends Component {
   render() {
-    const imagesPath = [
-      "http://via.placeholder.com/2048x1365",
-      "http://via.placeholder.com/2048x1365",
-      "http://via.placeholder.com/2048x1365",
-    ]
     return (
       <div className="_About">
-        <ContentContainer
-          singleContainerContent={
+        <SingleContainer          
+          fontColor="white"
+          bgImg={bg}
+          content={
             <ContentWrapper>
               <ContentTitle
                 title="The Story"
