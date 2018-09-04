@@ -1,0 +1,21 @@
+/* components/Content/ContentWrapper.css */
+
+._ContentWrapper {
+  padding-top: 20px;
+}
+
+/* Medium and up */
+
+@media only screen and (min-width: 601px) {
+  ._ContentWrapper {
+    padding-top: 30px;
+  }
+}
+
+/* Large and up */
+
+@media only screen and (min-width: 993px) {
+  ._ContentWrapper {
+    padding-top: 45px;
+  }
+}
