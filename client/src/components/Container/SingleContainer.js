@@ -3,11 +3,6 @@ import $ from 'jquery';
 import './Content.css';
 
 export class SingleContainer extends Component {
-	componentDidMount = () => {
-		$("._SingleContainer").css("display: none");
-	}
-
-
 	render() {
 		const styles = {};
 		(this.props.fontColor) ? styles.color = this.props.fontColor : null;
