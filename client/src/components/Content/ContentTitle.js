@@ -4,8 +4,8 @@ import './ContentTitle.css';
 export class ContentTitle extends Component {
 	render() {
 		return (
-			<div className="_ContentTitle">
-				<div className="title-header">
+			<div className="_ContentTitle row">
+				<div className="title-header col s12">
 					{this.props.title}
 				</div>
 			</div>

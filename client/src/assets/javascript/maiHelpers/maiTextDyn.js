@@ -6,8 +6,7 @@ export function maiTextDyn() {
 	$(() => {
 		$('.mai-textdyn').each(function () {
 			$(this).css({
-				'font-size': $(this).height(),
-				'line-height': $(this).height() + 'px'
+				'font-size': $(this).height()				
 			})
 		})
 	});
@@ -16,8 +15,7 @@ export function maiTextDyn() {
 	$(window).resize(function () {
 		$('.mai-textdyn').each(function () {
 			$(this).css({
-				'font-size': $(this).height(),
-				'line-height': $(this).height() + 'px'
+				'font-size': $(this).height()				
 			})
 		})
 	});

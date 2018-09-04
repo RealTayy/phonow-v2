@@ -1,14 +1,16 @@
 /* components/Content/ContentWrapper.css */
 
 ._ContentWrapper {
-  padding-top: 20px;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;  
 }
 
 /* Medium and up */
 
 @media only screen and (min-width: 601px) {
   ._ContentWrapper {
-    padding-top: 30px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;    
   }
 }
 
@@ -16,6 +18,7 @@
 
 @media only screen and (min-width: 993px) {
   ._ContentWrapper {
-    padding-top: 45px;
+    margin-top: 45px !important;
+    margin-bottom: 45px !important;
   }
 }

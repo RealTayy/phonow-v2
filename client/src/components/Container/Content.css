@@ -6,7 +6,15 @@
   /* 100vh - navbar height - footer height */
   height: calc(100vh - 56px - 48px);
   width: 100%;
-  overflow: auto;
+  overflow: auto;  
+}
+
+._SingleContainer .bg-image {
+  position: absolute;
+  height: 100%;
+	width: 100%;
+  z-index: -1;
+  background-size: cover !important;
 }
 
 .cc-row,

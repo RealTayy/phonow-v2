@@ -1,7 +1,12 @@
 /* components/Content/ContentTitle.css */
 
+._ContentTitle {
+	line-height: 1;
+	margin-bottom: 20px;	
+}
+
 ._ContentTitle .title-header {
-	text-align: center;
-	font-size: 50px
-	;
+	text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
 }
