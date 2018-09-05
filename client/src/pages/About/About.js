@@ -7,10 +7,8 @@ import fogr from '../../images/about/fog-r.png';
 import './About.css';
 import { maiStalkerDiv } from '../../assets/javascript/maiHelpers';
 import $ from 'jquery';
-import { TweenLite } from 'gsap/TweenMax';
 
 export class About extends Component {
-
   componentDidMount = () => {
     maiStalkerDiv();
     $('.fog').maiStalkerDiv([
@@ -37,7 +35,6 @@ export class About extends Component {
       }
     ]);
   }
-
 
   render() {
     return (
