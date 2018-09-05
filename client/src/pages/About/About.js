@@ -40,10 +40,9 @@ export class About extends Component {
     return (
       <div className="_About">
         <SingleContainer bgImg={bg}>
-          <div className="fog mai-stalkerDiv-wrapper">
-            <div id="fog-one" className="mai-stalkerDiv-img" style={{ background: `url(${fog}` }}></div>
-            <div id="fog-two" className="mai-stalkerDiv-img" style={{ background: `url(${fogr}` }}></div>
-          </div>
+          <div className="fog mai-stalkerDiv-wrapper"> </div>
+          <div id="fog-one" className="mai-stalkerDiv-bg-img" style={{ background: `url(${fog}` }}></div>
+          <div id="fog-two" className="mai-stalkerDiv-bg-img" style={{ background: `url(${fogr}` }}></div>
           <ContentWrapper className="z-depth-2">
             <ContentTitle className="f-opensans" pretitle="The" title="Story" />
             <div className="small-divider-white drop-shadow-1"></div>
