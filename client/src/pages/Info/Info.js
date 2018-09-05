@@ -4,8 +4,11 @@ import { Carousel } from '../../components/Carousel/Carousel';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
 import './Info.css';
 
+
 export class Info extends Component {
   render() {
+    console.log(process.env)
+    console.log(process.env.REACT_APP_TEST_ME);
     const imagesPath = [
       "http://via.placeholder.com/2048x1365",
       "http://via.placeholder.com/2048x1365",

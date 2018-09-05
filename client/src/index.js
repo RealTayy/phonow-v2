@@ -5,5 +5,6 @@ import './assets/javascript/maiHelpers';
 import './materialize-src/css/materialize.css';
 import 'materialize-css';
 import './assets/css/animate.css';
+// require('dotenv').config()
 
 render(<App />, document.getElementById('root'));
