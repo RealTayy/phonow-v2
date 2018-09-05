@@ -29,7 +29,7 @@ p {
 }
 
 .drop-shadow-2 {
-  -webkit-filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.35));  
+  -webkit-filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.35));
 }
 
 .f-raleway,
@@ -48,7 +48,7 @@ p {
 .small-divider::after {
   color: #F6BE61;
   display: block;
-  content: "―";  
+  content: "―";
   width: 100%;
   text-align: center;
   font-weight: 900;
@@ -60,13 +60,40 @@ p {
 .small-divider-white::after {
   color: #fff;
   display: block;
-  content: "―";  
+  content: "―";
   width: 100%;
   text-align: center;
   font-weight: 900;
   font-size: 30px;
   height: 6px;
   line-height: 1px;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: rgba(34, 34, 34, 0.25);
+}
+
+::-webkit-scrollbar-track:hover {
+  background: rgba(34, 34, 34, 0.5);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }
 
 /* Medium and up */
