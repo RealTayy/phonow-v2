@@ -45,16 +45,16 @@ export class Home extends Component {
               <div className="home-header center-align">
                 <img className="header-image" src={logo} alt="" />
                 <div className="header-text">
-                  <div className="text-main mai-textDyn">PHO NOW</div>
-                  <div className="text-sub mai-textDyn">VIETNAMESE NOODLE & GRILL</div>
+                  <div className="text-main mai-textDyn f-opensans">PHO NOW</div>
+                  <div className="text-sub mai-textDyn f-oleo">VIETNAMESE NOODLE & GRILL</div>
                 </div>
               </div>
               <div className="home-nav">
-                <div className="nav-list center-align">
-                  <span>FOOD</span><span>  •  </span>
-                  <span>RESTAURANT</span><span>  •  </span>
-                  <span>STORY</span><span>  •  </span>
-                  <span>CONTACT</span>
+                <div className="nav-list center-align f-raleway">
+                  <span className="nav-button">FOOD</span><span>  •  </span>
+                  <span className="nav-button">RESTAURANT</span><span>  •  </span>
+                  <span className="nav-button">STORY</span><span>  •  </span>
+                  <span className="nav-button">CONTACT</span>
                   <div className="mai-stalkerDiv-wrapper"></div>
                 </div>
               </div>

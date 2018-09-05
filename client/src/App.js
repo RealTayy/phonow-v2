@@ -23,7 +23,7 @@ class App extends Component {
   render() {    
     const isHome = this.state.isHome;
     return <Router forceRefresh={!('pushState' in window.history)}>
-      <div className="_App">        
+      <div className="_App f-raleway">        
         <header>
           <Navbar isHome={isHome} setIsHome={this.setIsHome} />
         </header>

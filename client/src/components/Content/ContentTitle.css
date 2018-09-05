@@ -2,12 +2,25 @@
 
 ._ContentTitle {
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 ._ContentTitle .title-header {
-	font-family: 'Open Sans', sans-serif;	
+  position: relative;
+  color: #F6BE61;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Oleo Script', cursive;
   text-transform: uppercase;
   text-align: center;
-  font-size: 63px;
+  font-size: 64px;  
+}
+
+._ContentTitle .pretitle-header {
+  position: relative;
+  /* color: #FEEDBB; */
+  text-transform: uppercase;
+  text-align: center;
+	font-size: 42px;
+	top: 6px;
+	line-height: 30px;
 }
