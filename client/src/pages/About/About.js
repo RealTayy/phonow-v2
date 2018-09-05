@@ -5,14 +5,50 @@ import bg from '../../images/about/bg.jpg';
 import fog from '../../images/about/fog.png';
 import fogr from '../../images/about/fog-r.png';
 import './About.css';
+import { maiStalkerDiv } from '../../assets/javascript/maiHelpers';
+import $ from 'jquery';
+import { TweenLite } from 'gsap/TweenMax';
 
 export class About extends Component {
+
+  componentDidMount = () => {
+    maiStalkerDiv();
+    $('.fog').maiStalkerDiv([
+      {
+        selector: '#fog-one',
+        zoom: 30,
+        offset: 30,
+        speed: 1.5,
+        easing: 'Power1.easeOut'
+      },
+      {
+        selector: '#fog-two',
+        zoom: 10,
+        offset: 10,
+        speed: 1,
+        easing: 'Power1.easeOut'
+      },
+      {
+        selector: '.bg-image',
+        zoom: 5,
+        offset: 5,
+        speed: 2,
+        easing: 'Power1.easeOut'
+      }
+    ]);
+
+
+  }
+
+
   render() {
     return (
       <div className="_About">
         <SingleContainer bgImg={bg}>
-          <div className="fog" style={{ background: `url(${fog}` }}></div>
-          <div className="fog" style={{ background: `url(${fogr}` }}></div>
+          <div className="fog mai-stalkerDiv-wrapper">
+            <div id="fog-one" className="mai-stalkerDiv-img" style={{ background: `url(${fog}` }}></div>
+            <div id="fog-two" className="mai-stalkerDiv-img" style={{ background: `url(${fogr}` }}></div>
+          </div>
           <ContentWrapper className="z-depth-2">
             <ContentTitle title="The Story" />
             <ContentBody className={"row"}>
@@ -28,8 +64,7 @@ export class About extends Component {
             </ContentBody>
           </ContentWrapper>
         </SingleContainer>
-        <div className="fogr"></div>
-      </div>
+      </div >
     )
   }
 }

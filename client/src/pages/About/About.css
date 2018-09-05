@@ -4,17 +4,17 @@
   color: #fff;
 }
 
-._About .fog {
-  width: 100%;  
-  height: 100%;
-  pointer-events: none;
-  position: fixed;  
-  margin: 0 -.75rem;    
-  background-size: cover !important;
-  z-index: -1;
+._About .SingleContainer {
+  overflow: hidden !important;
 }
 
-._About .fogr {}
+._About .fog {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 -.75rem;
+  background-size: cover !important;
+}
 
 ._About ._ContentBody {
   line-height: 1.6em;
@@ -27,6 +27,9 @@
 }
 
 ._About ._ContentWrapper {
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
   background: rgba(51, 51, 51, 0.7);
   padding: 20px;
 }

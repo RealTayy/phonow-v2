@@ -19,8 +19,6 @@ export class Home extends Component {
     this.props.setIsHome(false);
   }
 
-
-
   render() {
     const imagesPath = [
       pho,
@@ -35,8 +33,8 @@ export class Home extends Component {
               <div className="home-header center-align">
                 <img className="header-image" src={logo} alt="" />
                 <div className="header-text">
-                  <div className="text-main mai-textdyn">PHO NOW</div>
-                  <div className="text-sub mai-textdyn">VIETNAMESE NOODLE & GRILL</div>
+                  <div className="text-main mai-textDyn">PHO NOW</div>
+                  <div className="text-sub mai-textDyn">VIETNAMESE NOODLE & GRILL</div>
                 </div>
               </div>
               <div className="home-nav">
