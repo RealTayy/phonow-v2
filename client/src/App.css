@@ -1,5 +1,9 @@
 /* src/App.css */
 
+._App {
+  overflow: hidden;
+}
+
 main,
 header,
 footer {
@@ -71,9 +75,11 @@ p {
 
 /* width */
 
-::-webkit-scrollbar {
-  height: 7px;
-  width: 7px;
+@media only screen and (min-width: 993px) {
+  ::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+  }
 }
 
 /* Track */
