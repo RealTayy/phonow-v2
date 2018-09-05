@@ -4,7 +4,7 @@ import '../../css/maiHelpers/maiStalkerDiv.css';
 import { TweenLite } from 'gsap/TweenMax';
 
 export function maiStalkerDiv() {
-	(function ($) {
+	(function ($) {		
 		// Initialize Zoom
 		$.fn.maiStalkerDiv = function (stalkers) {
 			for (let i = 0; i < stalkers.length; i++) {
@@ -12,7 +12,7 @@ export function maiStalkerDiv() {
 				$(stalker.selector).css({ transform: `scale(${1 + (stalker.zoom / 50)})` })
 			}
 
-			$(this).mousemove((e) => {
+			$(this).mousemove((e) => {				
 				// Tracks mouseX position by PERCENTAGE
 				const mouseX = ((e.pageX - $(this).offset().left) / $(this).outerWidth() * 200) - 100
 				// Tracks mouseY position by PERCENTAGE

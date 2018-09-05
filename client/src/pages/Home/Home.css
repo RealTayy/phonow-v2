@@ -5,6 +5,27 @@
   color: #fff;
 }
 
+._Home .mai-stalkerDiv-wrapper {
+  position: fixed;
+  pointer-events: auto;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+._Home .bg-img {
+  position: fixed;
+  top: 0;
+  background: url("../../images/back.png");
+  background-color: #222;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
 ._Home .home-section {
   height: inherit;
 }
@@ -48,13 +69,22 @@
 
 ._Home .home-nav {
   position: relative;
+  pointer-events: none;
   height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+._Home .home-nav span {
+  position: relative;
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 1;
+}
+
 ._Home .home-carousel {
+  pointer-events: none;
   position: relative;
   height: 55%;
   padding-bottom: 5px;

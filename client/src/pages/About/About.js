@@ -36,8 +36,6 @@ export class About extends Component {
         easing: 'Power1.easeOut'
       }
     ]);
-
-
   }
 
 

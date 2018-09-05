@@ -6,13 +6,24 @@ import pho from '../../images/home/pho.png';
 import eggroll from '../../images/home/eggroll.png';
 import './Home.css';
 import { AnimatedCarousel } from '../../components/AnimatedCarousel/AnimatedCarousel';
-import { maiTextDyn } from '../../assets/javascript/maiHelpers';
+import { maiTextDyn, maiStalkerDiv } from '../../assets/javascript/maiHelpers';
+import $ from 'jquery';
 
 export class Home extends Component {
 
   componentDidMount = () => {
     this.props.setIsHome(true);
     maiTextDyn();
+    maiStalkerDiv();
+    $('.mai-stalkerDiv-wrapper').maiStalkerDiv([
+      {
+        selector: '#home-bg',
+        zoom: 3,
+        offset: 3,
+        speed: 1,
+        easing: 'Power1.easeOut'
+      }
+    ])
   }
 
   componentWillUnmount = () => {
@@ -27,6 +38,7 @@ export class Home extends Component {
     ]
     return (
       <div className="_Home">
+        <div id="home-bg" className="bg-img"></div>
         <ContentContainer
           singleContainerContent={
             <div className="home-section">
@@ -43,6 +55,7 @@ export class Home extends Component {
                   <span>RESTAURANT</span><span>  •  </span>
                   <span>STORY</span><span>  •  </span>
                   <span>CONTACT</span>
+                  <div className="mai-stalkerDiv-wrapper"></div>
                 </div>
               </div>
               <div className="home-carousel center-align">
