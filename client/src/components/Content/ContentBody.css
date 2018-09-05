@@ -1,5 +1,14 @@
 /* components/Content/ContentBody.css */
 
-._ContentBody { 
+._ContentBody .small-header {
+	/* text-align: center; */
+	font-weight: 600;
+	font-size: 20px;
+	/* margin-bottom: 10px;	 */
+}
 
+._ContentBody .content-body {
+	/* text-align: center; */
+	font-size: 17px;
+	margin-bottom: 10px;
 }
