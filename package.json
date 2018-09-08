@@ -10,7 +10,8 @@
     "client": "cd client && npm run start",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "sass": "cd client && node-sass --watch ./src/materialize-src/sass -o ./src/materialize-src/css"
   },
   "author": "",
   "license": "ISC",

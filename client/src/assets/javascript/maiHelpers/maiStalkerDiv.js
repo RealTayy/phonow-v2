@@ -17,7 +17,7 @@ export function maiStalkerDiv() {
 				const mouseX = ((e.pageX - $(this).offset().left) / $(this).outerWidth() * 200) - 100
 				// Tracks mouseY position by PERCENTAGE
 				const mouseY = ((e.pageY - $(this).offset().top) / $(this).outerHeight() * 200) - 100
-				console.log('Tracking', mouseX, mouseY);
+				// console.log('Tracking', mouseX, mouseY);
 				if (Math.abs(mouseX / 100) >= 1 || Math.abs(mouseY / 100) >= 1) return;
 				else {
 					for (let i = 0; i < stalkers.length; i++) {
