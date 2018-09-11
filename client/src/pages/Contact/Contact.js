@@ -7,19 +7,24 @@ import uyen from '../../images/contact/uyen.jpg';
 import { maiStalkerDiv } from '../../assets/javascript/maiHelpers';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
 import $ from 'jquery';
+import M from 'materialize-css';
 
 export class Contact extends Component {
   componentDidMount = () => {
+    // Initialize moving background
     maiStalkerDiv();
     $('.mai-stalkerDiv-wrapper').maiStalkerDiv([
       {
         selector: '.contact-bg-img',
-        zoom: 3,
-        offset: 3,
+        zoom: 4,
+        offset: 4,
         speed: 2,
         easing: 'Power1.easeOut'
       }
     ])
+
+    // Initilize Select menu    
+    M.FormSelect.init(document.querySelectorAll('select'));
   }
 
   render() {
@@ -53,29 +58,42 @@ export class Contact extends Component {
             <div className="form-container">
               <div className="form-bg-img"></div>
               <div className="form-wrapper">
-                <div className="form-header f-opensans center-align drop-shadow-1">
-                  CONTACT US
-                </div>
-                <div className="form-header f-opensans center-align drop-shadow-1">
-                  CONTACT US
-                </div>
-                <div className="form-header f-opensans center-align drop-shadow-1">
-                  CONTACT US
-                </div>
-                <div className="form-header f-opensans center-align drop-shadow-1">
-                  CONTACT US
-                </div>
-                <div className="form-header f-opensans center-align drop-shadow-1">
-                  CONTACT US
-                </div>
-                <div className="form-header f-opensans center-align drop-shadow-1">
-                  CONTACT US
-                </div>
-                <div className="form-header f-opensans center-align drop-shadow-1">
-                  CONTACT US
-                </div>
-                <div className="form-header f-opensans center-align drop-shadow-1">
-                  CONTACT US
+                <div className="container">
+                  <div className="form-header center-align f-2">
+                    CONTACT US
+                  </div>
+                  <div className="row">
+                    <form className="contact-form">
+                      <div className="input-field col s12">
+                        <input id="first-name" type="text" className="validate" />
+                        <label htmlFor="first-name">Name</label>
+                      </div>
+                      <div className="input-field col s12">
+                        <input id="email" type="email" className="validate" />
+                        <label htmlFor="email">Email</label>
+                      </div>
+                      <div className="input-field col s12">
+                        <input id="tel" type="tel" className="validate" />
+                        <label htmlFor="tel">Phone Number</label>
+                      </div>
+                      <div className="input-field col s12">
+                        <select defaultValue="">
+                          <option value="" disabled>Select Inquiry Type</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <label>Inquiry Type</label>
+                      </div>
+                      <div className="input-field col s12">
+                        <textarea id="message" className="materialize-textarea validate" rows="5"></textarea>
+                        <label htmlFor="message">Message</label>
+                      </div>
+                      <div className="form-submit center-align">
+                        <a className="waves-effect waves-light btn"><i className="material-icons right">send</i>SUBMIT</a>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>

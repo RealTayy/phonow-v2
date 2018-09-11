@@ -46,11 +46,13 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.f-opensans {
+.f-opensans,
+.f-2 {
   font-family: 'Open Sans', sans-serif;
 }
 
-.f-oleo {
+.f-oleo,
+.f-1 {
   font-family: 'Oleo Script', cursive;
 }
 
