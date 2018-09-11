@@ -61,6 +61,11 @@
   font-size: 40px;
 }
 
+._Contact form input,
+._Contact form textarea {
+  color: #fff;
+}
+
 ._Contact .bg-img,
   {
   width: 100%;
