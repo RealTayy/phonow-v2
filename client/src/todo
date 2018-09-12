@@ -7,6 +7,11 @@ MVP:
 > Change Logo on footer
 > MAke INFO page actually looks good PLEASE GOD PLEASE
 > Fix gap on bottom of Mobile view INFO page
+> Secure creditials google maps
+> Make Clickable Marker on google maps api INFO page
+> Style Google maps https://mapstyle.withgoogle.com/
+styles: [{ stylers: [{ 'saturation': -100 }, { 'gamma': 0.8 }, { 'lightness': 4 }, { 'visibility': 'on' }] }]
+
 
 For Funsies:
 > Make Madeby change to maiCoding when hover in footer

@@ -2,13 +2,30 @@ import React, { Component } from 'react'
 import { ContentContainer } from '../../components/Container';
 import { Carousel } from '../../components/Carousel/Carousel';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
+import GoogleMapReact from 'google-map-react';
 import './Info.css';
 
 
+const MapMarker = ({ text }) => <div>{text}</div>;
 export class Info extends Component {
+
+  static defaultProps = {
+    center: {
+      lat: 59.95,
+      lng: 30.33
+    },
+    zoom: 11,
+    options: {
+      // styles: [{ stylers: [{ 'saturation': -100 }, { 'gamma': 0.8 }, { 'lightness': 4 }, { 'visibility': 'on' }] }]
+
+    }
+  };
+
+  componentDidMount = () => {
+
+  }
+
   render() {
-    console.log(process.env)
-    console.log(process.env.REACT_APP_TEST_ME);
     const imagesPath = [
       "http://via.placeholder.com/2048x1365",
       "http://via.placeholder.com/2048x1365",
@@ -18,7 +35,22 @@ export class Info extends Component {
       <div className="_Info">
         <ContentContainer
           rightContainerContent={
-            <Carousel imagesPath={imagesPath} />
+            <div id="info-map" className="info-map">
+              <div style={{ height: '100%', width: '100%' }}>
+                <GoogleMapReact
+                  bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_KEY }}
+                  defaultCenter={this.props.center}
+                  defaultZoom={this.props.zoom}
+                  options={this.props.options}
+                >
+                  <MapMarker
+                    lat={59.955413}
+                    lng={30.337844}
+                    text={'Pho Now'}
+                  />
+                </GoogleMapReact>
+              </div>
+            </div>
           }
           leftClasses="valign-wrapper"
           leftContainerContent={
