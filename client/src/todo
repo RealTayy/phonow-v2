@@ -11,6 +11,7 @@ MVP:
 > Make Clickable Marker on google maps api INFO page
 > Style Google maps https://mapstyle.withgoogle.com/
 styles: [{ stylers: [{ 'saturation': -100 }, { 'gamma': 0.8 }, { 'lightness': 4 }, { 'visibility': 'on' }] }]
+> Inquiry Type needs to show correct valid color once selecting an option.
 
 
 For Funsies:

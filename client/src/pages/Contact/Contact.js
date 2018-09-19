@@ -65,22 +65,22 @@ export class Contact extends Component {
                   <div className="row">
                     <form className="contact-form">
                       <div className="input-field col s12">
-                        <i class="material-icons prefix">account_circle</i>
+                        <i className="material-icons prefix">account_circle</i>
                         <input id="first-name" type="text" className="validate" />
                         <label htmlFor="first-name">Name *</label>
                       </div>
                       <div className="input-field col s12">
-                        <i class="material-icons prefix">email</i>
+                        <i className="material-icons prefix">email</i>
                         <input id="email" type="email" className="validate" />
                         <label htmlFor="email">Email *</label>
                       </div>
                       <div className="input-field col s12">
-                      <i class="material-icons prefix">phone</i>
+                      <i className="material-icons prefix">phone</i>
                         <input id="tel" type="tel" className="validate" />
                         <label htmlFor="tel">Phone Number</label>
                       </div>
                       <div className="input-field col s12">
-                      <i class="material-icons prefix">assignment</i>
+                      <i className="material-icons prefix">assignment</i>
                         <select defaultValue="1">
                           <option value="1">Feedback</option>
                           <option value="2">Catering</option>
@@ -90,7 +90,7 @@ export class Contact extends Component {
                         <label>Inquiry Type *</label>
                       </div>
                       <div className="input-field col s12">
-                      <i class="material-icons prefix">message</i>
+                      <i className="material-icons prefix">message</i>
                         <textarea id="message" className="materialize-textarea validate" rows="5"></textarea>
                         <label htmlFor="message">Message *</label>
                       </div>

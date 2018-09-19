@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { ContentContainer } from '../../components/Container';
-import { Carousel } from '../../components/Carousel/Carousel';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
 import GoogleMapReact from 'google-map-react';
 import './Info.css';
@@ -26,11 +25,6 @@ export class Info extends Component {
   }
 
   render() {
-    const imagesPath = [
-      "http://via.placeholder.com/2048x1365",
-      "http://via.placeholder.com/2048x1365",
-      "http://via.placeholder.com/2048x1365",
-    ]
     return (
       <div className="_Info">
         <ContentContainer
@@ -60,7 +54,7 @@ export class Info extends Component {
                 <ContentBody>
                   <div className="info-content">
                     <div className="info-hours row">
-                      <div className="small-header col s12">HOURS OF OPERATION</div>
+                      <div className="small-header col s12 center-align">HOURS OF OPERATION</div>
                       <div className="content-body col s12">
                         <div className="row">
                           <div className="col s4">Monday:</div>
@@ -81,7 +75,7 @@ export class Info extends Component {
                       </div>
                     </div>
                     <div className="info-contact row">
-                      <div className="small-header col s12">CONTACT & DIRECTIONS</div>
+                      <div className="small-header col s12 center-align">CONTACT & DIRECTIONS</div>
                       <div className="content-body col s12">
                         <div className="row">
                           <div className="col s4"><i className="fas fa-phone-square"></i> Phone:</div>

@@ -1,19 +1,40 @@
 /* pages/Info/Info.css */
 
-._Info .pretitle-header {
-  color: #FEEDBB;
+._Info {
+  color: #fff
 }
 
-._Info .title-header {
-  color: #F6BE61;
+._Info .pretitle-header {
+  color: #fff;
 }
 
 ._Info .left-container {
-  background-color: #fff;
+  background-color: #F6BE61;
 }
 
 ._Info ._ContentTitle {
   margin-bottom: 20px;
+}
+
+._Info .title-header {
+  color: #FEEDBB;
+}
+
+._Info .content-body {
+  font-weight: bold;
+}
+
+._Info .info-hours {
+  margin-bottom: 20px;
+}
+
+._Info .small-header {
+  width: calc(100% - 20px) !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  background-color: #FEEDBB;
+  color: #F6BE61;
+  font-weight: bold;
 }
 
 ._Info .info-content {
@@ -23,12 +44,12 @@
 
 ._Info .info-map {
   width: 100vw;
-  height: 100vw;  
+  height: 100vw;
 }
 
 @media only screen and (min-width: 601px) {
   ._Info ._ContentTitle {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
   ._Info .info-map {
     width: 100%;
