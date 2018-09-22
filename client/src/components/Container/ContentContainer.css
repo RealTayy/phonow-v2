@@ -1,9 +1,7 @@
 /* components/Container/ContentContainer.css */
 
 ._ContentContainer .right-container,
-._ContentContainer .left-container {
-  /* background-color: #fff; */
-  /* 100vh - navbar height - footer height */
+._ContentContainer .left-container {  
   max-height: calc(100vh - 56px - 48px);
   padding: 0 !important;
 }
@@ -40,14 +38,8 @@
 }
 
 @media only screen and (min-width: 601px) {
-  ._ContentContainer {
-    /* 100vh - navbar height - footer height */
-    height: calc(100vh - 64px - 48px);
-  }
-  ._ContentContainer .left-container,
   ._ContentContainer .right-container,
-  ._ContentContainer .single-container {
-    /* 100vh - navbar height - footer height */
-    height: calc(100vh - 64px - 48px);
+  ._ContentContainer .left-container {  
+    height: calc(100vh - 56px - 48px);    
   }
 }
