@@ -27,6 +27,6 @@
   ._SingleContainer,
   ._DoubleContaine {
     /* 100vh - navbar height - footer height */
-    height: calc(100vh - 64px - 48px);
+    height: calc(100vh - 56px - 48px);
   }
 }
