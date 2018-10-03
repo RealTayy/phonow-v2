@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { SingleContainer } from '../../components/Container';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
 import bg from '../../images/about/bg.jpg';
@@ -8,7 +8,7 @@ import './About.css';
 import { maiStalkerDiv } from '../../assets/javascript/maiHelpers';
 import $ from 'jquery';
 
-export class About extends Component {
+class About extends Component {
   componentDidMount = () => {
     maiStalkerDiv();
     $('.fog').maiStalkerDiv([
