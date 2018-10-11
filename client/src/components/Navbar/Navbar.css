@@ -1,5 +1,9 @@
 /* components/Navbar/Navbar.CSS */
 
+nav {
+  background-color: #222;
+}
+
 ._Navbar {
   position: relative;  
 }

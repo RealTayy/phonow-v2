@@ -46,7 +46,7 @@ export class Info extends Component {
               </div>
             </div>
           }
-          leftClasses="valign-wrapper"
+          leftClasses="valign-wrapper z-depth-2"
           leftContainerContent={
             <ContentWrapper>
               <div>

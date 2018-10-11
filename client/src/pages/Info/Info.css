@@ -9,6 +9,8 @@
 }
 
 ._Info .left-container {
+  position: relative;
+  z-index: 1;
   background-color: #F6BE61;
 }
 
