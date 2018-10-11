@@ -12,6 +12,7 @@
   position: relative;
   z-index: 1;
   background-color: #F6BE61;
+  overflow: auto;
 }
 
 ._Info ._ContentTitle {
@@ -56,5 +57,16 @@
   ._Info .info-map {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  ._Info .left-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  ._Info ._ContentWrapper {
+    margin: auto !important;
   }
 }
