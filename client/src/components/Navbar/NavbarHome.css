@@ -24,6 +24,7 @@
   transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
   background-color: transparent;
   box-shadow: none !important;
+  font-weight: bold;
 }
 
 ._NavbarHome nav ul a,
@@ -44,6 +45,6 @@
 @media only screen and (min-width: 601px) {
   ._NavbarHome .logo-img {
     position: relative;
-    height: 56px;
+    height: 48px;
   }
 }

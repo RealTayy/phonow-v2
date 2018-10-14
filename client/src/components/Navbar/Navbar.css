@@ -2,6 +2,7 @@
 
 ._Navbar {
   position: relative;  
+  font-weight: bold;
 }
 
 ._Navbar nav {

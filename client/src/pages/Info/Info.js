@@ -50,7 +50,7 @@ export class Info extends Component {
           leftContainerContent={
             <ContentWrapper>
               <div>
-                <ContentTitle className="f-opensans" pretitle="The" title="Restaurant" />
+                {/* <ContentTitle className="f-opensans" pretitle="The" title="Restaurant" />                 */}
                 <ContentBody>
                   <div className="info-content">
                     <div className="info-hours row">
