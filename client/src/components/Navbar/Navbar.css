@@ -15,8 +15,8 @@
 ._Navbar .logo-img {
   padding: 0 15px;
   position: relative;
-  top: 4px;
-  height: 48px;
+  top: 8px;
+  height: 40px;
 }
 
 ._Navbar ul>li>a {
@@ -37,6 +37,6 @@
 @media only screen and (min-width: 601px) {
   ._Navbar .logo-img {
     position: relative;
-    height: 48px;
+    height: 40px;
   }
 }

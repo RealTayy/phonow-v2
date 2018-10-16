@@ -4,8 +4,7 @@ import { Sidenav } from './Sidenav';
 import $ from 'jquery';
 import './Navbar.css';
 import './NavbarHome.css';
-
-import smallLogo from '../../images/smallLogo2.png';
+import smallLogo from '../../images/navlogo1.png'
 
 export class Navbar extends Component {
 
@@ -19,7 +18,7 @@ export class Navbar extends Component {
 			<div className={`_Navbar${(this.props.isHome) ? 'Home' : ''}`}>
 				<nav>
 					<div className="nav-wrapper container">
-						<Link to="/" className="brand-logo hide-on-med-and-down">
+						<Link to="/" className="brand-logo">
 							<img className="logo-img" src={smallLogo} alt="" />
 						</Link>
 						<a href="#!" data-target="_Sidenav" className="sidenav-trigger">

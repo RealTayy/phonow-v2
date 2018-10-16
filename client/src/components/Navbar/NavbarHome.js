@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Sidenav } from './Sidenav';
-import smallLogo from '../../images/smallLogo2.png'
+import smallLogo from '../../images/navlogo1.png'
 import './NavbarHome.css'
 
-
+// THIS COMPONENT IS NOT USED MARKED FOR DELETETION
 export class Navbar extends Component {
 	render() {
 		return (
