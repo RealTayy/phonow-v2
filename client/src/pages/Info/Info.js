@@ -4,12 +4,14 @@ import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Cont
 import GoogleMapReact from 'google-map-react';
 import './Info.css';
 import mapstyle from './mapstyle.json';
+import smallLogo from '../../images/navlogo1.png'
 
 
-const MapMarker = ({ text }) => {
+const MapMarker = () => {
   return (
-    <div className="map-marker">
-      {text}
+    <div className="map-marker z-depth-2">
+      <div className="marker-text">PhoNow</div>
+      <img className="marker-logo z-depth-2" src={smallLogo} alt="smallLogo" />
     </div>
   )
 };
@@ -52,7 +54,7 @@ export class Info extends Component {
             </div>
             <div className="info-card z-depth-2 col s12 m4 l12 pull-m4">
               <div className="info-header row f-2">
-              <div className="material-icons">store</div>
+                <div className="material-icons">store</div>
                 <div>HOURS OF OPERATION</div>
               </div>
               <div className="info-body row">
@@ -85,7 +87,6 @@ export class Info extends Component {
               <MapMarker
                 lat={this.props.center.lat}
                 lng={this.props.center.lng}
-                text={'Pho Now'}
               />
             </GoogleMapReact>
           </div>

@@ -5,7 +5,7 @@
 }
 
 ._NavbarHome .logo-img {
-  padding: 0 15px;
+  padding: 0 5px;
   position: relative;
   top: 8px;
   height: 40px;
@@ -37,6 +37,9 @@
 @media only screen and (max-width: 600px) {
   ._NavbarHome .nav-wrapper {
     width: 100%;
+  }
+  ._NavbarHome .logo-img {
+    padding: 0 5px 0 0;
   }
 }
 

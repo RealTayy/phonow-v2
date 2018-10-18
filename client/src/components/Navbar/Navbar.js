@@ -20,6 +20,7 @@ export class Navbar extends Component {
 					<div className="nav-wrapper container">
 						<Link to="/" className="brand-logo">
 							<img className="logo-img" src={smallLogo} alt="" />
+							<span className="logo-text">PhoNow</span>
 						</Link>
 						<a href="#!" data-target="_Sidenav" className="sidenav-trigger">
 							<i className="material-icons">menu</i>
