@@ -1,0 +1,337 @@
+[
+  {
+    "name": "Vietnamese Eggs Rolls (2)",
+    "category": "Appetizers",
+    "price": 2.99,
+    "options": [
+      "Shrimp and Pork",
+      "Vegetarian"
+    ]
+  },
+  {
+    "name": "Fresh Spring Rolls (2)",
+    "category": "Appetizers",
+    "price": 2.99,
+    "options": [
+      "Shrimp",
+      "Tofu"
+    ]
+  },
+  {
+    "name": "Grilled Meat Spring (2)",
+    "category": "Appetizers",
+    "price": 3.99,
+    "options": [
+      "Grilled Chicken",
+      "Grilled Pork",
+      "Grilled Beef"
+    ]
+  },
+  {
+    "name": "Fried Dumpling (6)",
+    "category": "Appetizers",
+    "price": 3.99,
+    "options": [
+      "Chicken",
+      "Pork"
+    ]
+  },
+  {
+    "name": "Chicken Wings (6)",
+    "category": "Appetizers",
+    "price": 5.99,
+    "options": [
+      "Plain",
+      "Hot",
+      "BBQ",
+      "Garlic Parmesan",
+      "Lemon Pepper"
+    ]
+  },
+  {
+    "name": "Boneless Chicken Wings (6)",
+    "category": "Appetizers",
+    "price": 5.99,
+    "options": [
+      "Plain",
+      "Hot",
+      "BBQ",
+      "Garlic Parmesan",
+      "Lemon Pepper"
+    ]
+  },
+  {
+    "name": "Cheese Puff Crab Rangoon",
+    "category": "Appetizers",
+    "price": 3.99
+  },
+  {
+    "name": "Wonton Soup",
+    "category": "Appetizers",
+    "price": 4.99
+  },
+  {
+    "name": "French Bread",
+    "category": "Sides",
+    "price": 1.00
+  },
+  {
+    "name": "Bowl of Steamed Rice",
+    "category": "Sides",
+    "price": 1.00
+  },
+  {
+    "name": "Bowl of Rice Noodles",
+    "category": "Sides",
+    "price": 1.00
+  },
+  {
+    "name": "Bowl of Egg Rice",
+    "category": "Sides",
+    "price": 2.00
+  },
+  {
+    "name": "Fried Eggs (2)",
+    "category": "Sides",
+    "price": 2.00
+  },
+  {
+    "name": "French Fries",
+    "category": "Sides",
+    "price": 3.00
+  },
+  {
+    "name": "Plate of Eye round steak",
+    "category": "Sides",
+    "price": 3.00
+  },
+  {
+    "name": "Meatballs (6)",
+    "category": "Sides",
+    "price": 3.00
+  },
+  {
+    "name": "Dish of Fried Rice",
+    "category": "Sides",
+    "price": 5.00
+  },
+  {
+    "name": "Extra Beansprouts and Greens",
+    "category": "Sides",
+    "price": 1.00
+  },
+  {
+    "name": "Beef Noodle Soup",
+    "category": "Noodle Soup",
+    "price": [
+      {
+        "Small": 6.99,
+        "Large": 7.99
+      }
+    ],
+    "options": [
+      "Eye round steak",
+      "Eye round steak & Well-done lean meat",
+      "Eye round steak & Well-done flank",
+      "Eye round steak & Soft tendon",
+      "Eye round steak & Beef meatball",
+      "Eye round steak & Beef tripe",
+      "Eye round steak, Well-done flank, & Fatty brisket",
+      "Eye round steak, Well-done flank, & Soft tendon",
+      "Well-done flank, Fatty brisket & Soft tendon",
+      "Well-done lean meat",
+      "Well-done lean meat & Beef meatballs",
+      "Well-done lean meat & Flank",
+      "Well-done lean meat & Soft Tendon",
+      "Well-done lean meat, Flank, & Brisket",
+      "Beef meatballs",
+      "Beef stew"
+    ]
+  },
+  {
+    "name": "Special Combination",
+    "category": "Noodle Soup",
+    "price": 8.99,
+    "details": "Eye round steak, well done flank, fatty birsket, soft tendon, beef tripe, beef meatballs"
+  },
+  {
+    "name": "Chicken Noodle Soup",
+    "category": "Noodle Soup",
+    "price": [
+      {
+        "Small": 6.99,
+        "Large": 7.99
+      }
+    ],
+    "options": [
+      "Chicken white meat",
+      "Chicken dark meat",
+      "Mixed white & dark meat",
+      "Clear vermicelli with Chicken"
+    ]
+  },
+  {
+    "name": "Vegetarian Noodle Soup",
+    "category": "Noodle Soup",
+    "price": [
+      {
+        "Small": 6.99,
+        "Large": 7.99
+      }
+    ],
+    "details": "Broccoli, carrots, mushroom, & tofu",
+  },
+  {
+    "name": "Meatless Noodle Soup",
+    "category": "Noodle Soup",
+    "price": 5.99,
+    "options": [
+      "Beef broth",
+      "Chicken broth",
+      "Vegetarian broth"
+    ]
+  },
+  {
+    "name": "Seafood Noodle Soup",
+    "category": "Noodle Soup",
+    "price": {
+      "Small": 7.99,
+      "Large": 8.99
+    },
+    "details": "Shrimp, fishballs, crab sticks, broccoli, and carrots"
+  },
+  {
+    "name": "Egg Noodle Soup",
+    "category": "Noodle Soup",
+    "price": 8.99,
+    "options": [
+      "Egg noodle with beef stew",
+      "Egg noodle with meatball",
+      "Egg noodle with chicken",
+      "Egg noodle with seafood"
+    ]
+  },
+  {
+    "name": "Fried Rice Plates",
+    "category": "Rice Plates",
+    "price": 7.99,
+    "options": [
+      "Pork & chicken",
+      "Chicken & shrimp",
+      "Shrimp",
+      "Pork, chicken, shrimp"
+    ],
+    "details": "Hot Jasmine fried rice with egg, bean sprout, and green onion"
+  },
+  {
+    "name": "Steam Rice Plates",
+    "category": "Rice Plates",
+    "price": 7.99,
+    "options": [
+      "Charbroiled pork chop",
+      "Charbroiled sliced pork",
+      "Charbroiled chicken",
+      "Charbroiled beef (add $1)",
+      "Shrimp (add $1)",
+      "Tofu and vegatable"
+    ]
+  },
+  {
+    "name": "Vermicelli Noodles",
+    "category": "Noodle Bowls",
+    "price": 7.99,
+    "options": [
+      "Charbroiled sliced pork",
+      "Charbroiled chicken",
+      "Charbroiled beef (add $1)",
+      "Shrimp (add $1)",
+      "Egg rolls",
+      "Tofu & vegetable"
+    ],
+    "details": "Served with lettuce, cucumber, bean sprout, carrot, green onion, cilantro, peanuts and homemade fish sauce"
+  },
+  {
+    "name": "Combination Noodles",
+    "category": "Noodle Bowls",
+    "price": 7.99,
+    "details": "Pork, chicken, shrimp, and egg rolls. Served with lettuce, cucumber, bean sprout, carrot, green onion, cilantro, peanuts and homemade fish sauce"
+  },
+  {
+    "name": "Roasted Chicken",
+    "category": "House Specials",
+    "price": 10.99,
+    "details": "Whole chicken roasted in our house special sauce. Served with green and red peppers, sweet white onion, green onion, and cilantro. A fresh sliced lime, salt and black pepper for dipping sauce."
+  },
+  {
+    "name": "Shaking beef or chicken",
+    "category": "House Specials",
+    "price": 10.99,
+    "details": "Vietnamese popular dish called \"Shaking Beef\" cooked in our special sauce. Served with cilantro, green, red peppers, and sweet white onion. A fresh sliced lime, salt and black pepper for dipping sauce."
+  },
+  {
+    "name": "House Lo Mein",
+    "category": "House Specials",
+    "price": 8.99,
+    "options": [
+      "Chicken",
+      "Beef",
+      "Shrimp"
+    ],
+    "details": "Lo Mein noodles stir fried with chicken, beef, shrimp, yellow onions, bean sprouts, cabbage, green onions and cilantro."
+  },
+  {
+    "name": "Chow Mein",
+    "category": "House Specials",
+    "price": 10.99,
+    "options": [
+      "Chicken",
+      "Beef",
+      "Shrimp",
+      "Combo (add $2)"
+    ],
+    "details": "Thin egg noodles stir fried with chicken, beef, shrimp, BBQ pork, mushroom, carrots, baby born, green onions, cilantro, and assorted greens onion."
+  },
+  {
+    "name": "Pad Thai",
+    "category": "House Specials",
+    "price": 8.99,
+    "options": [
+      "Chicken",
+      "Beef",
+      "Shrimp",
+      "Combo (add $2)"
+    ],
+    "details": "Thin rice noodle stir fried chicken, beef, shrimp, eggs, green onions, and cilantro. Served with bean sprouts and peanuts."
+  },
+  {
+    "name": "House Fried Rice",
+    "category": "House Specials",
+    "price": 8.99,
+    "options": [
+      "Pork",
+      "Chicken",
+      "Beef",
+      "Shrimp (add $1)"
+    ],
+    "details": "Hot jasmine fried rice with egg, carrots, green peas, and onion"
+  },
+  {
+    "name": "Deluxe Fried Rice",
+    "category": "House Specials",
+    "price": 9.99,
+    "details": "Hot jasmine fried rice with egg, carrots, green peas, and green onion plus a tasty combination of beef, chicken, pork, and shrimp"
+  },
+  {
+    "name": "Vietnamese Sandwich",
+    "category": "Sandwiches",
+    "price": 4.99,
+    "options": [
+      "Grilled Pork",
+      "Grilled Beef",
+      "Grilled Chicken",
+      "Beef pork belly, ham, and pate",
+      "Fried tofu or fried egg ($3.99)"
+    ],
+    "details": "Fresh french break with a butter spread, fresh slices of cucumbers, sweet and sour carrots, cilantro, and fresh jalapenos"
+  }
+]
