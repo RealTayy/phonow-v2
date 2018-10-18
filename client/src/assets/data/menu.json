@@ -333,5 +333,123 @@
       "Fried tofu or fried egg ($3.99)"
     ],
     "details": "Fresh french break with a butter spread, fresh slices of cucumbers, sweet and sour carrots, cilantro, and fresh jalapenos"
+  },
+  {
+    "name": "Kid's meal",
+    "category": "Kid meal",
+    "price": 4.99,
+    "options": [
+      "Well done lean meat noodle soup",
+      "Steam rice with chicken, pork or beef",
+      "Chicken nuggets with french fries"
+    ],
+    "details": "All Kid's meal served with an eggroll"
+  },
+  {
+    "name": "Tapioca drinks",
+    "category": "Drinks",
+    "price": 3.99,
+    "options": [
+      "Mango",
+      "Strawberry",
+      "Banana",
+      "Pineapple",
+      "Kiwi",
+      "Avocado",
+      "Coconut",
+      "Taro",
+      "Papaya",
+      "Coffee",
+      "Thai Tea",
+      "Milk Tea",
+      "Green Milk Tea",
+      "Passion Fruit Tea"
+    ],
+    "details": "Served with tapioca pearls or rainbow jelly"
+  },
+  {
+    "name": ,
+    "category": "Drinks",
+    "price": ,
+  },
+  {
+    "name": "Soft Drinks (Can)",
+    "category": "Drinks",
+    "price": 1.35
+  },
+  {
+    "name": "Fountain Drinks",
+    "category": "Drinks",
+    "price": 1.99
+  },
+  {
+    "name": "Iced tea",
+    "category": "Drinks",
+    "price": 1.99
+  },
+  {
+    "name": "Hot Jasmine or Green tea",
+    "category": "Drinks",
+    "price": 1.99
+  },
+  {
+    "name": "Syrup",
+    "category": "Drinks",
+    "price": 1.99,
+    "options": [
+      "Raspberry",
+      "Strawberry",
+      "Cherry"
+    ]
+  },
+  {
+    "name": "Fresh lemonade",
+    "category": "Drinks",
+    "price": 2.35
+  },
+  {
+    "name": "Sweet lemon iced tea",
+    "category": "Drinks",
+    "price": 2.50
+  },
+  {
+    "name": "Fresh lemonade with club soda",
+    "category": "Drinks",
+    "price": 2.99
+  },
+  {
+    "name": "Fresh strawberry lemonade",
+    "category": "Drinks",
+    "price": 2.99
+  },
+  {
+    "name": "Young coconut drink",
+    "category": "Drinks",
+    "price": 2.99
+  },
+  {
+    "name": "Vietnamese Coffee (Hot or Cold)",
+    "category": "Drinks",
+    "price": 3.25
+  },
+  {
+    "name": "Ice Cream",
+    "category": "Dessert",
+    "price": 2.99,
+    "options": [
+      "Vanilla",
+      "Chocolate",
+      "Strawberry"
+    ]
+  },
+  {
+    "name": "Jelly Taro and tapioca in coconut milk",
+    "category": "Dessert",
+    "price": 3.99,
+  },
+  {
+    "name": "Fried ice cream or banana ice cream",
+    "category": "Dessert",
+    "price": 4.99
   }
 ]
