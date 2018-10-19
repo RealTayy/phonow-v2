@@ -27,6 +27,31 @@ export class Contact extends Component {
     M.FormSelect.init(document.querySelectorAll('select'));
   }
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const email = {
+      name: $('#name').val(),
+      email: $('#email').val(),
+      tel: $('#tel').val(),
+      inquiry: $('#inquiry').val(),
+      message: $('#message').val()
+    }
+    if (!email.name) return this.helpText('enter in email bruh', 'error');    
+  }
+
+  helpText = (message, type, ms) => {
+    let color = (() => {
+      switch (type) {
+        case 'error': return 'red'; break;
+        case 'success': return 'green'; break;
+        default: return 'white';
+      };
+    })
+    $('.helper-text').css({ color: color })
+    $('.helper-text').text(message);
+
+  }
+
   render() {
     return (
       <div className="_Contact">
@@ -66,8 +91,8 @@ export class Contact extends Component {
                     <form className="contact-form">
                       <div className="input-field col s12">
                         <i className="material-icons prefix">account_circle</i>
-                        <input id="first-name" type="text" className="validate" />
-                        <label htmlFor="first-name">Name *</label>
+                        <input id="name" type="text" className="validate" />
+                        <label htmlFor="name">Name *</label>
                       </div>
                       <div className="input-field col s12">
                         <i className="material-icons prefix">email</i>
@@ -75,27 +100,31 @@ export class Contact extends Component {
                         <label htmlFor="email">Email *</label>
                       </div>
                       <div className="input-field col s12">
-                      <i className="material-icons prefix">phone</i>
+                        <i className="material-icons prefix">phone</i>
                         <input id="tel" type="tel" className="validate" />
                         <label htmlFor="tel">Phone Number</label>
                       </div>
                       <div className="input-field col s12">
-                      <i className="material-icons prefix">assignment</i>
-                        <select defaultValue="1">
-                          <option value="1">Feedback</option>
-                          <option value="2">Catering</option>
-                          <option value="3">Employement</option>
-                          <option value="4">Marketing</option>
+                        <i className="material-icons prefix">assignment</i>
+                        <select id="inquiry" defaultValue="Feedback">
+                          <option value="Feedback">Feedback</option>
+                          <option value="Catering">Catering</option>
+                          <option value="Employement">Employement</option>
+                          <option value="Marketing">Marketing</option>
                         </select>
                         <label>Inquiry Type *</label>
                       </div>
                       <div className="input-field col s12">
-                      <i className="material-icons prefix">message</i>
+                        <i className="material-icons prefix">message</i>
                         <textarea id="message" className="materialize-textarea validate" rows="5"></textarea>
                         <label htmlFor="message">Message *</label>
                       </div>
                       <div className="form-submit center-align">
-                        <a className="waves-effect waves-light btn"><i className="material-icons right">send</i>SUBMIT</a>
+                        <div className="helper-text">se</div>
+                        <button className="waves-effect waves-light btn" type="submit" onClick={this.handleSubmit}>
+                          <i className="material-icons right">send</i>
+                          <span>SUBMIT</span>
+                        </button>
                       </div>
                     </form>
                   </div>
