@@ -35,12 +35,17 @@ export class Contact extends Component {
       tel: $('#tel').val(),
       inquiry: $('#inquiry').val(),
       message: $('#message').val()
-    }
-    if (!email.name) return this.helpText('enter in email bruh', 'error');    
+    }    
+	if (!(email.name
+		&&email.email
+		&&email.inquiry
+		&&email.message)) return this.helpText('Please fill out required fields', 'error', 2000);
   }
 
   helpText = (message, type, ms) => {
-    let color = (() => {
+	  console.log('hihi')
+	$('.helper-text').removeClass('fadeOut')
+	let color = (() => {
       switch (type) {
         case 'error': return 'red'; break;
         case 'success': return 'green'; break;
@@ -49,7 +54,7 @@ export class Contact extends Component {
     })
     $('.helper-text').css({ color: color })
     $('.helper-text').text(message);
-
+	setTimeout(() => { $('.helper-text').addClass('fadeOut')}, ms||3000);	
   }
 
   render() {
@@ -120,7 +125,7 @@ export class Contact extends Component {
                         <label htmlFor="message">Message *</label>
                       </div>
                       <div className="form-submit center-align">
-                        <div className="helper-text">se</div>
+                        <div className="helper-text animated">se</div>
                         <button className="waves-effect waves-light btn" type="submit" onClick={this.handleSubmit}>
                           <i className="material-icons right">send</i>
                           <span>SUBMIT</span>
