@@ -130,7 +130,7 @@ export class Contact extends Component {
                         <label htmlFor="message">Message *</label>
                       </div>
                       <div className="form-submit center-align">
-                        <div className="helper-text animated">se</div>
+                        <div className="helper-text animated"></div>
                         <button className="waves-effect waves-light btn" type="submit" onClick={this.handleSubmit}>
                           <i className="material-icons right">send</i>
                           <span>SUBMIT</span>

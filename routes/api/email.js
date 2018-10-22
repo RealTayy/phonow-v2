@@ -41,14 +41,18 @@ router.route("/")
 		var mail = {
 			from: mailData.email,
 			to: process.env.DESTINATION_EMAIL,
-			subject: `${mailData.name} | ${mailData.email}`,
+			subject: `${mailData.name} | ${mailData.email} | ${mailData.inquiry}`,
 			text: `${mailData.name} | ${mailData.email} | ${mailData.message}`,
 			html: `
 					<div>
-						<h2 style="margin: 0px">${mailData.name}</h2>
-						<h3 style="margin: 0px">${mailData.email}</h3>
-						<p>${mailData.message}</p>
-					</div>`
+						<h2 style="margin: 0px; font-weight: bold">DETAILS</h2>
+						<h3 style="margin: 0px">Name: ${mailData.name}</h3>
+						<h3 style="margin: 0px">Email: ${mailData.email}</h3
+						<h3 style="margin: 0px">Phone: ${(mailData.tel) ? mailData.tel : 'not provided'}</h3						
+						<h3 style="margin-top: 0px">Type: ${mailData.inquiry}</h3>
+						<h2 style="margin: 0px; font-weight: bold">MESSAGE</h2>
+						<p style="margin: 0px;> ${mailData.message}</p>
+					</div >`
 		}
 		// Sends mail using nodeMailer
 		transporter.sendMail(mail, (err, info) => {
