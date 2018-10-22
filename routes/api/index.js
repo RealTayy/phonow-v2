@@ -9,13 +9,10 @@ const router = require("express").Router();
 |*  SET UP INDIVIDUAL API ROUTES  *|
 |**********************************/
 // Import in individual routes
-const collectionNameRoutes = require("./collectionName");
+const emailRoutes = require("./email")
 
 // Sets path to use individual routes
-// EXAMPLE:
-//   router.use("/collectionName", collectionNameRoutes);
-//   // www.url.com/api/collectionName will use routes from collectionNameRoutes
-router.use("/collectionName", collectionNameRoutes);
+router.use('/email', emailRoutes);
 
 /***********|
 |* EXPORTS *| 

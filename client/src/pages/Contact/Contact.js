@@ -8,6 +8,7 @@ import { maiStalkerDiv } from '../../assets/javascript/maiHelpers';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
 import $ from 'jquery';
 import M from 'materialize-css';
+import API from '../../utils/API';
 
 export class Contact extends Component {
   componentDidMount = () => {
@@ -35,17 +36,21 @@ export class Contact extends Component {
       tel: $('#tel').val(),
       inquiry: $('#inquiry').val(),
       message: $('#message').val()
-    }    
-	if (!(email.name
-		&&email.email
-		&&email.inquiry
-		&&email.message)) return this.helpText('Please fill out required fields', 'error', 2000);
+    }
+    if (!(email.name
+      && email.email
+      && email.inquiry
+      && email.message))
+      return this.helpText('Please fill out required fields', 'error', 2000);
+    API.sendEmail(email)
+      .then((res) => { console.log(res) })
+      .catch((err) => console.log(err));
   }
 
   helpText = (message, type, ms) => {
-	  console.log('hihi')
-	$('.helper-text').removeClass('fadeOut')
-	let color = (() => {
+    console.log('hihi')
+    $('.helper-text').removeClass('fadeOut')
+    let color = (() => {
       switch (type) {
         case 'error': return 'red'; break;
         case 'success': return 'green'; break;
@@ -54,12 +59,12 @@ export class Contact extends Component {
     })
     $('.helper-text').css({ color: color })
     $('.helper-text').text(message);
-	setTimeout(() => { $('.helper-text').addClass('fadeOut')}, ms||3000);	
+    setTimeout(() => { $('.helper-text').addClass('fadeOut') }, ms || 3000);
   }
 
   render() {
     return (
-      <div className="_Contact">
+      <div className="_Contact" >
         <div className="mai-stalkerDiv-wrapper"></div>
         <div className="mai-stalkerDiv-bg-img contact-bg-img" style={{ background: `url(${bg})` }}></div>
         <ContentContainer
