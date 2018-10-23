@@ -48,10 +48,11 @@ router.route("/")
 						<h2 style="margin: 0px; font-weight: bold">DETAILS</h2>
 						<h3 style="margin: 0px">Name: ${mailData.name}</h3>
 						<h3 style="margin: 0px">Email: ${mailData.email}</h3
-						<h3 style="margin: 0px">Phone: ${(mailData.tel) ? mailData.tel : 'not provided'}</h3						
+						<h3 style="margin: 0px">Phone: ${(mailData.tel) ? mailData.tel : 'not provided'} ${((mailData.tel && mailData.ext) ? 'ext.' + mailData.ext : '')}</h3						
 						<h3 style="margin-top: 0px">Type: ${mailData.inquiry}</h3>
 						<h2 style="margin: 0px; font-weight: bold">MESSAGE</h2>
-						<p style="margin: 0px;> ${mailData.message}</p>
+						<p style="margin: 0px"> ${mailData.message}</p>
+						<p style="font-size: 12px"> This email was sent from a notification-only address that cannot accept incoming email. Please do not reply to this message.</p>
 					</div >`
 		}
 		// Sends mail using nodeMailer

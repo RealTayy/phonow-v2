@@ -11,6 +11,11 @@ import M from 'materialize-css';
 import API from '../../utils/API';
 
 export class Contact extends Component {
+  state = {
+    tel: '',
+    telFormatted: '',
+    inquiry: '',
+  }
   componentDidMount = () => {
     // Initialize moving background
     maiStalkerDiv();
@@ -33,22 +38,50 @@ export class Contact extends Component {
     const email = {
       name: $('#name').val(),
       email: $('#email').val(),
-      tel: $('#tel').val(),
+      tel: this.state.tel,
+      ext: $('#ext').val(),
       inquiry: $('#inquiry').val(),
       message: $('#message').val()
     }
-    if (!(email.name
-      && email.email
-      && email.inquiry
-      && email.message))
+    // All fields filled out validator
+    if (!(email.name && email.email && email.inquiry && email.message))
       return this.helpText('Please fill out required fields', 'error', 2000);
+    // phone number validator
+    if (this.state.tel.length !== 10)
+      return this.helpText('Please enter in valid phone number', 'error', 2000);
+
+    if ($('#email').hasClass('invalid'))
+      return this.helpText('Please enter in valid email', 'error', 2000);
+
     API.sendEmail(email)
       .then((res) => { console.log(res) })
       .catch((err) => console.log(err));
   }
 
+  handleTelChange = (e) => {
+    // exit if max phone length reached
+    // strip all non-numbers  
+    const tel = e.target.value.replace(/\D/g, '');
+    if (tel.length >= 11) return;
+    this.setState({
+      tel: tel,
+      telFormatted: this.formatTel(tel)
+    });
+  }
+
+  handleChangeDropdown = (e) => {
+    this.setState({ [e.target.id]: e.target.value });
+    if (e.target.value) $(`#${e.target.id}`).parent().children('input').addClass('valid');
+    else $(`#${e.target.id}`).parent().children('input').removeClass('valid');
+  }
+
+  formatTel = (tel) => {
+    if (tel.length < 4) return tel
+    else if (tel.length < 7) return `(${tel.slice(0, 3)}) ${tel.slice(3)}`
+    else return `(${tel.slice(0, 3)}) ${tel.slice(3, 6)}-${tel.slice(6)}`;
+  }
+
   helpText = (message, type, ms) => {
-    console.log('hihi')
     $('.helper-text').removeClass('fadeOut')
     let color = (() => {
       switch (type) {
@@ -100,6 +133,17 @@ export class Contact extends Component {
                   <div className="row">
                     <form className="contact-form">
                       <div className="input-field col s12">
+                        <i className="material-icons prefix">assignment</i>
+                        <select id="inquiry" value={this.state.inquiry} onChange={this.handleChangeDropdown}>
+                          <option disabled value="">Select Inquiry Type</option>
+                          <option value="Feedback">Feedback</option>
+                          <option value="Catering">Catering</option>
+                          <option value="Employement">Employement</option>
+                          <option value="Marketing">Marketing</option>
+                        </select>
+                        <label>Inquiry Type *</label>
+                      </div>
+                      <div className="input-field col s12">
                         <i className="material-icons prefix">account_circle</i>
                         <input id="name" type="text" className="validate" />
                         <label htmlFor="name">Name *</label>
@@ -109,20 +153,14 @@ export class Contact extends Component {
                         <input id="email" type="email" className="validate" />
                         <label htmlFor="email">Email *</label>
                       </div>
-                      <div className="input-field col s12">
+                      <div className="input-field col s8">
                         <i className="material-icons prefix">phone</i>
-                        <input id="tel" type="tel" className="validate" />
+                        <input id="tel" type="text" className="validate" onChange={this.handleTelChange} value={this.state.telFormatted} />
                         <label htmlFor="tel">Phone Number</label>
                       </div>
-                      <div className="input-field col s12">
-                        <i className="material-icons prefix">assignment</i>
-                        <select id="inquiry" defaultValue="Feedback">
-                          <option value="Feedback">Feedback</option>
-                          <option value="Catering">Catering</option>
-                          <option value="Employement">Employement</option>
-                          <option value="Marketing">Marketing</option>
-                        </select>
-                        <label>Inquiry Type *</label>
+                      <div className="input-field col s4">
+                        <input id="ext" type="text" className="validate" />
+                        <label htmlFor="ext">Ext.</label>
                       </div>
                       <div className="input-field col s12">
                         <i className="material-icons prefix">message</i>
