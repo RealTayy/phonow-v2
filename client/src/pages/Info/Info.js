@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { SingleContainer } from '../../components/Container';
-import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
 import GoogleMapReact from 'google-map-react';
 import './Info.css';
 import mapstyle from './mapstyle.json';

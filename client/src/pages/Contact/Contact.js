@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { ContentContainer } from '../../components/Container';
 import './Contact.css'
 import bg from '../../images/contact/bg.jpg';
-import formbg from '../../images/contact/form-bg.png';
 import uyen from '../../images/contact/uyen.jpg';
 import { maiStalkerDiv } from '../../assets/javascript/maiHelpers';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
@@ -49,13 +48,14 @@ export class Contact extends Component {
     // phone number validator
     if (this.state.tel.length !== 10)
       return this.helpText('Please enter in valid phone number', 'error', 2000);
-
+    // email validator
     if ($('#email').hasClass('invalid'))
       return this.helpText('Please enter in valid email', 'error', 2000);
 
+    this.helpText('Sending email...', 'default', 30000)
     API.sendEmail(email)
-      .then((res) => { console.log(res) })
-      .catch((err) => console.log(err));
+      .then((res) => this.helpText('Email sent!', 'success', 2000))
+      .catch((err) => this.helpText('Error sending email.', 'error', 2000));
   }
 
   handleTelChange = (e) => {
@@ -85,10 +85,10 @@ export class Contact extends Component {
     $('.helper-text').removeClass('fadeOut')
     let color = (() => {
       switch (type) {
-        case 'error': return 'red'; break;
-        case 'success': return 'green'; break;
+        case 'error': return 'red';
+        case 'success': return 'green';
         default: return 'white';
-      };
+      }
     })
     $('.helper-text').css({ color: color })
     $('.helper-text').text(message);
@@ -109,7 +109,7 @@ export class Contact extends Component {
                 <div className="small-divider drop-shadow-1"></div>
                 <ContentBody>
                   <div className="message-intro col s12 center-align">
-                    <div className="intro-picture"><img src={uyen} /></div>
+                    <div className="intro-picture"><img src={uyen} alt="uyen" /></div>
                     <div className="intro-header">A message from Uyen Tran</div>
                     <div className="intro-subheader">PHO NOW FOUNDER AND OWNER</div>
                     <div className="small-divider drop-shadow-1"></div>
