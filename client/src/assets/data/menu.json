@@ -179,7 +179,7 @@
         "Large": 7.99
       }
     ],
-    "details": "Broccoli, carrots, mushroom, & tofu",
+    "details": "Broccoli, carrots, mushroom, & tofu"
   },
   {
     "name": "Meatless Noodle Soup",
@@ -336,7 +336,7 @@
   },
   {
     "name": "Kid's meal",
-    "category": "Kid meal",
+    "category": "Kids Meal",
     "price": 4.99,
     "options": [
       "Well done lean meat noodle soup",
@@ -366,11 +366,6 @@
       "Passion Fruit Tea"
     ],
     "details": "Served with tapioca pearls or rainbow jelly"
-  },
-  {
-    "name": ,
-    "category": "Drinks",
-    "price": ,
   },
   {
     "name": "Soft Drinks (Can)",
@@ -445,7 +440,7 @@
   {
     "name": "Jelly Taro and tapioca in coconut milk",
     "category": "Dessert",
-    "price": 3.99,
+    "price": 3.99
   },
   {
     "name": "Fried ice cream or banana ice cream",

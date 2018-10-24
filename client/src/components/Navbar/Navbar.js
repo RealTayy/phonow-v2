@@ -27,14 +27,14 @@ export class Navbar extends Component {
 						</a>
 						<ul className="right hide-on-med-and-down">
 							<li><Link className="link-home" onClick={this.handleClick} to={"/"}>Home</Link></li>
-							<li><Link className="link-menu" onClick={this.handleClick} to={"/menu"}>Menu</Link></li>
+							<li><Link className="link-menu" onClick={this.handleClick} to={"/menu/all"}>Menu</Link></li>
 							<li><Link className="link-info" onClick={this.handleClick} to={"/info"}>Info</Link></li>
 							<li><Link className="link-about" onClick={this.handleClick} to={"/about"}>About Us</Link></li>
 							<li><Link className="link-contact" onClick={this.handleClick} to={"/contact"}>Contact</Link></li>
 						</ul>
 					</div>
 				</nav>
-				<Sidenav setIsHome={this.props.setIsHome} />
+				<Sidenav setIsHome={this.props.setIsHome} categories={this.props.categories} />
 			</div>
 		)
 	}

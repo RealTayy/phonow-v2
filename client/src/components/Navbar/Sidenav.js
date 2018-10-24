@@ -8,7 +8,10 @@ export class Sidenav extends Component {
 
 	componentDidMount = () => {
 		// Initializes _Sidenav
-		M.Sidenav.init(document.querySelectorAll('#_Sidenav'));
+		M.Sidenav.init(document.querySelectorAll('#_Sidenav'))
+		// Initialize collapsible inside of _Sidenav
+		M.Collapsible.init(document.querySelectorAll('.sidenav-collapsible'));
+		;
 	};
 
 	handleClick = (e) => {
@@ -25,7 +28,21 @@ export class Sidenav extends Component {
 					</Link>
 				</div>
 				<li><Link to={"/"} onClick={this.handleClick} className="link-home sidenav-close">Home</Link></li>
-				<li><Link to={"/menu"} onClick={this.handleClick} className="link-menu sidenav-close">Menu</Link></li>
+				<li className="no-padding">
+					<ul className="collapsible collapsible-accordion sidenav-collapsible">
+						<li>
+							<a className="collapsible-header">Menu</a>
+							<div className="collapsible-body">
+								<ul>
+									<li><Link to={"/menu/all"} onClick={this.handleClick} className="link-menu sidenav-close">All Items</Link></li>
+									{this.props.categories.map((category) => {
+										return <li key={category}><Link to={`/menu/${category}`} onClick={this.handleClick} className="link-menu sidenav-close">{category}</Link></li>
+									})}
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</li>
 				<li><Link to={"/info"} onClick={this.handleClick} className="link-info sidenav-close">Store Info</Link></li>
 				<li><Link to={"/about"} onClick={this.handleClick} className="link-about sidenav-close">About Us</Link></li>
 				<li><Link to={"/contact"} onClick={this.handleClick} className="link-contact sidenav-close">Contact</Link></li>

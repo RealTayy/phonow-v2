@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { ContentContainer } from '../../components/Container';
 import { Carousel } from '../../components/Carousel/Carousel';
 import { ContentTitle } from '../../components/Content';
+import { MenuNav } from '../../components/MenuNav';
 
 export class Menu extends Component {
 
@@ -16,17 +17,14 @@ export class Menu extends Component {
       "http://via.placeholder.com/2047x1365",
     ]
     return (
-      <div className="_Menu">
+      <div className="_Menu">        
         <ContentContainer
           leftContainerContent={
             <Carousel imagesPath={imagesPath} />
           }
           rightContainerContent={
             <div>
-              <ContentTitle
-                title="The Menu"
-              />
-              <div>asdf</div>
+              <div>{this.props.category || 'All'}</div>
             </div>
           }
           rightClasses={"scrollable"}
