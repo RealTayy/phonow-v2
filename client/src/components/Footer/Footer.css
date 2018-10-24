@@ -6,8 +6,7 @@
   padding-top: 0 !important;
   text-transform: uppercase;
   transition-property: background-color, box-shadow;
-  transition-duration: 1s;
-  transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition-duration: .3s;  
   box-shadow: 0 -1px 4px -1px rgba(0, 0, 0, 0.3);
   line-height: 48px;
   font-weight: bold;

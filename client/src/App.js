@@ -40,9 +40,25 @@ class App extends Component {
       <div className="_App f-raleway">
         <header>
           <Navbar isHome={isHome} setIsHome={this.setIsHome} categories={this.state.categories} />
-          <Route exact path="/menu/:category" render={() => (
-            <MenuNav categories={this.state.categories} />
-          )} />
+          <Route
+            render={({ location }) => {
+              const { pathname } = location;
+              return (
+                <TransitionGroup>
+                  <Transition
+                    key={pathname}
+                    timeout={{
+                      enter: 1000,
+                      exit: 1000
+                    }}>
+                    <Route location={location} exact path="/menu/:category" render={({ location }) => (
+                      <MenuNav categories={this.state.categories} />
+                    )} />
+                  </Transition>
+                </TransitionGroup>
+              )
+            }}
+          />
         </header>
         <main>
           <Route
