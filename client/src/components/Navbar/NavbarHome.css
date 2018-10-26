@@ -16,6 +16,15 @@
   text-transform: uppercase;
 }
 
+._NavbarHome .nav-link {
+  transition-property: color;
+  transition-duration: .5s;
+}
+
+._NavbarHome .nav-link.active {  
+  color: #FFD95D;
+}
+
 /* NavbarHome Specific */
 
 ._NavbarHome nav {

@@ -10,6 +10,7 @@ import $ from 'jquery';
 
 class About extends Component {
   componentDidMount = () => {
+    this.props.setActiveTab('/about');
     maiStalkerDiv();
     $('.fog').maiStalkerDiv([
       {

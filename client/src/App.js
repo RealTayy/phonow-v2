@@ -15,9 +15,12 @@ import { MenuNav } from './components/MenuNav';
 class App extends Component {
   state = {
     isHome: false,
+    isMenu: /\^.menu/g.test(window.location.pathname),
     categories: [],
     menu: [],
-  }
+    activeTab: '',
+    activeCategory: ''
+  };
 
   componentDidMount = () => {
     API.getCategories()
@@ -26,11 +29,30 @@ class App extends Component {
     API.getMenu()
       .then(menu => this.setState({ menu: menu }))
       .catch(err => console.log(err))
-  }
-
+  };
 
   setIsHome = (isHome) => {
     this.setState({ isHome: isHome });
+  };
+
+  setIsMenu = (isMenu) => {
+    this.setState({ isMenu: isMenu });
+  };
+
+  setActiveTab = (activeTab) => {
+    const isHome = (activeTab === '/');
+    const isMenu = /^.menu/g.test(activeTab);
+    this.setState({
+      activeTab: activeTab,
+      isHome: isHome,
+      isMenu: isMenu,
+    })
+  };
+
+  setActiveCategory = (category) => {    
+    this.setState({
+      activeCategory: category
+    });
   }
 
 
@@ -39,25 +61,18 @@ class App extends Component {
     return <Router forceRefresh={!('pushState' in window.history)}>
       <div className="_App f-raleway">
         <header>
-          <Navbar isHome={isHome} setIsHome={this.setIsHome} categories={this.state.categories} />
-          <Route
-            render={({ location }) => {
-              const { pathname } = location;
-              return (
-                <TransitionGroup>
-                  <Transition
-                    key={pathname}
-                    timeout={{
-                      enter: 1000,
-                      exit: 1000
-                    }}>
-                    <Route location={location} exact path="/menu/:category" render={({ location }) => (
-                      <MenuNav categories={this.state.categories} />
-                    )} />
-                  </Transition>
-                </TransitionGroup>
-              )
-            }}
+          <Navbar
+            isHome={isHome}
+            activeTab={this.state.activeTab}
+            setActiveTab={this.setActiveTab}
+            categories={this.state.categories}
+            setActiveCategory={this.setActiveCategory}
+          />
+          <MenuNav
+            isMenu={this.state.isMenu}
+            activeTab={this.state.activeTab}
+            categories={this.state.categories}
+            setActiveCategory={this.setActiveCategory}
           />
         </header>
         <main>
@@ -81,19 +96,19 @@ class App extends Component {
                             exact path="/"
                             render={() => (
                               <Home
-                                setIsHome={this.setIsHome}
+                                setActiveTab={this.setActiveTab}
                               />
                             )}
                           />
                           <Route
-                            exact path="/menu/:category"
+                            exact path="/menu"
                             render={(props) => {
                               return (
                                 <Menu
-                                  setIsHome={this.setIsHome}
+                                  setActiveTab={this.setActiveTab}
                                   menu={this.state.menu}
                                   categories={this.state.categories}
-                                  category={props.match.params.category}
+                                  category={this.state.activeCategory}
                                 />
                               )
                             }}
@@ -102,7 +117,7 @@ class App extends Component {
                             exact path="/info"
                             render={() => (
                               <Info
-                                setIsHome={this.setIsHome}
+                                setActiveTab={this.setActiveTab}
                               />
                             )}
                           />
@@ -110,7 +125,7 @@ class App extends Component {
                             exact path="/about"
                             render={() => (
                               <About
-                                setIsHome={this.setIsHome}
+                                setActiveTab={this.setActiveTab}
                               />
                             )}
                           />
@@ -118,13 +133,13 @@ class App extends Component {
                             exact path="/contact"
                             render={() => (
                               <Contact
-                                setIsHome={this.setIsHome}
+                                setActiveTab={this.setActiveTab}
                               />
                             )}
                           />
                           <Route
                             render={() => (<Home
-                              setIsHome={this.setIsHome}
+                              setActiveTab={this.setActiveTab}
                             />)}
                           />
                         </Switch>

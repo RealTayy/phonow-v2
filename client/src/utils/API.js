@@ -2,6 +2,7 @@
 import * as menu from '../assets/data/menu.json';
 import * as categories from '../assets/data/categories.json';
 
+// Currently uses static data instead of data from DB. Implement DB/CMS in furture version
 export default {
   // Get menu items from DB
   // Currently using static data

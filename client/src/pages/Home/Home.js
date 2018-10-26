@@ -12,7 +12,7 @@ import $ from 'jquery';
 export class Home extends Component {
 
   componentDidMount = () => {
-    this.props.setIsHome(true);
+    this.props.setActiveTab('/');
     maiTextDyn();
     maiStalkerDiv();
     $('.mai-stalkerDiv-wrapper').maiStalkerDiv([
@@ -24,10 +24,6 @@ export class Home extends Component {
         easing: 'Power1.easeOut'
       }
     ])
-  }
-
-  componentWillUnmount = () => {
-    this.props.setIsHome(false);
   }
 
   render() {

@@ -16,6 +16,8 @@ export class Contact extends Component {
     inquiry: '',
   }
   componentDidMount = () => {
+    this.props.setActiveTab('/contact');
+
     // Initialize moving background
     maiStalkerDiv();
     $('.mai-stalkerDiv-wrapper').maiStalkerDiv([

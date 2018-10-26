@@ -15,6 +15,10 @@ const MapMarker = () => {
 };
 export class Info extends Component {
 
+  componentDidMount = () => {    
+    this.props.setActiveTab('/info');
+  }
+
   static defaultProps = {
     center: {
       lat: 29.845087,
@@ -25,10 +29,6 @@ export class Info extends Component {
       styles: mapstyle
     }
   };
-
-  componentDidMount = () => {
-
-  }
 
   render() {
     return (

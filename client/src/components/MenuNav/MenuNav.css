@@ -4,7 +4,7 @@
   z-index: -1;
   background: #567B37;
   width: 100%;
-  font-size: 14.5px;
+  font-size: 13px;
   line-height: 42px;
 }
 
@@ -15,9 +15,26 @@
   text-align: center;
 }
 
-._MenuNav .menunav-link {
+._MenuNav li {
+  font-weight: bold;
   padding: 0 10px;
-  height: 100%;  
-	display: inline-block;
-	text-transform: uppercase;
+  height: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+._MenuNav a.active {
+  color: #ffd95d;
+}
+
+._MenuNav a {
+  transition-property: color;
+  transition-duration: .3s;
+  color: #92C24C;
+}
+
+@media only screen and (max-width: 1080px) {  
+  ._MenuNav a {
+    font-size: 11.5px
+  }
 }

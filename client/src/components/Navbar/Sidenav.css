@@ -2,5 +2,10 @@
 
 ._Sidenav .sidenav-header {
   padding: 48px 0;
-  border-bottom: 2px solid #444;  
+  border-bottom: 2px solid #444;
+}
+
+.sidenav-trigger {
+  margin: 0px !important;
+  padding: 0px 18px;
 }

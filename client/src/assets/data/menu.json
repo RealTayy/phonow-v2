@@ -1,7 +1,7 @@
 [
   {
     "name": "Vietnamese Eggs Rolls (2)",
-    "category": "Appetizers",
+    "category": "appetizers",
     "price": 2.99,
     "options": [
       "Shrimp and Pork",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Fresh Spring Rolls (2)",
-    "category": "Appetizers",
+    "category": "appetizers",
     "price": 2.99,
     "options": [
       "Shrimp",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Grilled Meat Spring (2)",
-    "category": "Appetizers",
+    "category": "appetizers",
     "price": 3.99,
     "options": [
       "Grilled Chicken",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Fried Dumpling (6)",
-    "category": "Appetizers",
+    "category": "appetizers",
     "price": 3.99,
     "options": [
       "Chicken",
@@ -38,7 +38,7 @@
   },
   {
     "name": "Chicken Wings (6)",
-    "category": "Appetizers",
+    "category": "appetizers",
     "price": 5.99,
     "options": [
       "Plain",
@@ -50,7 +50,7 @@
   },
   {
     "name": "Boneless Chicken Wings (6)",
-    "category": "Appetizers",
+    "category": "appetizers",
     "price": 5.99,
     "options": [
       "Plain",
@@ -62,67 +62,67 @@
   },
   {
     "name": "Cheese Puff Crab Rangoon",
-    "category": "Appetizers",
+    "category": "appetizers",
     "price": 3.99
   },
   {
     "name": "Wonton Soup",
-    "category": "Appetizers",
+    "category": "appetizers",
     "price": 4.99
   },
   {
     "name": "French Bread",
-    "category": "Sides",
+    "category": "sides",
     "price": 1.00
   },
   {
     "name": "Bowl of Steamed Rice",
-    "category": "Sides",
+    "category": "sides",
     "price": 1.00
   },
   {
     "name": "Bowl of Rice Noodles",
-    "category": "Sides",
+    "category": "sides",
     "price": 1.00
   },
   {
     "name": "Bowl of Egg Rice",
-    "category": "Sides",
+    "category": "sides",
     "price": 2.00
   },
   {
     "name": "Fried Eggs (2)",
-    "category": "Sides",
+    "category": "sides",
     "price": 2.00
   },
   {
     "name": "French Fries",
-    "category": "Sides",
+    "category": "sides",
     "price": 3.00
   },
   {
     "name": "Plate of Eye round steak",
-    "category": "Sides",
+    "category": "sides",
     "price": 3.00
   },
   {
     "name": "Meatballs (6)",
-    "category": "Sides",
+    "category": "sides",
     "price": 3.00
   },
   {
     "name": "Dish of Fried Rice",
-    "category": "Sides",
+    "category": "sides",
     "price": 5.00
   },
   {
     "name": "Extra Beansprouts and Greens",
-    "category": "Sides",
+    "category": "sides",
     "price": 1.00
   },
   {
     "name": "Beef Noodle Soup",
-    "category": "Noodle Soup",
+    "category": "noodlesoup",
     "price": [
       {
         "Small": 6.99,
@@ -150,13 +150,13 @@
   },
   {
     "name": "Special Combination",
-    "category": "Noodle Soup",
+    "category": "noodlesoup",
     "price": 8.99,
     "details": "Eye round steak, well done flank, fatty birsket, soft tendon, beef tripe, beef meatballs"
   },
   {
     "name": "Chicken Noodle Soup",
-    "category": "Noodle Soup",
+    "category": "noodlesoup",
     "price": [
       {
         "Small": 6.99,
@@ -172,7 +172,7 @@
   },
   {
     "name": "Vegetarian Noodle Soup",
-    "category": "Noodle Soup",
+    "category": "noodlesoup",
     "price": [
       {
         "Small": 6.99,
@@ -183,7 +183,7 @@
   },
   {
     "name": "Meatless Noodle Soup",
-    "category": "Noodle Soup",
+    "category": "noodlesoup",
     "price": 5.99,
     "options": [
       "Beef broth",
@@ -193,7 +193,7 @@
   },
   {
     "name": "Seafood Noodle Soup",
-    "category": "Noodle Soup",
+    "category": "noodlesoup",
     "price": {
       "Small": 7.99,
       "Large": 8.99
@@ -202,7 +202,7 @@
   },
   {
     "name": "Egg Noodle Soup",
-    "category": "Noodle Soup",
+    "category": "noodlesoup",
     "price": 8.99,
     "options": [
       "Egg noodle with beef stew",
@@ -213,7 +213,7 @@
   },
   {
     "name": "Fried Rice Plates",
-    "category": "Rice Plates",
+    "category": "riceplates",
     "price": 7.99,
     "options": [
       "Pork & chicken",
@@ -225,7 +225,7 @@
   },
   {
     "name": "Steam Rice Plates",
-    "category": "Rice Plates",
+    "category": "riceplates",
     "price": 7.99,
     "options": [
       "Charbroiled pork chop",
@@ -238,7 +238,7 @@
   },
   {
     "name": "Vermicelli Noodles",
-    "category": "Noodle Bowls",
+    "category": "noodlebowls",
     "price": 7.99,
     "options": [
       "Charbroiled sliced pork",
@@ -252,25 +252,25 @@
   },
   {
     "name": "Combination Noodles",
-    "category": "Noodle Bowls",
+    "category": "noodlebowls",
     "price": 7.99,
     "details": "Pork, chicken, shrimp, and egg rolls. Served with lettuce, cucumber, bean sprout, carrot, green onion, cilantro, peanuts and homemade fish sauce"
   },
   {
     "name": "Roasted Chicken",
-    "category": "House Specials",
+    "category": "housespecials",
     "price": 10.99,
     "details": "Whole chicken roasted in our house special sauce. Served with green and red peppers, sweet white onion, green onion, and cilantro. A fresh sliced lime, salt and black pepper for dipping sauce."
   },
   {
     "name": "Shaking beef or chicken",
-    "category": "House Specials",
+    "category": "housespecials",
     "price": 10.99,
     "details": "Vietnamese popular dish called \"Shaking Beef\" cooked in our special sauce. Served with cilantro, green, red peppers, and sweet white onion. A fresh sliced lime, salt and black pepper for dipping sauce."
   },
   {
     "name": "House Lo Mein",
-    "category": "House Specials",
+    "category": "housespecials",
     "price": 8.99,
     "options": [
       "Chicken",
@@ -281,7 +281,7 @@
   },
   {
     "name": "Chow Mein",
-    "category": "House Specials",
+    "category": "housespecials",
     "price": 10.99,
     "options": [
       "Chicken",
@@ -293,7 +293,7 @@
   },
   {
     "name": "Pad Thai",
-    "category": "House Specials",
+    "category": "housespecials",
     "price": 8.99,
     "options": [
       "Chicken",
@@ -305,7 +305,7 @@
   },
   {
     "name": "House Fried Rice",
-    "category": "House Specials",
+    "category": "housespecials",
     "price": 8.99,
     "options": [
       "Pork",
@@ -317,13 +317,13 @@
   },
   {
     "name": "Deluxe Fried Rice",
-    "category": "House Specials",
+    "category": "housespecials",
     "price": 9.99,
     "details": "Hot jasmine fried rice with egg, carrots, green peas, and green onion plus a tasty combination of beef, chicken, pork, and shrimp"
   },
   {
     "name": "Vietnamese Sandwich",
-    "category": "Sandwiches",
+    "category": "sandwiches",
     "price": 4.99,
     "options": [
       "Grilled Pork",
@@ -336,7 +336,7 @@
   },
   {
     "name": "Kid's meal",
-    "category": "Kids Meal",
+    "category": "kidsmeal",
     "price": 4.99,
     "options": [
       "Well done lean meat noodle soup",
@@ -347,7 +347,7 @@
   },
   {
     "name": "Tapioca drinks",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 3.99,
     "options": [
       "Mango",
@@ -369,27 +369,27 @@
   },
   {
     "name": "Soft Drinks (Can)",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 1.35
   },
   {
     "name": "Fountain Drinks",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 1.99
   },
   {
     "name": "Iced tea",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 1.99
   },
   {
     "name": "Hot Jasmine or Green tea",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 1.99
   },
   {
     "name": "Syrup",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 1.99,
     "options": [
       "Raspberry",
@@ -399,37 +399,37 @@
   },
   {
     "name": "Fresh lemonade",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 2.35
   },
   {
     "name": "Sweet lemon iced tea",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 2.50
   },
   {
     "name": "Fresh lemonade with club soda",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 2.99
   },
   {
     "name": "Fresh strawberry lemonade",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 2.99
   },
   {
     "name": "Young coconut drink",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 2.99
   },
   {
     "name": "Vietnamese Coffee (Hot or Cold)",
-    "category": "Drinks",
+    "category": "drinks",
     "price": 3.25
   },
   {
     "name": "Ice Cream",
-    "category": "Dessert",
+    "category": "desserts",
     "price": 2.99,
     "options": [
       "Vanilla",
@@ -439,12 +439,12 @@
   },
   {
     "name": "Jelly Taro and tapioca in coconut milk",
-    "category": "Dessert",
+    "category": "desserts",
     "price": 3.99
   },
   {
     "name": "Fried ice cream or banana ice cream",
-    "category": "Dessert",
+    "category": "desserts",
     "price": 4.99
   }
 ]

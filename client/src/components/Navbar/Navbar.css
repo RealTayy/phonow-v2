@@ -7,7 +7,7 @@
 
 ._Navbar nav {
   transition-property: background-color, box-shadow;
-  transition-duration: .3s;  
+  transition-duration: .3s;
 }
 
 ._Navbar .logo-img {
@@ -20,6 +20,15 @@
 ._Navbar ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
+}
+
+._Navbar .nav-link {
+  transition-property: color;
+  transition-duration: .5s;
+}
+
+._Navbar .nav-link.active {  
+  color: #FFD95D;
 }
 
 /* Small only */

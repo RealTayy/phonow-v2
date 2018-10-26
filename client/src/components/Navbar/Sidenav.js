@@ -15,8 +15,13 @@ export class Sidenav extends Component {
 	};
 
 	handleClick = (e) => {
-		if ($(".page-container").children().length > 1) e.preventDefault()
-		else this.props.setIsHome($(e.target).hasClass('link-home'));
+		if ($(".page-container").children().length > 1) return e.preventDefault();
+	}
+
+	handleMenuClick = (e) => {
+		let category = $(e.target).data('category');
+		category = category.toLowerCase().replace(/ /g, '')
+		this.props.setActiveCategory(category);
 	}
 
 	render() {
@@ -34,9 +39,9 @@ export class Sidenav extends Component {
 							<a className="collapsible-header">Menu</a>
 							<div className="collapsible-body">
 								<ul>
-									<li><Link to={"/menu/all"} onClick={this.handleClick} className="link-menu sidenav-close">All Items</Link></li>
+									<li><Link to={"/menu"} onClick={this.handleClick} className="link-menu sidenav-close">All Items</Link></li>
 									{this.props.categories.map((category) => {
-										return <li key={category}><Link to={`/menu/${category}`} onClick={this.handleClick} className="link-menu sidenav-close">{category}</Link></li>
+										return <li key={category}><Link data-category={category} to={`/menu`} onClick={this.handleMenuClick} className="link-menu sidenav-close">{category}</Link></li>
 									})}
 								</ul>
 							</div>
