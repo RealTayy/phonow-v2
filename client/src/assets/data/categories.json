@@ -1,12 +1,42 @@
 [
-	"Appetizers",
-	"Sides",
-	"Noodle Soup",
-	"Rice Plates",
-	"Noodle Bowls",
-	"House Specials",
-	"Sandwiches",
-	"Kids Meal",
-	"Drinks",
-	"Desserts"
+	{
+		"display": "Appetizers",
+		"id": "appetizers"
+	},
+	{
+		"display": "Sides",
+		"id": "sides"
+	},
+	{
+		"display": "Noodle Soup",
+		"id": "noodlesoup"
+	},
+	{
+		"display": "Rice Plates",
+		"id": "riceplates"
+	},
+	{
+		"display": "Noodle Bowls",
+		"id": "noodlebowls"
+	},
+	{
+		"display": "House Specials",
+		"id": "housespecials"
+	},
+	{
+		"display": "Sandwiches",
+		"id": "sandwiches"
+	},
+	{
+		"display": "Kids Meal",
+		"id": "kidsmeal"
+	},
+	{
+		"display": "Drinks",
+		"id": "drinks"
+	},
+	{
+		"display": "Desserts",
+		"id": "desserts"
+	}
 ]

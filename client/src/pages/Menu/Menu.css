@@ -1,4 +1,10 @@
-@media only screen and (min-width: 993px) {  
+@media only screen and (min-width: 993px) {
+  ._Menu .right-container {
+    padding-top: 42px !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
   ._Menu .right-container {
     padding-top: 42px !important;
   }

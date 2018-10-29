@@ -28,10 +28,9 @@ export class MenuNav extends Component {
 					<li key={'all'}>
 						<Link className="menunav-link active" to={"/menu"} data-category="all" onClick={this.handleClick}>All</Link>
 					</li>
-					{this.props.categories.map((category) => {
-						const newPath = category.toLowerCase().replace(/ /g, '');
-						return <li key={category}>
-							<Link className={`menunav-link ${(activeCategory === newPath) ? 'active' : ''}`} to={`/menu`} data-category={newPath} onClick={this.handleClick}>{category}</Link>
+					{this.props.categories.map((category) => {						
+						return <li key={category.id}>
+							<Link className={`menunav-link ${(activeCategory === category.id) ? 'active' : ''}`} to={`/menu`} data-category={category.id} onClick={this.handleClick}>{category.display}</Link>
 						</li>
 					})}
 				</ul>

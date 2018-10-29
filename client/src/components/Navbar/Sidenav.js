@@ -24,7 +24,8 @@ export class Sidenav extends Component {
 		this.props.setActiveCategory(category);
 	}
 
-	render() {
+	render() { 
+		console.log(this.props.categories);
 		return (
 			<ul className="_Sidenav sidenav" id="_Sidenav">
 				<div className="sidenav-header center-align">
@@ -41,7 +42,7 @@ export class Sidenav extends Component {
 								<ul>
 									<li><Link to={"/menu"} onClick={this.handleClick} className="link-menu sidenav-close">All Items</Link></li>
 									{this.props.categories.map((category) => {
-										return <li key={category}><Link data-category={category} to={`/menu`} onClick={this.handleMenuClick} className="link-menu sidenav-close">{category}</Link></li>
+										return <li key={category.id}><Link data-category={category.id} to={`/menu`} onClick={this.handleMenuClick} className="link-menu sidenav-close">{category.display}</Link></li>
 									})}
 								</ul>
 							</div>
