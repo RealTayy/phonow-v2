@@ -81,13 +81,25 @@
   left: 3px;
 }
 
-._Info .marker-logo {
+._Info .marker-frame {
   position: relative;
   height: 45px;
   display: inline-block;
   left: 50%;
   transform: translate(-50%);
   top: -15px;
+  padding: 9px 4px;
+  background: #253031;
+  border-radius: 75px;
+}
+
+._Info .marker-logo {
+  position: relative;
+  height: 45px;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%);
+  top: -10px;
   padding: 9px 4px;
   background: #253031;
   border-radius: 50px;

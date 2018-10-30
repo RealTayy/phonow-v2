@@ -11,11 +11,11 @@ export class Navbar extends Component {
 		activeTab: this.props.activeTab
 	}
 
-	handleClick = (e) => {		
-		if(e.target.pathname === this.props.activeTab) return e.preventDefault()
+	handleClick = (e) => {
+		if (e.target.pathname === this.props.activeTab) return e.preventDefault()
 		if ($(".page-container").children().length > 1) return e.preventDefault()
 		else {
-			this.props.setActiveCategory('all');			
+			this.props.setActiveCategory('all');
 			this.transitionPage();
 		}
 	}
@@ -52,7 +52,7 @@ export class Navbar extends Component {
 			<div className={`_Navbar${(this.props.isHome) ? 'Home' : ''}`}>
 				<nav>
 					<div className="nav-wrapper container">
-						<Link to="/" className="brand-logo">
+						<Link to="/" className="brand-logo" data-tabid="home" onClick={this.handleClick}>
 							<img className="logo-img" src={smallLogo} alt="" />
 							<span className="logo-text">Pho Now</span>
 						</Link>

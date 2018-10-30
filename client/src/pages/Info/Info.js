@@ -7,15 +7,17 @@ import smallLogo from '../../images/navlogo1.png'
 
 const MapMarker = () => {
   return (
-    <div className="map-marker z-depth-2 animated pulse infinite">
+    <div className="map-marker z-depth-2 pulse">
       <div className="marker-text f-2">PHO NOW</div>
-      <img className="marker-logo z-depth-2" src={smallLogo} alt="smallLogo" />
+      <div className="marker-frame pulse">
+        <img className="marker-logo z-depth-2" src={smallLogo} alt="smallLogo" />
+      </div>
     </div>
   )
 };
 export class Info extends Component {
 
-  componentDidMount = () => {    
+  componentDidMount = () => {
     this.props.setActiveTab('/info');
   }
 
@@ -30,7 +32,7 @@ export class Info extends Component {
     }
   };
 
-  render() {    
+  render() {
     return (
       <div className="_Info animated fadeIn">
         <div className="row">
