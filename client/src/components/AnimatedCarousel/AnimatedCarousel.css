@@ -5,19 +5,19 @@
 ._AnimatedCarousel .slick-track,
 ._AnimatedCarousel .slick-slide,
 ._AnimatedCarousel .slick-slide>div {
-	height: 100%;  	
+  height: 100%;
 }
 
 ._AnimatedCarousel .slick-slide>div {
-	display: flex;	
-	justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ._AnimatedCarousel .slick-slide img {
-	/* Unforces image to fill out width */
-	position: relative;
-  width: unset !important;
+  /* Unforces image to fill out width */
+  position: relative;
+  width: auto !important;
   max-height: 100%;
-	max-width: 100%;	
+  max-width: 100%;
 }
