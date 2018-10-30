@@ -21,5 +21,9 @@ export default {
       reject(new Error('how did you get here lol'));
     })
     return categoriesPromise;
+  },
+  sendEmail: function (emailData) {
+    return axios.post("/api/email", emailData);
   }
+
 };
