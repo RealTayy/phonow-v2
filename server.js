@@ -16,13 +16,13 @@ const PORT = process.env.PORT || 3001;
 
 /* MONGODB ORM */
 //  MongoDB object modeling tool
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 /* PROMISE LIBRARY */
 // Bluebird is a fully featured promise library with focus on features and performance
-const Promise = require('bluebird');
+// const Promise = require('bluebird');
 // Replace mongoose's promise library 
-mongoose.Promise = Promise;
+// mongoose.Promise = Promise;
 
 /* BODY PARSERS */
 // node.js body parsing middleware avaiable under req.body
@@ -37,26 +37,26 @@ app.use(bodyParser.urlencoded({ extended: false }));
 	YELLOW      Client Error Codes
 	CYAN        Redirection Codes
 	UNCOLORED   Other Codes         */
-const logger = require('morgan');
-app.use(logger('dev'));
+// const logger = require('morgan');
+// app.use(logger('dev'));
 
 /*******************|
 |* SET UP DATABASE *| 
 |*******************/
 // Connect to db
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mern-bp-DB";
-mongoose.connect(MONGODB_URI);
-const db = mongoose.connection;
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mern-bp-DB";
+// mongoose.connect(MONGODB_URI);
+// const db = mongoose.connection;
 
 // Logs error if mongoDB/mongoose runs into an error
-db.on("error", (error) => {
-	console.log(`DB Error: ${error}`);
-});
+// db.on("error", (error) => {
+// 	console.log(`DB Error: ${error}`);
+// });
 
 // Logs success if sucessfully connected to db
-db.once("open", () => {
-	console.log("DB connection successful!");
-});
+// db.once("open", () => {
+// 	console.log("DB connection successful!");
+// });
 
 /*****************|
 |* SET UP ROUTES *| 
