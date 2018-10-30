@@ -16,13 +16,22 @@ export class Sidenav extends Component {
 	};
 
 	handleClick = (e) => {
-		if ($(".page-container").children().length > 1) return e.preventDefault();
+		if (e.target.pathname === this.props.activeTab) return e.preventDefault()
+		if ($(".page-container").children().length > 1) return e.preventDefault()
+		else {
+			this.props.setActiveCategory('all');
+			this.transitionPage();
+		}
 	}
 
 	handleMenuClick = (e) => {
 		let category = $(e.target).data('category');
 		category = category.toLowerCase().replace(/ /g, '')
 		this.props.setActiveCategory(category);
+	}
+
+	transitionPage = (oldPage, newPage) => {
+		$('.page-container').children().addClass('fadeOut');
 	}
 
 	render() {

@@ -44,7 +44,7 @@ export class Navbar extends Component {
 	}
 
 	transitionPage = (oldPage, newPage) => {
-		console.log($('.page-container').children().addClass('fadeOut'));
+		$('.page-container').children().addClass('fadeOut');
 	}
 
 	render() {

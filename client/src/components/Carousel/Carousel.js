@@ -6,8 +6,9 @@ export class Carousel extends Component {
 	render() {
 		const settings = this.props.settings || {
 			autoplay: true,
-			autoplaySpeed: 4000,
-			arrows: false,						
+			autoplaySpeed: 5000,
+			arrows: false,
+			pauseOnHover: false,
 		}
 		return (
 			<Slider className="_Carousel" {...settings}>
