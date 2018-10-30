@@ -7,8 +7,8 @@ export class Carousel extends Component {
 		const settings = this.props.settings || {
 			autoplay: true,
 			autoplaySpeed: 4000,
-			arrows: false,			
-		}		
+			arrows: false,						
+		}
 		return (
 			<Slider className="_Carousel" {...settings}>
 				{this.props.imagesPath.map((src, i) => {

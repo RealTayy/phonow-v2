@@ -7,7 +7,7 @@ export class AnimatedCarousel extends Component {
 	render() {
 		const settings = this.props.settings || {
 			autoplay: true,
-			autoplaySpeed: 5000,
+			autoplaySpeed: 4000,
 			arrows: false,
 			accessibility: false,
 			slidesToShow: 1,

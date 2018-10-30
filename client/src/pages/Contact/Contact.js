@@ -44,6 +44,7 @@ export class Contact extends Component {
       inquiry: $('#inquiry').val(),
       message: $('#message').val()
     }
+
     // All fields filled out validator
     if (!(email.name && email.email && email.inquiry && email.message))
       return this.helpText('Please fill out required fields', 'error', 2000);
@@ -54,10 +55,12 @@ export class Contact extends Component {
     if ($('#email').hasClass('invalid'))
       return this.helpText('Please enter in valid email', 'error', 2000);
 
-    this.helpText('Sending email...', 'default', 30000)
+    this.helpText('Sending email...', 'default', 30000);
+    $('.contact-submit').attr('disabled', true);
     API.sendEmail(email)
       .then((res) => this.helpText('Email sent!', 'success', 2000))
-      .catch((err) => this.helpText('Error sending email.', 'error', 2000));
+      .catch((err) => this.helpText('Error sending email.', 'error', 2000))
+      .then(() => $('.contact-submit').attr('disabled', false));
   }
 
   handleTelChange = (e) => {
@@ -171,7 +174,7 @@ export class Contact extends Component {
                       </div>
                       <div className="form-submit center-align">
                         <div className="helper-text animated"></div>
-                        <button className="waves-effect waves-light btn" type="submit" onClick={this.handleSubmit}>
+                        <button className="contact-submit waves-effect waves-light btn" type="submit" onClick={this.handleSubmit}>
                           <i className="material-icons right">send</i>
                           <span>SUBMIT</span>
                         </button>
