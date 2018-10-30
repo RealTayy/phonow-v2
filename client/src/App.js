@@ -23,12 +23,22 @@ class App extends Component {
   };
 
   componentDidMount = () => {
-    API.getCategories()
-      .then(categories => this.setState({ categories: categories }))
-      .catch(err => console.log(err));
-    API.getMenu()
-      .then(menu => this.setState({ menu: menu }))
-      .catch(err => console.log(err))
+    Promise.all([
+      API.getCategories()
+        .then(categories => categories),
+      API.getMenu()
+        .then(menu => menu)
+    ])
+      .then((value) => {
+        const categories = value[0];
+        const menu = value[1];
+        this.formatMenu(menu, categories)
+        this.setState({
+          categories: value[0],
+          menu: value[1]
+        })
+      })
+      .catch((err) => console.log(err));
   };
 
   setIsHome = (isHome) => {
@@ -49,10 +59,22 @@ class App extends Component {
     })
   };
 
-  setActiveCategory = (category) => {    
+  setActiveCategory = (category) => {
     this.setState({
       activeCategory: category
     });
+  }
+
+  formatMenu = (menu, categories) => {
+    // Iterate through menu and push items into correct categories
+    menu.forEach(item => {
+      let indexOfCategory = categories.findIndex((ele) => {
+        return (ele.id === item.category);
+      })
+      categories[indexOfCategory].items.push(item);
+    });
+
+    return categories;
   }
 
 

@@ -9,3 +9,54 @@
     padding-top: 42px !important;
   }
 }
+
+._Menu {
+  color:#253031
+}
+
+._Menu .menu-wrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+._Menu .menu-content {
+  margin: auto;
+  width: 85%;
+  padding: 1.5rem;
+}
+
+._Menu .category-name {
+  text-transform: uppercase;  
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+._Menu .category-name span {
+  border-bottom: 3px black solid;
+}
+
+._Menu .item {
+  margin-bottom: 15px;
+}
+
+._Menu .item-name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+._Menu ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+._Menu .item-details {
+  font-style: italic
+}
+
+/* Small and down */
+
+@media only screen and (max-width: 600px) {
+  ._Menu .menu-content {
+    width: 100%;
+  }
+}

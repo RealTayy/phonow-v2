@@ -24,8 +24,7 @@ export class Sidenav extends Component {
 		this.props.setActiveCategory(category);
 	}
 
-	render() { 
-		console.log(this.props.categories);
+	render() { 		
 		return (
 			<ul className="_Sidenav sidenav" id="_Sidenav">
 				<div className="sidenav-header center-align">

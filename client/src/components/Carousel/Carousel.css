@@ -1,7 +1,7 @@
 /* components/Carousel/Carousel.css */
 
-._Carousel {	
-  position: relative;  
+._Carousel {
+  position: relative;
 }
 
 ._Carousel .slick-slide,
@@ -22,4 +22,11 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  ._Carousel .slick-list {
+    max-height: 250px;
+    overflow: hidden;
+  }
 }

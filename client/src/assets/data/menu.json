@@ -18,7 +18,7 @@
     ]
   },
   {
-    "name": "Grilled Meat Spring (2)",
+    "name": "Grilled Meat Spring Rolls (2)",
     "category": "appetizers",
     "price": 3.99,
     "options": [
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "name": "Fried Dumpling (6)",
+    "name": "Fried Dumplings (6)",
     "category": "appetizers",
     "price": 3.99,
     "options": [
@@ -123,12 +123,10 @@
   {
     "name": "Beef Noodle Soup",
     "category": "noodlesoup",
-    "price": [
-      {
-        "Small": 6.99,
-        "Large": 7.99
-      }
-    ],
+    "price": {
+      "Small": 6.99,
+      "Large": 7.99
+    },
     "options": [
       "Eye round steak",
       "Eye round steak & Well-done lean meat",
@@ -157,12 +155,10 @@
   {
     "name": "Chicken Noodle Soup",
     "category": "noodlesoup",
-    "price": [
-      {
-        "Small": 6.99,
-        "Large": 7.99
-      }
-    ],
+    "price": {
+      "Small": 6.99,
+      "Large": 7.99
+    },
     "options": [
       "Chicken white meat",
       "Chicken dark meat",
@@ -173,12 +169,10 @@
   {
     "name": "Vegetarian Noodle Soup",
     "category": "noodlesoup",
-    "price": [
-      {
-        "Small": 6.99,
-        "Large": 7.99
-      }
-    ],
+    "price": {
+      "Small": 6.99,
+      "Large": 7.99
+    },
     "details": "Broccoli, carrots, mushroom, & tofu"
   },
   {
@@ -277,7 +271,7 @@
       "Beef",
       "Shrimp"
     ],
-    "details": "Lo Mein noodles stir fried with chicken, beef, shrimp, yellow onions, bean sprouts, cabbage, green onions and cilantro."
+    "details": "Lo Mein noodles stir fried with chicken, beef, or shrimp, yellow onions, bean sprouts, cabbage, green onions and cilantro."
   },
   {
     "name": "Chow Mein",
@@ -301,7 +295,7 @@
       "Shrimp",
       "Combo (add $2)"
     ],
-    "details": "Thin rice noodle stir fried chicken, beef, shrimp, eggs, green onions, and cilantro. Served with bean sprouts and peanuts."
+    "details": "Thin rice noodle stir fried chicken, beef, or shrimp. Also, eggs, green onions, and cilantro. Served with bean sprouts and peanuts."
   },
   {
     "name": "House Fried Rice",

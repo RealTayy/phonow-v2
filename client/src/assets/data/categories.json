@@ -1,42 +1,52 @@
 [
 	{
 		"display": "Appetizers",
-		"id": "appetizers"
+		"id": "appetizers",
+		"items": []
 	},
 	{
 		"display": "Sides",
-		"id": "sides"
+		"id": "sides",
+		"items": []
 	},
 	{
 		"display": "Noodle Soup",
-		"id": "noodlesoup"
+		"id": "noodlesoup",
+		"items": []
 	},
 	{
 		"display": "Rice Plates",
-		"id": "riceplates"
+		"id": "riceplates",
+		"items": []
 	},
 	{
 		"display": "Noodle Bowls",
-		"id": "noodlebowls"
+		"id": "noodlebowls",
+		"items": []
 	},
 	{
 		"display": "House Specials",
-		"id": "housespecials"
+		"id": "housespecials",
+		"items": []
 	},
 	{
 		"display": "Sandwiches",
-		"id": "sandwiches"
+		"id": "sandwiches",
+		"items": []
 	},
 	{
 		"display": "Kids Meal",
-		"id": "kidsmeal"
+		"id": "kidsmeal",
+		"items": []
 	},
 	{
 		"display": "Drinks",
-		"id": "drinks"
+		"id": "drinks",
+		"items": []
 	},
 	{
 		"display": "Desserts",
-		"id": "desserts"
+		"id": "desserts",
+		"items": []
 	}
 ]
