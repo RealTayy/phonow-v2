@@ -30,7 +30,7 @@ export class Info extends Component {
     }
   };
 
-  render() {
+  render() {    
     return (
       <div className="_Info">
         <div className="row">
