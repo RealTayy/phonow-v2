@@ -21,11 +21,12 @@ export class Menu extends Component {
     return (
       <div className="_Menu animated">
         <ContentContainer
+          leftClasses="animated fadeInLeft"
           leftContainerContent={
             <Carousel imagesPath={imagesPath} />
-          }
+          }          
           rightContainerContent={
-            <div className="menu-wrapper">
+            <div className="menu-wrapper animated fadeInRight">
               <div className="menu-content">
                 {filteredMenu.map((category) => {
                   return (

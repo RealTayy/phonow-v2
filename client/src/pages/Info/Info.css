@@ -63,7 +63,7 @@
   position: relative;
   padding: 5px;
   height: 25px;
-  width: 70px;
+  width: 85px;
   background: #253031;
   border-radius: 10px;
 }
@@ -73,11 +73,12 @@
   z-index: 1;
   position: absolute;
   height: 15px;
-  width: 60px;
+  width: 80px;
   color: white;
   font-size: 15px;
   line-height: 15px;
   margin: auto;
+  left: 3px;
 }
 
 ._Info .marker-logo {
@@ -87,7 +88,7 @@
   left: 50%;
   transform: translate(-50%);
   top: -15px;
-  padding: 10px 5px;
+  padding: 9px 4px;
   background: #253031;
   border-radius: 50px;
 }

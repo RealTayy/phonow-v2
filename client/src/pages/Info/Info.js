@@ -7,8 +7,8 @@ import smallLogo from '../../images/navlogo1.png'
 
 const MapMarker = () => {
   return (
-    <div className="map-marker z-depth-2">
-      <div className="marker-text">PhoNow</div>
+    <div className="map-marker z-depth-2 animated pulse infinite">
+      <div className="marker-text f-2">PHO NOW</div>
       <img className="marker-logo z-depth-2" src={smallLogo} alt="smallLogo" />
     </div>
   )
@@ -34,7 +34,7 @@ export class Info extends Component {
     return (
       <div className="_Info animated fadeIn">
         <div className="row">
-          <div className="info-col col m12 l5">
+          <div className="info-col col m12 l5 animated fadeInUp">
             <div className="info-card z-depth-2 col s12 m4 l12 push-m8">
               <div className="info-header row f-2">
                 <div className="material-icons">location_on</div>

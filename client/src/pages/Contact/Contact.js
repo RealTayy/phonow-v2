@@ -106,7 +106,7 @@ export class Contact extends Component {
         <div className="mai-stalkerDiv-wrapper"></div>
         <div className="mai-stalkerDiv-bg-img contact-bg-img" style={{ background: `url(${bg})` }}></div>
         <ContentContainer
-          leftClasses="valign-wrapper"
+          leftClasses="valign-wrapper animated fadeInLeft"
           leftContainerContent={
             <ContentWrapper>
               <div className="message-container container">
@@ -126,7 +126,7 @@ export class Contact extends Component {
               </div>
             </ContentWrapper>
           }
-          rightClasses="valign-wrapper"
+          rightClasses="valign-wrapper animated fadeInRight"
           rightContainerContent={
             <div className="form-container">
               <div className="form-bg-img"></div>

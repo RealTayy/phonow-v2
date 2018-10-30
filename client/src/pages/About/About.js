@@ -44,10 +44,10 @@ class About extends Component {
           <div className="fog mai-stalkerDiv-wrapper"> </div>
           <div id="fog-one" className="mai-stalkerDiv-bg-img" style={{ background: `url(${fog}` }}></div>
           <div id="fog-two" className="mai-stalkerDiv-bg-img" style={{ background: `url(${fogr}` }}></div>
-          <ContentWrapper className="z-depth-2">
+          <ContentWrapper className="z-depth-2 animated fadeInUp">
             <ContentTitle className="f-opensans" pretitle="The" title="Story" />
             <div className="small-divider-white drop-shadow-1"></div>
-            <ContentBody className={"row"}>
+            <ContentBody className="row">
               <p className="col s12">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>

@@ -10,15 +10,18 @@
   }
 }
 
-._Menu {
+._Menu {  
   position: absolute;
   top: 0;
   color: #253031;
   z-index: 0;
 }
 
-._Menu .menu-wrapper {
-  background-color: #fff;
+._Menu .right-container {
+background-color: #fff;
+}
+
+._Menu .menu-wrapper {  
   height: 100%;
   overflow: auto;
 }
