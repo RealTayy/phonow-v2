@@ -32,7 +32,7 @@ export class Info extends Component {
 
   render() {    
     return (
-      <div className="_Info">
+      <div className="_Info animated fadeIn">
         <div className="row">
           <div className="info-col col m12 l5">
             <div className="info-card z-depth-2 col s12 m4 l12 push-m8">
@@ -76,7 +76,7 @@ export class Info extends Component {
         </div>
         <div id="info-map" className="info-map" >
           <div style={{ height: '100%', width: '100%' }}>
-            <GoogleMapReact
+            <GoogleMapReact className=""
               bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_KEY }}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}

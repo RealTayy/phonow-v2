@@ -19,7 +19,7 @@ export class Menu extends Component {
     const category = this.props.category || 'all';
     const filteredMenu = this.filterCategories(category, this.props.categories);
     return (
-      <div className="_Menu">
+      <div className="_Menu animated">
         <ContentContainer
           leftContainerContent={
             <Carousel imagesPath={imagesPath} />

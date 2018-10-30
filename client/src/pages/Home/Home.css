@@ -3,6 +3,7 @@
 ._Home {
   position: relative;
   color: #fff;
+  z-index: 0;
 }
 
 ._Home .mai-stalkerDiv-wrapper {
@@ -12,6 +13,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
 }
 
 ._Home .bg-img {
@@ -77,10 +79,10 @@
 }
 
 ._Home .home-nav span {
-  position: relative;
-  pointer-events: auto;
-  cursor: pointer;
-  z-index: 1;
+  /* position: relative; */
+  /* pointer-events: auto; */
+  /* cursor: pointer; */
+  /* z-index: 1; */
 }
 
 ._Home .home-carousel {
@@ -100,6 +102,15 @@
 
 ._Home .single-container {
   background-color: transparent;
+}
+
+._Home .home-nav a {
+  transition-property: color;
+  transition-duration: .5s;
+}
+
+._Home .home-nav a:hover {
+  color: yellow;
 }
 
 /* Medium and up */

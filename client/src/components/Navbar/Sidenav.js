@@ -32,9 +32,9 @@ export class Sidenav extends Component {
 					<Link to="/" className="sidenav-close">
 						<img className="sidenav-img" src={logo} alt="" />
 					</Link>
-					<h2>
-						asdf
-					</h2>
+					<div className="f-2">
+						PHO NOW
+					</div>
 				</h2>
 				<li><Link to={"/"} onClick={this.handleClick} className="link-home sidenav-close">Home</Link></li>
 				<li className="no-padding">

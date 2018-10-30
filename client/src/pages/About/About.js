@@ -39,7 +39,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className="_About">
+      <div className="_About animated">
         <SingleContainer bgImg={bg} className={`${this.props.className}`}>
           <div className="fog mai-stalkerDiv-wrapper"> </div>
           <div id="fog-one" className="mai-stalkerDiv-bg-img" style={{ background: `url(${fog}` }}></div>

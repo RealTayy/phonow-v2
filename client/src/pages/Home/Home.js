@@ -33,25 +33,22 @@ export class Home extends Component {
       eggroll,
     ]
     return (
-      <div className="_Home">
+      <div className="_Home animated">
         <div id="home-bg" className="bg-img"></div>
         <ContentContainer
           singleContainerContent={
             <div className="home-section">
+              <div className="mai-stalkerDiv-wrapper"></div>
               <div className="home-header center-align">
                 <img className="header-image" src={logo} alt="" />
                 <div className="header-text">
-                  <div className="text-main mai-textDyn f-opensans">PHO NOW</div>
-                  <div className="text-sub mai-textDyn f-oleo">VIETNAMESE NOODLE & GRILL</div>
+                  <div className="text-main mai-textDyn f-2">PHO NOW</div>
+                  <div className="text-sub mai-textDyn f-1">VIETNAMESE NOODLE & GRILL</div>
                 </div>
               </div>
               <div className="home-nav">
-                <div className="nav-list center-align f-raleway">
-                  <span className="nav-button">FOOD</span><span>  •  </span>
-                  <span className="nav-button">RESTAURANT</span><span>  •  </span>
-                  <span className="nav-button">STORY</span><span>  •  </span>
-                  <span className="nav-button">CONTACT</span>
-                  <div className="mai-stalkerDiv-wrapper"></div>
+                <div className="nav-list center-align f-3">
+                  <span className="nav-button">LOCALLY CRAFTED + MADE WITH LOVE</span>
                 </div>
               </div>
               <div className="home-carousel center-align">

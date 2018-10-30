@@ -11,9 +11,13 @@ export class Navbar extends Component {
 		activeTab: this.props.activeTab
 	}
 
-	handleClick = (e) => {
+	handleClick = (e) => {		
+		if(e.target.pathname === this.props.activeTab) return e.preventDefault()
 		if ($(".page-container").children().length > 1) return e.preventDefault()
-		this.props.setActiveCategory('all');
+		else {
+			this.props.setActiveCategory('all');			
+			this.transitionPage();
+		}
 	}
 
 	componentDidMount = () => {
@@ -37,6 +41,10 @@ export class Navbar extends Component {
 	animateActiveTab = ($activeTab) => {
 		$('.nav-links .nav-link').removeClass('active');
 		$activeTab.addClass('active');
+	}
+
+	transitionPage = (oldPage, newPage) => {
+		console.log($('.page-container').children().addClass('fadeOut'));
 	}
 
 	render() {

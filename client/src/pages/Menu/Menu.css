@@ -11,10 +11,13 @@
 }
 
 ._Menu {
-  color:#253031
+  position: relative;
+  color:#253031;
+  z-index: 0;
 }
 
 ._Menu .menu-wrapper {
+  background-color: #fff;
   height: 100%;
   overflow: auto;
 }

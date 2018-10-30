@@ -102,7 +102,7 @@ export class Contact extends Component {
 
   render() {
     return (
-      <div className="_Contact" >
+      <div className="_Contact animated" >
         <div className="mai-stalkerDiv-wrapper"></div>
         <div className="mai-stalkerDiv-bg-img contact-bg-img" style={{ background: `url(${bg})` }}></div>
         <ContentContainer

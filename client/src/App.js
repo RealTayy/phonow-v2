@@ -106,8 +106,8 @@ class App extends Component {
                   <Transition
                     key={pathname}
                     timeout={{
-                      enter: 1000,
-                      exit: 1000,
+                      enter: 750,
+                      exit: 750,
                     }}
                   >
                     <Route
