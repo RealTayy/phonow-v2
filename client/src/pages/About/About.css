@@ -1,6 +1,8 @@
 /* pages/About/About.css */
 
 ._About {
+  position: absolute;
+  top: 0;
   color: #fff;
 }
 
@@ -46,7 +48,6 @@
     display: flex;
     align-items: center;
   }
-  
   ._About ._ContentWrapper {
     margin: auto !important;
   }

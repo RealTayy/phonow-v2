@@ -31,7 +31,7 @@ export class Menu extends Component {
                   return (
                     <div className="category" key={category.id} data-categoryid={category.id}>
                       <div className="category-name f-2"><span>{category.display}</span></div>
-                      <div className="category-items">
+                      <div className="category-items f-3">
                         {category.items.map((item) => {
 
                           // Set price
@@ -49,18 +49,18 @@ export class Menu extends Component {
                           return (
                             <div className="item" key={item.name}>
                               {/* Name/Price */}
-                              <div className="item-name">
+                              <div className="item-name f-2">
                                 {item.name} • {displayPrice}
                               </div>
                               {/* Details */}
                               {(item.details) ?
-                                <div className="item-details">
+                                <div className="item-details f-3">
                                   {item.details}
                                 </div> : ''
                               }
                               {/* Options */}
                               {(item.options) ?
-                                <ul className="item-options">
+                                <ul className="item-options f-3">
                                   {item.options.map((option) => {
                                     return (
                                       <li className="option" key={option}>

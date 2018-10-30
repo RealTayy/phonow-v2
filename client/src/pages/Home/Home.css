@@ -1,7 +1,8 @@
 /* pages/Home/Home.css */
 
 ._Home {
-  position: relative;
+  position: absolute;
+  top: 0;
   color: #fff;
   z-index: 0;
 }
