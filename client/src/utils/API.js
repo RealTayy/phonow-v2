@@ -1,4 +1,4 @@
-// import axios from "axios";
+import axios from "axios";
 import * as menu from '../assets/data/menu.json';
 import * as categories from '../assets/data/categories.json';
 
