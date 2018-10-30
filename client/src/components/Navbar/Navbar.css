@@ -23,12 +23,16 @@
 }
 
 ._Navbar .nav-link {
-  transition-property: color;
-  transition-duration: .5s;
+  transition-property: background-color, color;
+  transition-duration: .3s;
 }
 
 ._Navbar .nav-link.active {  
   color: #FFD95D;
+}
+
+.logo-text {
+  text-transform: uppercase;
 }
 
 /* Small only */

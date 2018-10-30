@@ -24,7 +24,7 @@ export class MenuNav extends Component {
 		const activeCategory = window.location.pathname.split('/')[2];
 		return (
 			<div className={`_MenuNav hide-on-med-and-down z-depth-2 ${(this.props.isMenu) ? 'animated fadeInDown' : 'animated fadeOutUp'}`}>
-				<ul className="menunav-list">
+				<ul className="menunav-list f-3">
 					<li key={'all'}>
 						<Link className="menunav-link active" to={"/menu"} data-category="all" onClick={this.handleClick}>All</Link>
 					</li>

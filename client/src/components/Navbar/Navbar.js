@@ -46,12 +46,12 @@ export class Navbar extends Component {
 					<div className="nav-wrapper container">
 						<Link to="/" className="brand-logo">
 							<img className="logo-img" src={smallLogo} alt="" />
-							<span className="logo-text">PhoNow</span>
+							<span className="logo-text">Pho Now</span>
 						</Link>
 						<a href="#!" data-target="_Sidenav" className="sidenav-trigger">
 							<i className="material-icons">menu</i>
 						</a>
-						<ul className="nav-links right hide-on-med-and-down">
+						<ul className="nav-links right hide-on-med-and-down f-3">
 							<li><Link className="nav-link link-home" data-tabid="home" onClick={this.handleClick} to={"/"}>Home</Link></li>
 							<li><Link className="nav-link link-menu" data-tabid="menu" onClick={this.handleClick} to={"/menu"}>Menu</Link></li>
 							<li><Link className="nav-link link-info" data-tabid="info" onClick={this.handleClick} to={"/info"}>Info</Link></li>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import M from 'materialize-css';
 import $ from 'jquery';
 import './Sidenav.css';
+import logo from './images/logo.png'
 
 export class Sidenav extends Component {
 
@@ -24,14 +25,17 @@ export class Sidenav extends Component {
 		this.props.setActiveCategory(category);
 	}
 
-	render() { 		
+	render() {
 		return (
 			<ul className="_Sidenav sidenav" id="_Sidenav">
-				<div className="sidenav-header center-align">
+				<h2 className="sidenav-header center-align">
 					<Link to="/" className="sidenav-close">
-						<img className="sidenav-img" src="http://via.placeholder.com/128x128" alt="" />
+						<img className="sidenav-img" src={logo} alt="" />
 					</Link>
-				</div>
+					<h2>
+						asdf
+					</h2>
+				</h2>
 				<li><Link to={"/"} onClick={this.handleClick} className="link-home sidenav-close">Home</Link></li>
 				<li className="no-padding">
 					<ul className="collapsible collapsible-accordion sidenav-collapsible">

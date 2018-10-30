@@ -3230,7 +3230,7 @@ nav {
           height: inherit;
           line-height: inherit; }
       nav ul a:hover {
-        background-color: rgba(0, 0, 0, 0.1); }
+        color: #92C14D; }
     nav ul.left {
       float: left; }
   nav form {
