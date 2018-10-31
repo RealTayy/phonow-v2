@@ -49,14 +49,14 @@ class About extends Component {
             <div className="small-divider-white drop-shadow-1"></div>
             <ContentBody className="row">
               <p className="col s12">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                Opening in 2018, Pho Now is a family owned Vietnamese restaurant serving authentic cuisine from the heart of Saigon. We are located in Houston, Texas on the intersection of NorthWest FWY and Tidwell.
+			  </p>
               <p className="col s12">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                </p>
-              <p className="col s12">
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                </p>
+                From our mothers kitchen to your table. Our menu is filled with fresh ingredients & traditional dishes straight from the city of Saigon, including one of the most world wide known bowl, PHO, also known as Vietnamese Beef Soup Noodle. Pho is a Vietnamese rice noodle soup, accompanied with sweet basil, lime or lemon, chili peppers, bean sprouts and other herbs/ Slow-cooked for several hours, this comfort food has always resulted in a clear beef broth and slim slices of beef and/or chicken. Pho Now was born out of a love and craving for the soup. Here at Pho Now our chef applies authentic Vietnamese flavors and techniques that allow the ingredients to be expressed without boundaries.
+			  </p>								
+			  <p className="col s12">
+				Cooked for over 17 hours, our broth is rich and flavorful made with pure bone broth. We are thrilled to share with you the most iconic dishes from the streets of Saigon, Vietnam. Come visit us soon to experience the flavors of Vietnam from the other side of the world.
+              </p>
             </ContentBody>
           </ContentWrapper>
         </SingleContainer>

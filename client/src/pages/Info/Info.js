@@ -44,12 +44,12 @@ export class Info extends Component {
               </div>
               <div className="info-body row">
                 <div className="col s4 m12 l4"><i className="fas fa-phone-square"></i> Phone:</div>
-                <div className="col s8 m12 l8">281-132-4568</div>
+                <div className="col s8 m12 l8">713-699-4444</div>
                 <div className="col s4 m12 l4"><i className="fas fa-envelope-square"></i> Email:</div>
                 <div className="col s8 m12 l8">PhoNowTexas@gmail.com</div>
                 <div className="col s4 m12 l4"><i className="fas fa-building"></i> Address:</div>
-                <div className="col s8 m12 l8">1445 Fake Street</div>
-                <div className="col s8 m12 l8 push-s4 push-l4">Houston, TX, 77498</div>
+                <div className="col s8 m12 l8">536 E Tidwell Rd</div>
+                <div className="col s8 m12 l8 push-s4 push-l4">Houston, TX, 77022</div>
               </div>
             </div>
             <div className="info-card z-depth-2 col s12 m4 l12 pull-m4">
@@ -67,9 +67,9 @@ export class Info extends Component {
                 <div className="col s4 m12 l4">Thursday:</div>
                 <div className="col s8 m12 l8">11:00am - 10:00pm</div>
                 <div className="col s4 m12 l4">Friday:</div>
-                <div className="col s8 m12 l8">11:00am - 10:00pm</div>
+                <div className="col s8 m12 l8">11:00am - 11:00pm</div>
                 <div className="col s4 m12 l4">Saturday:</div>
-                <div className="col s8 m12 l8">11:00am - 10:00pm</div>
+                <div className="col s8 m12 l8">11:00am - 11:00pm</div>
                 <div className="col s4 m12 l4">Sunday:</div>
                 <div className="col s8 m12 l8">11:00am - 10:00pm</div>
               </div>

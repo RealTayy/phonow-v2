@@ -118,7 +118,7 @@ export class Contact extends Component {
                     <div className="intro-header">A message from Uyen Tran</div>
                     <div className="intro-subheader">PHO NOW FOUNDER AND OWNER</div>
                     <div className="small-divider drop-shadow-1"></div>
-                    <div className="intro-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloremque? Reiciendis ea esse dolorum vitae tempora veniam, illum iusto, labore soluta modi reprehenderit asperiores sequi doloribus unde voluptate in enim.</div>
+                    <div className="intro-body">Hi and thanks for visiting us at Pho Now! We hope you have a great experience while here and hope to see you soon. If you felt we fell short of an amazing experience, or just have general question please let us know. We look forward to hearing from you.</div>
                     <div className="intro-thanks">Thank You!</div>
                   </div>
                   <div className="message-contactcol s12">                </div>
