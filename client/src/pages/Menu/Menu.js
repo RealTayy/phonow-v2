@@ -51,8 +51,7 @@ export class Menu extends Component {
   }
 
   render() {
-    const imagesPath = images;
-    const category = this.props.category || 'all';
+    const imagesPath = images;    
     return (
       <div className="_Menu animated">
         <ContentContainer
