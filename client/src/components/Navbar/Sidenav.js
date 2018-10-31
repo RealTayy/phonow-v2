@@ -4,6 +4,7 @@ import M from 'materialize-css';
 import $ from 'jquery';
 import './Sidenav.css';
 import logo from './images/logo.png'
+import maiLogo from '../../images/maicoding-b.png';
 
 export class Sidenav extends Component {
 
@@ -64,6 +65,12 @@ export class Sidenav extends Component {
 				<li><Link to={"/info"} onClick={this.handleClick} className="link-info sidenav-close">Store Info</Link></li>
 				<li><Link to={"/about"} onClick={this.handleClick} className="link-about sidenav-close">About Us</Link></li>
 				<li><Link to={"/contact"} onClick={this.handleClick} className="link-contact sidenav-close">Contact</Link></li>
+				<li className="sidenav-close">
+					<a href="http://www.maicoding.me/" target="_blank" rel="noopener noreferrer">
+						<div className="credit-text left">Made by: maiCoding</div>
+						<img className="credit-logo right" src={maiLogo} alt="" />
+					</a>
+				</li>
 			</ul>
 		)
 	}

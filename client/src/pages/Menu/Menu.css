@@ -10,7 +10,7 @@
   }
 }
 
-._Menu {  
+._Menu {
   position: absolute;
   top: 0;
   color: #253031;
@@ -18,10 +18,10 @@
 }
 
 ._Menu .right-container {
-background-color: #fff;
+  background-color: #fff;
 }
 
-._Menu .menu-wrapper {  
+._Menu .menu-wrapper {
   height: 100%;
   overflow: auto;
 }
@@ -30,6 +30,12 @@ background-color: #fff;
   margin: auto;
   width: 85%;
   padding: 1.5rem;
+}
+
+._Menu .category {
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: .5s;
 }
 
 ._Menu .category-name {

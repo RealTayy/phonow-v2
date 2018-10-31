@@ -3,34 +3,69 @@ import { ContentContainer } from '../../components/Container';
 import { Carousel } from '../../components/Carousel/Carousel';
 import './Menu.css';
 import images from './images';
+import $ from 'jquery';
 
 export class Menu extends Component {
   componentDidMount = () => {
     this.props.setActiveTab('/menu');
   }
 
-  filterCategories = (filter, categories) => {
-    if (filter === 'all' || '') return categories;
-    else return categories.filter((category) => category.id === filter);
+  componentDidUpdate = (prevProps, prevState) => {
+    const $categories = $('.category');
+    for (let i = 0; i < $categories.length; i++) {
+      const category = $categories[i];
+      $(category).height(category.scrollHeight);
+    }
+    this.animateFilter(this.props.category);
+  }
+
+  animateFilter = (filter) => {
+    const $categories = $('.category');
+    if (filter === 'all' || '') {
+      for (let i = 0; i < $categories.length; i++) {
+        const category = $categories[i];
+        $(category).removeClass('fadeOut');
+        $(category).addClass('fadeIn');
+        $(category).height(category.scrollHeight);
+      }
+    }
+    else {
+      const $category = $(`.category[data-categoryid='${filter}']`)
+      if (!$category[0]) return
+      else {
+        for (let i = 0; i < $categories.length; i++) {
+          const category = $categories[i];
+          if ($(category).data('categoryid') === filter) {
+            $(category).removeClass('fadeOut fadeIn');
+            $(category).addClass('fadeIn');
+            $(category).height(`${$category[0].scrollHeight}px`)
+          }
+          else {
+            $(category).removeClass('fadeIn fadeOut')
+            $(category).addClass('fadeOut')
+            $(category).height('0px')
+          }
+        }
+      }
+    }
   }
 
   render() {
     const imagesPath = images;
     const category = this.props.category || 'all';
-    const filteredMenu = this.filterCategories(category, this.props.categories);
     return (
       <div className="_Menu animated">
         <ContentContainer
           leftClasses="animated fadeInLeft"
           leftContainerContent={
             <Carousel imagesPath={imagesPath} />
-          }          
+          }
           rightContainerContent={
             <div className="menu-wrapper animated fadeInRight">
               <div className="menu-content">
-                {filteredMenu.map((category) => {
+                {this.props.categories.map((category) => {
                   return (
-                    <div className="category" key={category.id} data-categoryid={category.id}>
+                    <div className="category animated fadeIn" key={category.id} data-categoryid={category.id}>
                       <div className="category-name f-2"><span>{category.display}</span></div>
                       <div className="category-items f-3">
                         {category.items.map((item) => {
