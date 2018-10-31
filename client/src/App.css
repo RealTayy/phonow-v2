@@ -1,5 +1,10 @@
 /* src/App.css */
 
+.page-footer {
+  transition-property: background-color;
+  transition-duration: .75s;  
+}
+
 ._App {
   overflow: hidden;
 }

@@ -5,10 +5,9 @@
   height: 48px;
   padding-top: 0 !important;
   text-transform: uppercase;
-  transition-property: background-color, box-shadow;
-  transition-duration: .75s;    
   line-height: 48px;
   font-weight: bold;
+  background-color: #253031 !important;
 }
 
 ._Footer .copyright {

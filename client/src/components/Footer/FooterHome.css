@@ -6,9 +6,6 @@
   padding-top: 0 !important;
 	text-transform: uppercase;	
 	line-height: 48px;
-	transition-property: background-color, box-shadow;
-  transition-duration: .750s;  
-	background-color: transparent !important;
 	font-weight: bold;
 }
 

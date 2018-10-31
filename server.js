@@ -66,7 +66,6 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static(path.join(__dirname, './client', 'build')));	
 }
 
-console.log(process.env.USER);
 // imports in ./routes/index.js (contains API and VIEW routes);
 const routes = require("./routes");
 // Sets express to use routes
