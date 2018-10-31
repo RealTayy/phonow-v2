@@ -8,6 +8,7 @@
   line-height: 48px;
   font-weight: bold;
   background-color: #253031 !important;
+  box-shadow: 0 -1px 4px -1px rgba(0, 0, 0, 0.3);
 }
 
 ._Footer .copyright {

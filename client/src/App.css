@@ -1,7 +1,7 @@
 /* src/App.css */
 
 .page-footer {
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   transition-duration: .75s;  
 }
 
