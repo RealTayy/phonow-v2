@@ -9,6 +9,7 @@ export class Carousel extends Component {
 			autoplaySpeed: 5000,
 			arrows: false,
 			pauseOnHover: false,
+			lazyLoad: 'progressive',
 		}
 		return (
 			<Slider className="_Carousel" {...settings}>

@@ -16,6 +16,7 @@ export class AnimatedCarousel extends Component {
 			pauseOnHover: false,
 			draggable: false,
 			swipe: false,
+			lazyLoad: 'progressive',
 			beforeChange: (oldIndex, newIndex) => {
 				let $allImg = $(`.${this.props.parentClass} ._AnimatedCarousel .slick-slide img`);
 				let $newImg = $(`.${this.props.parentClass} ._AnimatedCarousel .slick-slide[data-index=${newIndex}] img`);				
