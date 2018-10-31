@@ -6,8 +6,7 @@
   padding-top: 0 !important;
   text-transform: uppercase;
   transition-property: background-color, box-shadow;
-  transition-duration: .3s;  
-  box-shadow: 0 -1px 4px -1px rgba(0, 0, 0, 0.3);
+  transition-duration: .75s;    
   line-height: 48px;
   font-weight: bold;
 }

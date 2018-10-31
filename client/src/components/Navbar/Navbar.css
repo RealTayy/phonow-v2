@@ -7,7 +7,7 @@
 
 ._Navbar nav {
   transition-property: background-color, box-shadow;
-  transition-duration: .3s;
+  transition-duration: .75s;
 }
 
 ._Navbar .logo-img {

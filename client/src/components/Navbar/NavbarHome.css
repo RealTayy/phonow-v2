@@ -29,8 +29,7 @@
 
 ._NavbarHome nav {
   transition-property: background-color, box-shadow;
-  transition-duration: 1s;
-  transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition-duration: .75s;  
   background-color: transparent;
   box-shadow: none !important;
   font-weight: bold;
