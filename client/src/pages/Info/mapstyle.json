@@ -84,18 +84,6 @@
 			]
 	},
 	{
-			"featureType": "road",
-			"elementType": "labels",
-			"stylers": [
-					{
-							"visibility": "off"
-					},
-					{
-							"lightness": "100"
-					}
-			]
-	},
-	{
 			"featureType": "road.highway",
 			"elementType": "geometry.fill",
 			"stylers": [

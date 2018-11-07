@@ -7,12 +7,14 @@ import smallLogo from '../../images/navlogo1.png'
 
 const MapMarker = () => {
   return (
-    <div className="map-marker z-depth-2 pulse">
-      <div className="marker-text f-2">PHO NOW</div>
-      <div className="marker-frame pulse">
-        <img className="marker-logo z-depth-2" src={smallLogo} alt="smallLogo" />
-      </div>
-    </div>
+    <a href="https://www.google.com/maps/search/?api=1&query=536+E+Tidwell+rd" rel="noopener noreferrer" target="_blank">
+      <div className="map-marker z-depth-2 pulse">
+        <div className="marker-text f-2">PHO NOW</div>
+        <div className="marker-frame pulse">
+          <img className="marker-logo z-depth-2" src={smallLogo} alt="smallLogo" />
+        </div>
+      </div >
+    </a >
   )
 };
 export class Info extends Component {
