@@ -2,7 +2,7 @@
 
 ._Info {
   position: absolute;
-  top: 0;  
+  top: 0;
   height: 100%;
   width: 100%;
   overflow: auto;
@@ -87,8 +87,8 @@
   display: inline-block;
   left: 50%;
   -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
   top: -15px;
   padding: 9px 4px;
   background: #253031;
@@ -101,8 +101,8 @@
   display: inline-block;
   left: 50%;
   -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
   top: -10px;
   padding: 9px 4px;
   background: #253031;
@@ -126,7 +126,7 @@
     padding: 0 !important;
     margin: 0 !important;
     -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
     max-width: initial;
   }
   ._Info .info-card {
@@ -134,7 +134,7 @@
     margin-bottom: 0px;
     max-width: initial;
     -webkit-box-shadow: initial;
-            box-shadow: initial;
+    box-shadow: initial;
   }
 }
 
@@ -149,5 +149,14 @@
     padding: 24px !important;
     margin: 0 !important;
     max-width: initial;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .info-row {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
   }
 }

@@ -37,7 +37,7 @@ export class Info extends Component {
   render() {
     return (
       <div className="_Info animated fadeIn">
-        <div className="row">
+        <div className="info-row row">
           <div className="info-col col m12 l5 animated fadeInUp">
             <div className="info-card z-depth-2 col s12 m4 l12 push-m8">
               <div className="info-header row f-2">
