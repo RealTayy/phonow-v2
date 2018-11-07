@@ -38,8 +38,8 @@ export class Info extends Component {
     return (
       <div className="_Info animated fadeIn">
         <div className="info-row row">
-          <div className="info-col col m12 l5 animated fadeInUp">
-            <div className="info-card z-depth-2 col s12 m4 l12 push-m8">
+          <div className="info-col col s12 m5 animated fadeInUp">
+            <div className="info-card z-depth-2 col s12">
               <div className="info-header row f-2">
                 <div className="material-icons">location_on</div>
                 <div>CONTACT & DIRECTIONS</div>
@@ -54,7 +54,7 @@ export class Info extends Component {
                 <div className="col s8 m12 l8 push-s4 push-l4">Houston, TX, 77022</div>
               </div>
             </div>
-            <div className="info-card z-depth-2 col s12 m4 l12 pull-m4">
+            <div className="info-card z-depth-2 col s12">
               <div className="info-header row f-2">
                 <div className="material-icons">store</div>
                 <div>HOURS OF OPERATION</div>
