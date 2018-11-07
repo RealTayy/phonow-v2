@@ -1,6 +1,6 @@
 [
   {
-    "name": "Vietnamese Eggs Rolls (2)",
+    "name": "Vietnamese Egg Rolls (2)",
     "category": "appetizers",
     "price": 2.99,
     "options": [
@@ -51,17 +51,10 @@
   {
     "name": "Boneless Chicken Wings (6)",
     "category": "appetizers",
-    "price": 5.99,
-    "options": [
-      "Plain",
-      "Hot",
-      "BBQ",
-      "Garlic Parmesan",
-      "Lemon Pepper"
-    ]
+    "price": 5.99
   },
   {
-    "name": "Cheese Puff Crab Rangoon",
+    "name": "Cheese Puff Crab Rangoon (6)",
     "category": "appetizers",
     "price": 3.99
   },
@@ -86,7 +79,7 @@
     "price": 1.00
   },
   {
-    "name": "Bowl of Egg Rice",
+    "name": "Bowl of Egg Noodles",
     "category": "sides",
     "price": 2.00
   },
@@ -150,7 +143,7 @@
     "name": "Special Combination",
     "category": "noodlesoup",
     "price": 8.99,
-    "details": "Eye round steak, well done flank, fatty birsket, soft tendon, beef tripe, beef meatballs"
+    "details": "Eye round steak, well done flank, fatty brisket, soft tendon, beef tripe, beef meatballs"
   },
   {
     "name": "Chicken Noodle Soup",
@@ -215,10 +208,10 @@
       "Shrimp",
       "Pork, chicken, shrimp"
     ],
-    "details": "Hot Jasmine fried rice with egg, bean sprout, and green onion"
+    "details": "Hot Jasmine fried rice with egg, bean sprouts, and green onion"
   },
   {
-    "name": "Steam Rice Plates",
+    "name": "Steamed Rice Plates",
     "category": "riceplates",
     "price": 7.99,
     "options": [
@@ -227,7 +220,7 @@
       "Charbroiled chicken",
       "Charbroiled beef (add $1)",
       "Shrimp (add $1)",
-      "Tofu and vegatable"
+      "Tofu and vegatables"
     ]
   },
   {
@@ -242,13 +235,13 @@
       "Egg rolls",
       "Tofu & vegetable"
     ],
-    "details": "Served with lettuce, cucumber, bean sprout, carrot, green onion, cilantro, peanuts and homemade fish sauce"
+    "details": "Served with lettuce, cucumber, bean sprouts, carrots, green onion, cilantro, peanuts and homemade fish sauce"
   },
   {
     "name": "Combination Noodles",
     "category": "noodlebowls",
-    "price": 7.99,
-    "details": "Pork, chicken, shrimp, and egg rolls. Served with lettuce, cucumber, bean sprout, carrot, green onion, cilantro, peanuts and homemade fish sauce"
+    "price": 8.99,
+    "details": "Pork, chicken, shrimp, and egg rolls. Served with lettuce, cucumber, bean sprouts, carrots, green onion, cilantro, peanuts and homemade fish sauce"
   },
   {
     "name": "Roasted Chicken",
@@ -269,9 +262,10 @@
     "options": [
       "Chicken",
       "Beef",
-      "Shrimp"
+      "Shrimp",
+      "Combo (add $2)"
     ],
-    "details": "Lo Mein noodles stir fried with chicken, beef, or shrimp, yellow onions, bean sprouts, cabbage, green onions and cilantro."
+    "details": "Lo mein noodles stir fried with chicken, beef, or shrimp, yellow onions, bean sprouts, cabbage, green onions and cilantro."
   },
   {
     "name": "Chow Mein",
@@ -283,7 +277,7 @@
       "Shrimp",
       "Combo (add $2)"
     ],
-    "details": "Thin egg noodles stir fried with chicken, beef, shrimp, BBQ pork, mushroom, carrots, baby born, green onions, cilantro, and assorted greens onion."
+    "details": "Thin egg noodles stir fried with chicken, beef, shrimp, BBQ pork, mushrooms, carrots, baby corn, yellow onions, cilantro, and assorted green onion."
   },
   {
     "name": "Pad Thai",
@@ -295,7 +289,7 @@
       "Shrimp",
       "Combo (add $2)"
     ],
-    "details": "Thin rice noodle stir fried chicken, beef, or shrimp. Also, eggs, green onions, and cilantro. Served with bean sprouts and peanuts."
+    "details": "Thin rice noodles, stir fried chicken, beef, or shrimp. Also, eggs, green onions, and cilantro. Served with bean sprouts and peanuts."
   },
   {
     "name": "House Fried Rice",
@@ -326,7 +320,7 @@
       "Beef pork belly, ham, and pate",
       "Fried tofu or fried egg ($3.99)"
     ],
-    "details": "Fresh french break with a butter spread, fresh slices of cucumbers, sweet and sour carrots, cilantro, and fresh jalapenos"
+    "details": "Fresh french bread with a butter spread, fresh slices of cucumbers, sweet and sour carrots, cilantro, fresh jalapeños, and pate"
   },
   {
     "name": "Kid's meal",
@@ -334,10 +328,10 @@
     "price": 4.99,
     "options": [
       "Well done lean meat noodle soup",
-      "Steam rice with chicken, pork or beef",
+      "Steamed rice with chicken, pork or beef",
       "Chicken nuggets with french fries"
     ],
-    "details": "All Kid's meal served with an eggroll"
+    "details": "All Kid's meals served with an eggroll"
   },
   {
     "name": "Tapioca drinks",
@@ -365,11 +359,6 @@
     "name": "Soft Drinks (Can)",
     "category": "drinks",
     "price": 1.35
-  },
-  {
-    "name": "Fountain Drinks",
-    "category": "drinks",
-    "price": 1.99
   },
   {
     "name": "Iced tea",
