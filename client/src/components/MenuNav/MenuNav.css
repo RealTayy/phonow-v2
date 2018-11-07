@@ -28,8 +28,12 @@
 }
 
 ._MenuNav a {
+  -webkit-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
   transition-property: color, background-color;
-  transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
   color: #92C24C;
   padding: 0 10px;
   display: inline-block;

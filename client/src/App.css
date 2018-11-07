@@ -1,8 +1,14 @@
 /* src/App.css */
 
 .page-footer {
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, -webkit-box-shadow;
+  -o-transition-property: background-color, box-shadow;
   transition-property: background-color, box-shadow;
-  transition-duration: .75s;  
+  transition-property: background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: .75s;
+       -o-transition-duration: .75s;
+          transition-duration: .75s;  
 }
 
 ._App {

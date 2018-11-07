@@ -86,7 +86,9 @@
   height: 45px;
   display: inline-block;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
   top: -15px;
   padding: 9px 4px;
   background: #253031;
@@ -98,7 +100,9 @@
   height: 45px;
   display: inline-block;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
   top: -10px;
   padding: 9px 4px;
   background: #253031;
@@ -121,14 +125,16 @@
     position: relative;
     padding: 0 !important;
     margin: 0 !important;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
     max-width: initial;
   }
   ._Info .info-card {
     overflow: hidden !important;
     margin-bottom: 0px;
     max-width: initial;
-    box-shadow: initial;
+    -webkit-box-shadow: initial;
+            box-shadow: initial;
   }
 }
 

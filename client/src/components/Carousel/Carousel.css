@@ -21,7 +21,8 @@
 ._Carousel .slick-slide img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 600px) {
