@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { ContentContainer } from '../../components/Container';
 import './Contact.css'
 import bg from '../../images/contact/bg.jpg';
-import uyen from '../../images/contact/uyen.jpg';
+import uyen from '../../images/contact/uyen.png';
 import { maiStalkerDiv } from '../../assets/javascript/maiHelpers';
 import { ContentTitle, ContentWrapper, ContentBody } from '../../components/Content';
 import $ from 'jquery';
