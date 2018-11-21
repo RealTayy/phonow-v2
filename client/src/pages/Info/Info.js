@@ -61,15 +61,15 @@ export class Info extends Component {
               </div>
               <div className="info-body row">
                 <div className="col s4 m12 l4">Monday:</div>
-                <div className="col s8 m12 l8">11:00am - 10:00pm</div>
+                <div className="col s8 m12 l8">10:00am - 09:00pm</div>
                 <div className="col s4 m12 l4">Tuesday:</div>
-                <div className="col s8 m12 l8">11:00am - 10:00pm</div>
+                <div className="col s8 m12 l8">10:00am - 09:00pm</div>
                 <div className="col s4 m12 l4">Wednesday:</div>
-                <div className="col s8 m12 l8">11:00am - 10:00pm</div>
+                <div className="col s8 m12 l8">10:00am - 09:00pm</div>
                 <div className="col s4 m12 l4">Thursday:</div>
-                <div className="col s8 m12 l8">11:00am - 10:00pm</div>
+                <div className="col s8 m12 l8">10:00am - 09:00pm</div>
                 <div className="col s4 m12 l4">Friday:</div>
-                <div className="col s8 m12 l8">11:00am - 11:00pm</div>
+                <div className="col s8 m12 l8">10:00am - 09:00pm</div>
                 <div className="col s4 m12 l4">Saturday:</div>
                 <div className="col s8 m12 l8">10:00am - 09:00pm</div>
                 <div className="col s4 m12 l4">Sunday:</div>
