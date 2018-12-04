@@ -14,8 +14,7 @@ export class MenuNav extends Component {
 	}
 
 	setActiveCategory = (category) => {
-		if ($(`.menunav-link[data-category="${category}"]`).hasClass('active')) return;
-		console.log(category);	
+		if ($(`.menunav-link[data-category="${category}"]`).hasClass('active')) return;			
 		this.props.setActiveCategory(category);
 		$('.menunav-link').removeClass('active');
 		$(`.menunav-link[data-category="${category}"]`).addClass('active');

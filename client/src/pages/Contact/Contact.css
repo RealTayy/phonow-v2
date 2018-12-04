@@ -91,6 +91,10 @@
   opacity: 1;
 }
 
+._Contact .mai-stalkerDiv-wrapper {
+  background-color: black;
+}
+
 @media only screen and (min-height: 750px) {
   ._Contact .intro-picture img {
     height: 150px;
