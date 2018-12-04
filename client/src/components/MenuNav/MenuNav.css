@@ -1,5 +1,8 @@
 ._MenuNav {
   position: absolute;
+  box-sizing: content-box;
+  top: 0px;
+  padding-top: 56px;
   height: 42px;
   z-index: -1;
   background: #567B37;
