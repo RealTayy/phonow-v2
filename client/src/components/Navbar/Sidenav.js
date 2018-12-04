@@ -17,15 +17,18 @@ export class Sidenav extends Component {
 	};
 
 	handleClick = (e) => {
-		if (e.target.pathname === this.props.activeTab) return e.preventDefault()
+		if (e.target.pathname === this.props.activeTab) {
+			this.props.setActiveCategory('all');
+			return e.preventDefault() 
+		}
 		if ($(".page-container").children().length > 1) return e.preventDefault()
-		else {
+		else {						
 			this.props.setActiveCategory('all');
 			this.transitionPage();
 		}
 	}
 
-	handleMenuClick = (e) => {
+	handleMenuClick = (e) => {		
 		let category = $(e.target).data('category');
 		category = category.toLowerCase().replace(/ /g, '')
 		this.props.setActiveCategory(category);
@@ -55,7 +58,7 @@ export class Sidenav extends Component {
 								<ul>
 									<li><Link to={"/menu"} onClick={this.handleClick} className="link-menu sidenav-close">All Items</Link></li>
 									{this.props.categories.map((category) => {
-										return <li key={category.id}><Link data-category={category.id} to={`/menu`} onClick={this.handleMenuClick} className="link-menu sidenav-close">{category.display}</Link></li>
+										return <li key={category.id}><Link className="link-menu sidenav-close" data-category={category.id} to={`/menu`} onClick={this.handleMenuClick}>{category.display}</Link></li>
 									})}
 								</ul>
 							</div>
