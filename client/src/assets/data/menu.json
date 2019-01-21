@@ -14,6 +14,7 @@
     "price": 2.99,
     "options": [
       "Shrimp",
+      "Shrimp and Pork",
       "Tofu"
     ]
   },
@@ -62,6 +63,11 @@
     "name": "Wonton Soup",
     "category": "appetizers",
     "price": 4.99
+  },
+  {
+    "name": "French Fries",
+    "category": "appetizers",
+    "price": 3.99
   },
   {
     "name": "French Bread",

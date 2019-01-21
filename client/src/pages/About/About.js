@@ -49,7 +49,7 @@ class About extends Component {
             <div className="small-divider-white drop-shadow-1"></div>
             <ContentBody className="row">
               <p className="col s12">
-                Opening in 2018, Pho Now is a family owned Vietnamese restaurant serving authentic cuisine from the heart of Saigon. We are located in Houston, Texas on the intersection of NorthWest FWY and Tidwell.
+                Opening in 2018, Pho Now is a family owned Vietnamese restaurant serving authentic cuisine from the heart of Saigon. We are located in Houston, Texas on the intersection of North FWY and Tidwell.
 			  </p>
               <p className="col s12">
                 From our mothers kitchen to your table. Our menu is filled with fresh ingredients & traditional dishes straight from the city of Saigon, including one of the most world wide known bowl, PHO, also known as Vietnamese Beef Soup Noodle. Pho is a Vietnamese rice noodle soup, accompanied with sweet basil, lime or lemon, chili peppers, bean sprouts and other herbs/ Slow-cooked for several hours, this comfort food has always resulted in a clear beef broth and slim slices of beef and/or chicken. Pho Now was born out of a love and craving for the soup. Here at Pho Now our chef applies authentic Vietnamese flavors and techniques that allow the ingredients to be expressed without boundaries.
