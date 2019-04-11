@@ -15,20 +15,39 @@ require('dotenv').config({ path: envDir });
 /* EMAIL SENDER */
 // Sends email from GMAIL with Node.js
 const nodemailer = require('nodemailer');
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
+
+const oauth2Client = new OAuth2(
+	process.env.CLIENT_ID, // ClientID
+	process.env.CLIENT_SECRET, // Client Secret
+	"https://developers.google.com/oauthplayground" // Redirect URL
+);
+
+oauth2Client.setCredentials({
+	refresh_token: process.env.OAUTH_REFRESH_TOKEN
+});
+
+const accessToken = oauth2Client
+	.refreshAccessToken()
+	.then(tokens => tokens.credentials)
+	.then(credentials => credentials.access_token);
+
 const transporter = nodemailer.createTransport({
 	host: 'smtp.gmail.com',
-	service: 'Gmail',
+	service: 'gmail',
 	auth: {
 		type: 'OAuth2',
 		user: process.env.USER,
-		clientId: process.env.CLIENT_ID,
+		clientId: process.env.CLIENT_ID, 
 		clientSecret: process.env.CLIENT_SECRET,
 		refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+		accessToken: accessToken
 	},
-	tls: {
-		rejectUnauthorized: false
-	},
-	secure: true,
+	// tls: {
+	// 	rejectUnauthorized: false
+	// },
+	// secure: true,
 });
 
 /*********************************|
@@ -66,7 +85,6 @@ router.route("/")
 			}
 			transporter.close();
 		});
-
 	});
 
 /***********|
