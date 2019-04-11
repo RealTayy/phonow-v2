@@ -49,7 +49,7 @@ export class Contact extends Component {
     if (!(email.name && email.email && email.inquiry && email.message))
       return this.helpText('Please fill out required fields', 'error', 2000);
     // phone number validator
-    if (this.state.tel.length !== 10)
+    if (!(this.state.tel.length === 0 || this.state.tel.length === 10))
       return this.helpText('Please enter in valid phone number', 'error', 2000);
     // email validator
     if ($('#email').hasClass('invalid'))
