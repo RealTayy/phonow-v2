@@ -1,4 +1,5 @@
 export default [
+	// Appetizers
 	{
 		display: "Appetizers",
 		id: "appetizers",
@@ -75,6 +76,7 @@ export default [
 			}
 		]
 	},
+	// Sides
 	{
 		display: "Sides",
 		id: "sides",
@@ -131,6 +133,7 @@ export default [
 			}
 		]
 	},
+	// Noodle Soup
 	{
 		display: "Noodle Soup",
 		id: "noodlesoup",
@@ -222,6 +225,7 @@ export default [
 			}
 		]
 	},
+	// Rice Places
 	{
 		display: "Rice Plates",
 		id: "riceplates",
@@ -253,6 +257,7 @@ export default [
 			}
 		]
 	},
+	// Noodle Bowls
 	{
 		display: "Noodle Bowls",
 		id: "noodlebowls",
@@ -279,6 +284,7 @@ export default [
 			}
 		]
 	},
+	// House Specials
 	{
 		display: "House Specials",
 		id: "housespecials",
@@ -351,6 +357,7 @@ export default [
 			}
 		]
 	},
+	// Sandwiches
 	{
 		display: "Sandwiches",
 		id: "sandwiches",
@@ -370,6 +377,7 @@ export default [
 			}
 		]
 	},
+	// Kids Meal
 	{
 		display: "Kids Meal",
 		id: "kidsmeal",
@@ -387,6 +395,7 @@ export default [
 			}
 		]
 	},
+	// Drinks
 	{
 		display: "Drinks",
 		id: "drinks",
@@ -470,6 +479,7 @@ export default [
 			}
 		]
 	},
+	// Desserts
 	{
 		display: "Desserts",
 		id: "desserts",
