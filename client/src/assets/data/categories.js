@@ -385,13 +385,16 @@ export default [
 			{
 				name: "Kid's meal",
 				category: "kidsmeal",
-				price: 4.99,
+				price: 5.25,
 				options: [
 					"Well done lean meat noodle soup",
-					"Steamed rice with chicken, pork or beef",
+					"White chicken meat noodle soup",
+					"Steamed rice with grilled pork",
+					"Steamed rice with grilled chicken",
+					"Steamed rice with grilled beef",
 					"Chicken nuggets with french fries"
 				],
-				details: "All Kid's meals served with an eggroll"
+				details: "Served with an eggroll"
 			}
 		]
 	},
@@ -403,24 +406,25 @@ export default [
 			{
 				name: "Tapioca drinks",
 				category: "drinks",
-				price: 3.99,
+				price: 4.49,
 				options: [
 					"Mango",
 					"Strawberry",
 					"Banana",
 					"Pineapple",
 					"Kiwi",
+					"Papaya",
 					"Avocado",
 					"Coconut",
 					"Taro",
-					"Papaya",
 					"Coffee",
 					"Thai Tea",
 					"Milk Tea",
 					"Green Milk Tea",
-					"Passion Fruit Tea"
+					"Passion Fruit Tea",
+					"Chamoy smoothie ($5.25) - Mango or Strawberry",
 				],
-				details: "Served with tapioca pearls or rainbow jelly"
+				details: "Served with tapioca pearls, rainbow jelly, or both"
 			},
 			{
 				name: "Soft Drinks (Can)",
@@ -428,7 +432,7 @@ export default [
 				price: 1.35
 			},
 			{
-				name: "Iced tea",
+				name: "Iced tea (free refills)",
 				category: "drinks",
 				price: 1.99
 			},
@@ -438,19 +442,14 @@ export default [
 				price: 1.99
 			},
 			{
-				name: "Syrup",
+				name: "Sweet tea (free refills)",
 				category: "drinks",
-				price: 1.99,
-				options: [
-					"Raspberry",
-					"Strawberry",
-					"Cherry"
-				]
+				price: 2.50
 			},
 			{
 				name: "Fresh lemonade",
 				category: "drinks",
-				price: 2.35
+				price: 2.50
 			},
 			{
 				name: "Sweet lemon iced tea",
@@ -475,7 +474,7 @@ export default [
 			{
 				name: "Vietnamese Coffee (Hot or Cold)",
 				category: "drinks",
-				price: 3.25
+				price: 3.50
 			}
 		]
 	},
@@ -485,24 +484,14 @@ export default [
 		id: "desserts",
 		items: [
 			{
-				name: "Ice Cream",
+				name: "Jelly Taro and panda in coconut milk",
 				category: "desserts",
-				price: 2.99,
-				options: [
-					"Vanilla",
-					"Chocolate",
-					"Strawberry"
-				]
+				price: 3.25
 			},
 			{
-				name: "Jelly Taro and tapioca in coconut milk",
+				name: "Apple pie eggs rolls",
 				category: "desserts",
-				price: 3.99
-			},
-			{
-				name: "Fried ice cream or banana ice cream",
-				category: "desserts",
-				price: 4.99
+				price: 3.25
 			}
 		]
 	}
