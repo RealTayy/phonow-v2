@@ -1,6 +1,6 @@
 import axios from "axios";
 import * as menu from '../assets/data/menu.json';
-import * as categories from '../assets/data/categories.json';
+import categories from '../assets/data/categories.js';
 
 // Currently uses static data instead of data from DB. Implement DB/CMS in furture version
 export default {
