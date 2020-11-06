@@ -126,8 +126,8 @@ export default [
 				name: "Beef Noodle Soup",
 				category: "noodlesoup",
 				price: {
-					"Small": 6.99,
-					"Large": 7.99
+					"Small": 7.50,
+					"Large": 8.50
 				},
 				options: [
 					"Eye round steak",
@@ -135,52 +135,52 @@ export default [
 					"Eye round steak & Well-done flank",
 					"Eye round steak & Soft tendon",
 					"Eye round steak & Beef meatball",
-					"Eye round steak & Beef tripe",
-					"Eye round steak, Well-done flank, & Fatty brisket",
-					"Eye round steak, Well-done flank, & Soft tendon",
+					"Beef meatballs",
+					"Eye round steak, Well-done flank & Fatty brisket",
+					"Eye round steak, Well-done flank & Soft tendon",
 					"Well-done flank, Fatty brisket & Soft tendon",
 					"Well-done lean meat",
 					"Well-done lean meat & Beef meatballs",
 					"Well-done lean meat & Flank",
 					"Well-done lean meat & Soft Tendon",
-					"Well-done lean meat, Flank, & Brisket",
-					"Beef meatballs",
-					"Beef stew"
+					"Well-done lean meat, Flank & Brisket",
+					"Beef stew with white noodle",
+					"Beef stew with french breat (one size large)",
 				]
 			},
 			{
 				name: "Special Combination",
 				category: "noodlesoup",
-				price: 8.99,
+				price: 9.50,
 				details: "Eye round steak, well done flank, fatty brisket, soft tendon, beef tripe, beef meatballs"
 			},
 			{
 				name: "Chicken Noodle Soup",
 				category: "noodlesoup",
 				price: {
-					"Small": 6.99,
-					"Large": 7.99
+					"Small": 7.50,
+					"Large": 8.50
 				},
 				options: [
 					"Chicken white meat",
 					"Chicken dark meat",
 					"Mixed white & dark meat",
-					"Clear vermicelli with Chicken"
+					"Pho wonton"
 				]
 			},
 			{
 				name: "Vegetarian Noodle Soup",
 				category: "noodlesoup",
 				price: {
-					"Small": 6.99,
-					"Large": 7.99
+					"Small": 7.50,
+					"Large": 8.50
 				},
 				details: "Broccoli, carrots, mushroom, & tofu"
 			},
 			{
 				name: "Meatless Noodle Soup",
 				category: "noodlesoup",
-				price: 5.99,
+				price: 6.50,
 				options: [
 					"Beef broth",
 					"Chicken broth",
@@ -191,15 +191,15 @@ export default [
 				name: "Seafood Noodle Soup",
 				category: "noodlesoup",
 				price: {
-					"Small": 7.99,
-					"Large": 8.99
+					"Small": 8.50,
+					"Large": 9.50
 				},
-				details: "Shrimp, fishballs, crab sticks, broccoli, and carrots"
+				details: "Shrimp, fishballs, crab sticks"
 			},
 			{
 				name: "Egg Noodle Soup",
 				category: "noodlesoup",
-				price: 8.99,
+				price: 9.50,
 				options: [
 					"Egg noodle with beef stew",
 					"Egg noodle with meatball",
