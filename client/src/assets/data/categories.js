@@ -209,36 +209,38 @@ export default [
 			}
 		]
 	},
-	// Rice Places
+	// Rice Plates
 	{
 		display: "Rice Plates",
 		id: "riceplates",
 		items: [
 			{
-				name: "Fried Rice Plates",
-				category: "riceplates",
-				price: 7.99,
-				options: [
-					"Pork & chicken",
-					"Chicken & shrimp",
-					"Shrimp",
-					"Pork, chicken, shrimp"
-				],
-				details: "Hot Jasmine fried rice with egg, bean sprouts, and green onion"
-			},
-			{
 				name: "Steamed Rice Plates",
 				category: "riceplates",
-				price: 7.99,
+				price: 8.25,
 				options: [
 					"Charbroiled pork chop",
 					"Charbroiled sliced pork",
 					"Charbroiled chicken",
-					"Charbroiled beef (add $1)",
-					"Shrimp (add $1)",
-					"Tofu and vegatables"
+					"Charbroiled beef ($9.25)",
+					"Tofu and vegatables",
+					"Charbroiled shirp ($9.25)",
+					"Shrimp ($9.25)",
+					"Combination -- Pork, Chicken, Shrimp & Egg roll ($9.25)",
 				]
-			}
+			},
+			{
+				name: "Fried Rice Plates",
+				category: "riceplates",
+				price: 8.25,
+				details: "Jasmine fried rice with egg, bean sprout, green peas, and green onion",
+				options: [
+					"Pork",
+					"Chicken",
+					"Shrimp ($9.25)",
+					"Pork, chicken, shrimp ($9.25)"
+				],
+			},
 		]
 	},
 	// Noodle Bowls
