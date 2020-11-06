@@ -245,27 +245,26 @@ export default [
 	},
 	// Noodle Bowls
 	{
-		display: "Noodle Bowls",
+		display: "Vermicelli Noodles",
 		id: "noodlebowls",
 		items: [
 			{
 				name: "Vermicelli Noodles",
 				category: "noodlebowls",
-				price: 7.99,
+				price: 8.25,
 				options: [
 					"Charbroiled sliced pork",
 					"Charbroiled chicken",
-					"Charbroiled beef (add $1)",
-					"Shrimp (add $1)",
+					"Charbroiled beef ($9.25)",
+					"Shrimp ($9.25)",
 					"Egg rolls",
 					"Tofu & vegetable"
-				],
-				details: "Served with lettuce, cucumber, bean sprouts, carrots, green onion, cilantro, peanuts and homemade fish sauce"
+				]
 			},
 			{
 				name: "Combination Noodles",
 				category: "noodlebowls",
-				price: 8.99,
+				price: 9.25,
 				details: "Pork, chicken, shrimp, and egg rolls. Served with lettuce, cucumber, bean sprouts, carrots, green onion, cilantro, peanuts and homemade fish sauce"
 			}
 		]
