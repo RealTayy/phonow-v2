@@ -275,71 +275,85 @@ export default [
 		id: "housespecials",
 		items: [
 			{
-				name: "Roasted Chicken",
+				name: "Roasted chicken",
 				category: "housespecials",
-				price: 10.99,
-				details: "Whole chicken roasted in our house special sauce. Served with green and red peppers, sweet white onion, green onion, and cilantro. A fresh sliced lime, salt and black pepper for dipping sauce."
+				price: {
+					"Steamed rice": 11.99,
+					"Fried rice": 13.99
+				},
+				details: "Whole chicken roasted in our house special sauce served with green onion and cilantro. A fresh sliced lime, salt and black pepper for dipping sauce."
 			},
 			{
-				name: "Shaking beef or chicken",
+				name: "Shaking beef",
 				category: "housespecials",
-				price: 10.99,
+				price: {
+					"Steamed rice": 11.99,
+					"Fried rice": 13.99,
+					"Egg noodles": 13.99,
+				},
+				details: "Vietnamese popular dish called \"Shaking Beef \" cooked in our special sauce. Served with cilantro, green, red peppers, and sweet white onion. A fresh sliced lime, salt and black pepper for dipping sauce."
+			},
+			{
+				name: "Shaking chicken",
+				category: "housespecials",
+				price: {
+					"Steamed rice": 11.99,
+					"Fried rice": 13.99,
+					"Egg noodles": 13.99,
+				},
 				details: "Vietnamese popular dish called \"Shaking Beef\" cooked in our special sauce. Served with cilantro, green, red peppers, and sweet white onion. A fresh sliced lime, salt and black pepper for dipping sauce."
-			},
-			{
-				name: "House Lo Mein",
-				category: "housespecials",
-				price: 8.99,
-				options: [
-					"Chicken",
-					"Beef",
-					"Shrimp",
-					"Combo (add $2)"
-				],
-				details: "Lo mein noodles stir fried with chicken, beef, or shrimp, yellow onions, bean sprouts, cabbage, green onions and cilantro."
-			},
-			{
-				name: "Chow Mein",
-				category: "housespecials",
-				price: 10.99,
-				options: [
-					"Chicken",
-					"Beef",
-					"Shrimp",
-					"Combo (add $2)"
-				],
-				details: "Thin egg noodles stir fried with chicken, beef, shrimp, BBQ pork, mushrooms, carrots, baby corn, yellow onions, cilantro, and assorted green onion."
-			},
-			{
-				name: "Pad Thai",
-				category: "housespecials",
-				price: 8.99,
-				options: [
-					"Chicken",
-					"Beef",
-					"Shrimp",
-					"Combo (add $2)"
-				],
-				details: "Thin rice noodles, stir fried chicken, beef, or shrimp. Also, eggs, green onions, and cilantro. Served with bean sprouts and peanuts."
 			},
 			{
 				name: "House Fried Rice",
 				category: "housespecials",
-				price: 8.99,
+				price: 9.25,
 				options: [
 					"Pork",
 					"Chicken",
 					"Beef",
-					"Shrimp (add $1)"
+					"Tofu",
+					"Vegetarian",
 				],
 				details: "Hot jasmine fried rice with egg, carrots, green peas, and onion"
 			},
 			{
-				name: "Deluxe Fried Rice",
+				name: "Deluxe fried rice",
 				category: "housespecials",
-				price: 9.99,
+				price: 10.25,
 				details: "Hot jasmine fried rice with egg, carrots, green peas, and green onion plus a tasty combination of beef, chicken, pork, and shrimp"
-			}
+			},
+			{
+				name: "Charbroiled Shrimp fried rice",
+				category: "housespecials",
+				price: 10.25,
+			},
+			{
+				name: "House Lo Mein",
+				category: "housespecials",
+				price: {
+					"Chicken or Beef": 9.25,
+					"Shrimp or Combo": 11.25,
+				},
+				details: "Lo mein noodles stir fried with your choice of meat, yellow onions, bean sprouts, cabbage, green onions and cilantro."
+			},
+			{
+				name: "Chow Mein",
+				category: "housespecials",
+				price: {
+					"Chicken or Beef": 9.25,
+					"Shrimp or Combo": 11.25,
+				},
+				details: "Thin egg noodles stir fried with your choice of meat, carrots, broccoli, baby corn, cabbage, green onion, and cilantro."
+			},
+			{
+				name: "Pad Thai",
+				category: "housespecials",
+				price: {
+					"Chicken or Beef": 9.25,
+					"Shrimp or Combo": 11.25,
+				},
+				details: "Hot thin rice noodles with your choice of meat, eggs,green onions and cilantro. Served with bean sprouts, peanuts, and lemon."
+			},
 		]
 	},
 	// Sandwiches

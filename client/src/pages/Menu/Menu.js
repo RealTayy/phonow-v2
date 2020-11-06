@@ -51,7 +51,7 @@ export class Menu extends Component {
   }
 
   render() {
-    const imagesPath = images;    
+    const imagesPath = images;
     return (
       <div className="_Menu animated">
         <ContentContainer
@@ -75,9 +75,10 @@ export class Menu extends Component {
                             for (const key in item.price) {
                               if (item.price.hasOwnProperty(key)) {
                                 const element = item.price[key];
-                                displayPrice = `${displayPrice} ${key.charAt(0)}:$${element.toFixed(2)}`
+                                displayPrice = `${displayPrice} ${key}: $${element.toFixed(2)} •`
                               }
                             }
+                            displayPrice = displayPrice.substr(0, displayPrice.length - 2)
                           }
                           else displayPrice = `$${item.price.toFixed(2)}`
 
@@ -85,8 +86,12 @@ export class Menu extends Component {
                             <div className="item" key={item.name}>
                               {/* Name/Price */}
                               <div className="item-name f-2">
-                                {item.name} • {displayPrice}
+                                {item.name} {typeof item.price !== 'object' && `• ${displayPrice}`}
                               </div>
+                              {/* Price */}
+                              {typeof item.price === 'object' && <div className="item-price f-2">
+                                {displayPrice}
+                              </div>}
                               {/* Details */}
                               {(item.details) ?
                                 <div className="item-details f-3">
