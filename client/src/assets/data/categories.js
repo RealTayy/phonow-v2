@@ -364,15 +364,16 @@ export default [
 			{
 				name: "Vietnamese Sandwich",
 				category: "sandwiches",
-				price: 4.99,
+				price: 5.25,
 				options: [
 					"Grilled Pork",
 					"Grilled Beef",
 					"Grilled Chicken",
 					"Beef pork belly, ham, and pate",
-					"Fried tofu or fried egg ($3.99)"
+					"Fried tofu",
+					"Fried eggs (3)"
 				],
-				details: "Fresh french bread with a butter spread, fresh slices of cucumbers, sweet and sour carrots, cilantro, fresh jalapeños, and pate"
+				details: "Fresh french bread with a butter spread, fresh slices of cucumbers, sweet and sour carrots, cilantro, and fresh jalapeños"
 			}
 		]
 	},
