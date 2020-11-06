@@ -7,7 +7,7 @@ export default [
 			{
 				name: "Vietnamese Egg Rolls (2)",
 				category: "appetizers",
-				price: 2.99,
+				price: 3.25,
 				options: [
 					"Shrimp and Pork",
 					"Vegetarian"
@@ -16,7 +16,7 @@ export default [
 			{
 				name: "Fresh Spring Rolls (2)",
 				category: "appetizers",
-				price: 2.99,
+				price: 3.25,
 				options: [
 					"Shrimp",
 					"Shrimp and Pork",
@@ -26,7 +26,7 @@ export default [
 			{
 				name: "Grilled Meat Spring Rolls (2)",
 				category: "appetizers",
-				price: 3.99,
+				price: 4.25,
 				options: [
 					"Grilled Chicken",
 					"Grilled Pork",
@@ -36,7 +36,7 @@ export default [
 			{
 				name: "Fried Dumplings (6)",
 				category: "appetizers",
-				price: 3.99,
+				price: 4.25,
 				options: [
 					"Chicken",
 					"Pork"
@@ -45,35 +45,24 @@ export default [
 			{
 				name: "Chicken Wings (6)",
 				category: "appetizers",
-				price: 5.99,
+				price: 7.25,
 				options: [
 					"Plain",
 					"Hot",
 					"BBQ",
-					"Garlic Parmesan",
 					"Lemon Pepper"
 				]
 			},
 			{
-				name: "Boneless Chicken Wings (6)",
-				category: "appetizers",
-				price: 5.99
-			},
-			{
 				name: "Cheese Puff Crab Rangoon (6)",
 				category: "appetizers",
-				price: 3.99
+				price: 4.25
 			},
 			{
 				name: "Wonton Soup",
 				category: "appetizers",
-				price: 4.99
+				price: 4.25
 			},
-			{
-				name: "French Fries",
-				category: "appetizers",
-				price: 3.99
-			}
 		]
 	},
 	// Sides
