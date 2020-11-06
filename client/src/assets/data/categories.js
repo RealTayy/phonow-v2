@@ -91,14 +91,14 @@ export default [
 				price: 2.00
 			},
 			{
-				name: "Fried Eggs (2)",
+				name: "Bowl of Beef or Chicken Broth",
 				category: "sides",
 				price: 2.00
 			},
 			{
-				name: "French Fries",
+				name: "Fried Eggs (2)",
 				category: "sides",
-				price: 3.00
+				price: 2.00
 			},
 			{
 				name: "Plate of Eye round steak",
@@ -106,7 +106,7 @@ export default [
 				price: 3.00
 			},
 			{
-				name: "Meatballs (6)",
+				name: "Meatballs or Fried Meatballs (6)",
 				category: "sides",
 				price: 3.00
 			},
@@ -115,11 +115,6 @@ export default [
 				category: "sides",
 				price: 5.00
 			},
-			{
-				name: "Extra Beansprouts and Greens",
-				category: "sides",
-				price: 1.00
-			}
 		]
 	},
 	// Noodle Soup
