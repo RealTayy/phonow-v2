@@ -30,7 +30,7 @@ export class Contact extends Component {
       }
     ])
 
-    // Initilize Select menu    
+    // Initilize Select menu
     M.FormSelect.init(document.querySelectorAll('select'));
   }
 
@@ -65,7 +65,7 @@ export class Contact extends Component {
 
   handleTelChange = (e) => {
     // exit if max phone length reached
-    // strip all non-numbers  
+    // strip all non-numbers
     const tel = e.target.value.replace(/\D/g, '');
     if (tel.length >= 11) return;
     this.setState({
@@ -114,8 +114,8 @@ export class Contact extends Component {
                 <div className="small-divider drop-shadow-1"></div>
                 <ContentBody>
                   <div className="message-intro col s12 center-align">
-                    <div className="intro-picture"><img src={uyen} alt="uyen" /></div>
-                    <div className="intro-header">A message from Uyen Tran</div>
+                    {/* <div className="intro-picture"><img src={uyen} alt="uyen" /></div> */}
+                    <div className="intro-header">A message from the</div>
                     <div className="intro-subheader">PHO NOW FOUNDER AND OWNER</div>
                     <div className="small-divider drop-shadow-1"></div>
                     <div className="intro-body">Hi and thanks for visiting us at Pho Now! We hope you have a great experience while here and hope to see you soon. If you felt we fell short of an amazing experience, or just have general question please let us know. We look forward to hearing from you.</div>
