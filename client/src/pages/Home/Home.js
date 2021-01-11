@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { ContentContainer } from '../../components/Container';
 import logo from '../../images/home/sLogo.png';
-import rice from '../../images/home/rice.png';
 import pho from '../../images/home/pho.png';
 import eggroll from '../../images/home/eggroll.png';
 import './Home.css';
@@ -29,7 +28,6 @@ export class Home extends Component {
   render() {
     const imagesPath = [
       pho,
-      rice,
       eggroll,
     ]
     return (
