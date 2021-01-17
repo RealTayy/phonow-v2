@@ -98,12 +98,12 @@ export default [
 			{
 				name: "Fried Eggs (2)",
 				category: "sides",
-				price: 2.00
+				price: 2.50
 			},
 			{
 				name: "Plate of Eye round steak",
 				category: "sides",
-				price: 3.00
+				price: 3.50
 			},
 			{
 				name: "Meatballs or Fried Meatballs (6)",
@@ -113,7 +113,7 @@ export default [
 			{
 				name: "Dish of Fried Rice",
 				category: "sides",
-				price: 5.00
+				price: 5.75
 			},
 		]
 	},
@@ -219,7 +219,7 @@ export default [
 				category: "riceplates",
 				price: 8.25,
 				options: [
-					"Charbroiled pork chop",
+					// "Charbroiled pork chop",
 					"Charbroiled sliced pork",
 					"Charbroiled chicken",
 					"Charbroiled beef ($9.25)",
@@ -229,18 +229,18 @@ export default [
 					"Combination -- Pork, Chicken, Shrimp & Egg roll ($9.25)",
 				]
 			},
-			{
-				name: "Fried Rice Plates",
-				category: "riceplates",
-				price: 8.25,
-				details: "Jasmine fried rice with egg, bean sprout, green peas, and green onion",
-				options: [
-					"Pork",
-					"Chicken",
-					"Shrimp ($9.25)",
-					"Pork, chicken, shrimp ($9.25)"
-				],
-			},
+			// {
+			// 	name: "Fried Rice Plates",
+			// 	category: "riceplates",
+			// 	price: 8.25,
+			// 	details: "Jasmine fried rice with egg, bean sprout, green peas, and green onion",
+			// 	options: [
+			// 		"Pork",
+			// 		"Chicken",
+			// 		"Shrimp ($9.25)",
+			// 		"Pork, chicken, shrimp ($9.25)"
+			// 	],
+			// },
 		]
 	},
 	// Noodle Bowls
