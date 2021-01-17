@@ -73,7 +73,7 @@ export default [
 			{
 				name: "French Bread",
 				category: "sides",
-				price: 1.00
+				price: 1.50
 			},
 			{
 				name: "Bowl of Steamed Rice",
