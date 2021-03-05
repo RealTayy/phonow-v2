@@ -7,7 +7,6 @@ import smallLogo from '../../images/navlogo1.png'
 
 const MapMarker = (props) => {
   return (
-    // <a href="https://www.google.com/maps/search/?api=1&query=536+E+Tidwell+rd" rel="noopener noreferrer" target="_blank">
     <a href={props.addressUrl} rel="noopener noreferrer" target="_blank">
       <div className="map-marker z-depth-2 pulse">
         <div className="marker-text f-2">PHO NOW</div>
@@ -26,16 +25,19 @@ export class Info extends Component {
 
   static defaultProps = {
     center: {
-      lat: 29.845087,
-      lng: -95.391206
+      lat: 29.944848,
+      lng: -95.468276,
     },
-    zoom: 16,
+    zoom: 11,
     options: {
       styles: mapstyle
     }
   };
 
   render() {
+    const tidwelGoogleMapsUrl = 'https://www.google.com/maps/place/536+E+Tidwell+Rd,+Houston,+TX+77022/@29.8450907,-95.3934035,17z/data=!3m1!4b1!4m5!3m4!1s0x8640b80bb37a29cf:0xc3eaa47294c996f0!8m2!3d29.8450861!4d-95.3912148';
+    const cypresswoodGoogleMapsUrl = 'https://www.google.com/maps/place/210+Cypresswood+Dr,+Spring,+TX+77388/@30.0516519,-95.4389163,17z/data=!3m1!4b1!4m5!3m4!1s0x864734d5eeef15e1:0x2a22324f48d25a75!8m2!3d30.0516473!4d-95.4367276';
+
     return (
       <div className="_Info animated fadeIn">
         <div className="info-row row">
@@ -45,6 +47,7 @@ export class Info extends Component {
                 <div className="material-icons">location_on</div>
                 <div>CONTACT & DIRECTIONS</div>
               </div>
+              <div className="info-title f-2">HOUSTON/TIDWELL</div>
               <div className="info-body row">
                 <div className="col s4 m12 l4"><i className="fas fa-phone-square"></i> Phone:</div>
                 <div className="col s8 m12 l8">713-699-4444</div>
@@ -54,6 +57,33 @@ export class Info extends Component {
                 <div className="col s8 m12 l8">536 E Tidwell Rd</div>
                 <div className="col s8 m12 l8 push-s4 push-l4">Houston, TX, 77022</div>
               </div>
+              <a href={tidwelGoogleMapsUrl} rel="noopener noreferrer" target="_blank">
+                <div className="info-button-container">
+                  <button className="info-button waves-effect waves-light btn z-depth-0">
+                    <i className="fas fa-map" style={{position:'relative', marginRight: 8}}/>
+                    <span>Google Maps</span>
+                  </button>
+                </div>
+              </a>
+              <div className="f-2 info-title">-----</div>
+              <div className="info-title f-2">SPRING/CYPRESSWOOD</div>
+              <div className="info-body row">
+                <div className="col s4 m12 l4"><i className="fas fa-phone-square"></i> Phone:</div>
+                <div className="col s8 m12 l8">281-968-2222</div>
+                <div className="col s4 m12 l4"><i className="fas fa-envelope-square"></i> Email:</div>
+                <div className="col s8 m12 l8">PhoNowTexas@gmail.com</div>
+                <div className="col s4 m12 l4"><i className="fas fa-building"></i> Address:</div>
+                <div className="col s8 m12 l8">210 Cyprsswood Dr</div>
+                <div className="col s8 m12 l8 push-s4 push-l4">Spring, TX, 77388</div>
+              </div>
+              <a href={cypresswoodGoogleMapsUrl} rel="noopener noreferrer" target="_blank">
+              <div className="info-button-container">
+                  <button className="info-button waves-effect waves-light btn disabled z-depth-0">
+                    <span>Store opening soon</span>
+                  </button>
+                </div>
+              </a>
+              <div>{`\u00a0`}</div>
             </div>
             <div className="info-card z-depth-2 col s12">
               <div className="info-header row f-2">
@@ -88,15 +118,15 @@ export class Info extends Component {
               options={this.props.options}
             >
               <MapMarker
-                addressUrl={"https://www.google.com/maps/place/536+E+Tidwell+Rd,+Houston,+TX+77022/@29.8450907,-95.3934035,17z/data=!3m1!4b1!4m5!3m4!1s0x8640b80bb37a29cf:0xc3eaa47294c996f0!8m2!3d29.8450861!4d-95.3912148"}
+                addressUrl={tidwelGoogleMapsUrl}
                 lat={29.845087}
                 lng={-95.391206}
               />
-              {/* <MapMarker
-                addressUrl={"https://www.google.com/maps/place/210+Cypresswood+Dr,+Spring,+TX+77388/@30.0516519,-95.4389163,17z/data=!3m1!4b1!4m5!3m4!1s0x864734d5eeef15e1:0x2a22324f48d25a75!8m2!3d30.0516473!4d-95.4367276"}
+              <MapMarker
+                addressUrl={cypresswoodGoogleMapsUrl}
                 lat={30.051786580859943}
                 lng={-95.4366739570241}
-              /> */}
+              />
             </GoogleMapReact>
           </div>
         </div>
