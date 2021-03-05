@@ -92,11 +92,11 @@ export class Info extends Component {
                 lat={29.845087}
                 lng={-95.391206}
               />
-              <MapMarker
+              {/* <MapMarker
                 addressUrl={"https://www.google.com/maps/place/210+Cypresswood+Dr,+Spring,+TX+77388/@30.0516519,-95.4389163,17z/data=!3m1!4b1!4m5!3m4!1s0x864734d5eeef15e1:0x2a22324f48d25a75!8m2!3d30.0516473!4d-95.4367276"}
                 lat={30.051786580859943}
                 lng={-95.4366739570241}
-              />
+              /> */}
             </GoogleMapReact>
           </div>
         </div>
