@@ -35,7 +35,7 @@ export class Info extends Component {
   };
 
   render() {
-    const tidwelGoogleMapsUrl = 'https://www.google.com/maps/place/536+E+Tidwell+Rd,+Houston,+TX+77022/@29.8450907,-95.3934035,17z/data=!3m1!4b1!4m5!3m4!1s0x8640b80bb37a29cf:0xc3eaa47294c996f0!8m2!3d29.8450861!4d-95.3912148';
+    const tidwelGoogleMapsUrl = 'https://www.google.com/maps/place/Pho+Now/@29.8448389,-95.3911813,20z/data=!4m13!1m7!3m6!1s0x8640b80bb37a29cf:0xc3eaa47294c996f0!2s536+E+Tidwell+Rd,+Houston,+TX+77022!3b1!8m2!3d29.8450861!4d-95.3912148!3m4!1s0x8640b9e4b118b06d:0xc72512c11b51b8a3!8m2!3d29.8451271!4d-95.391055';
     const cypresswoodGoogleMapsUrl = 'https://www.google.com/maps/place/210+Cypresswood+Dr,+Spring,+TX+77388/@30.0516519,-95.4389163,17z/data=!3m1!4b1!4m5!3m4!1s0x864734d5eeef15e1:0x2a22324f48d25a75!8m2!3d30.0516473!4d-95.4367276';
 
     return (
