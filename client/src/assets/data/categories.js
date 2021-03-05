@@ -7,7 +7,7 @@ export default [
 			{
 				name: "Vietnamese Egg Rolls (2)",
 				category: "appetizers",
-				price: 3.25,
+				price: 3.50,
 				options: [
 					"Shrimp and Pork",
 					"Vegetarian"
@@ -16,7 +16,7 @@ export default [
 			{
 				name: "Fresh Spring Rolls (2)",
 				category: "appetizers",
-				price: 3.25,
+				price: 3.50,
 				options: [
 					"Shrimp",
 					"Shrimp and Pork",
@@ -45,13 +45,18 @@ export default [
 			{
 				name: "Chicken Wings (6)",
 				category: "appetizers",
-				price: 7.25,
+				price: 7.50,
 				options: [
 					"Plain",
 					"Hot",
 					"BBQ",
 					"Lemon Pepper"
 				]
+			},
+			{
+				name: "French Fries",
+				category: "appetizers",
+				price: 4.25
 			},
 			{
 				name: "Cheese Puff Crab Rangoon (6)",
@@ -73,17 +78,17 @@ export default [
 			{
 				name: "French Bread",
 				category: "sides",
-				price: 1.50
+				price: 1.25
 			},
 			{
 				name: "Bowl of Steamed Rice",
 				category: "sides",
-				price: 1.00
+				price: 1.25
 			},
 			{
 				name: "Bowl of Rice Noodles",
 				category: "sides",
-				price: 1.00
+				price: 1.25
 			},
 			{
 				name: "Bowl of Egg Noodles",
@@ -93,7 +98,7 @@ export default [
 			{
 				name: "Bowl of Beef or Chicken Broth",
 				category: "sides",
-				price: 2.00
+				price: 1.25
 			},
 			{
 				name: "Fried Eggs (2)",
@@ -113,7 +118,7 @@ export default [
 			{
 				name: "Dish of Fried Rice",
 				category: "sides",
-				price: 5.75
+				price: 5.50
 			},
 		]
 	},
@@ -126,8 +131,8 @@ export default [
 				name: "Beef Noodle Soup",
 				category: "noodlesoup",
 				price: {
-					"Small": 7.50,
-					"Large": 8.50
+					"Small": 7.75,
+					"Large": 8.75
 				},
 				options: [
 					"Eye round steak",
@@ -149,17 +154,17 @@ export default [
 				]
 			},
 			{
-				name: "Special Combination",
+				name: "Special Combination (ONE SIZE LARGE)",
 				category: "noodlesoup",
-				price: 9.50,
+				price: 9.75,
 				details: "Eye round steak, well done flank, fatty brisket, soft tendon, beef tripe, beef meatballs"
 			},
 			{
 				name: "Chicken Noodle Soup",
 				category: "noodlesoup",
 				price: {
-					"Small": 7.50,
-					"Large": 8.50
+					"Small": 7.75,
+					"Large": 8.75,
 				},
 				options: [
 					"Chicken white meat",
@@ -172,15 +177,15 @@ export default [
 				name: "Vegetarian Noodle Soup",
 				category: "noodlesoup",
 				price: {
-					"Small": 7.50,
-					"Large": 8.50
+					"Small": 7.75,
+					"Large": 8.75
 				},
 				details: "Broccoli, carrots, mushroom, & tofu"
 			},
 			{
-				name: "Meatless Noodle Soup",
+				name: "Meatless Noodle Soup (ONE SIZE LARGE)",
 				category: "noodlesoup",
-				price: 6.50,
+				price: 6.75,
 				options: [
 					"Beef broth",
 					"Chicken broth",
@@ -191,15 +196,15 @@ export default [
 				name: "Seafood Noodle Soup",
 				category: "noodlesoup",
 				price: {
-					"Small": 8.50,
-					"Large": 9.50
+					"Small": 8.75,
+					"Large": 9.75
 				},
 				details: "Shrimp, fishballs, crab sticks"
 			},
 			{
 				name: "Egg Noodle Soup",
 				category: "noodlesoup",
-				price: 9.50,
+				price: 9.75,
 				options: [
 					"Egg noodle with beef stew",
 					"Egg noodle with meatball",
@@ -217,7 +222,7 @@ export default [
 			{
 				name: "Steamed Rice Plates",
 				category: "riceplates",
-				price: 8.25,
+				price: 8.50,
 				options: [
 					// "Charbroiled pork chop",
 					"Charbroiled sliced pork",
@@ -226,21 +231,14 @@ export default [
 					"Tofu and vegatables",
 					"Charbroiled shirp ($9.25)",
 					"Shrimp ($9.25)",
-					"Combination -- Pork, Chicken, Shrimp & Egg roll ($9.25)",
 				]
 			},
-			// {
-			// 	name: "Fried Rice Plates",
-			// 	category: "riceplates",
-			// 	price: 8.25,
-			// 	details: "Jasmine fried rice with egg, bean sprout, green peas, and green onion",
-			// 	options: [
-			// 		"Pork",
-			// 		"Chicken",
-			// 		"Shrimp ($9.25)",
-			// 		"Pork, chicken, shrimp ($9.25)"
-			// 	],
-			// },
+			{
+				name: "Combination Stream Rice",
+				category: "riceplates",
+				price: 9.50,
+				details: "Pork, chicken, shrimp, and egg rolls"
+			}
 		]
 	},
 	// Noodle Bowls
@@ -251,12 +249,12 @@ export default [
 			{
 				name: "Vermicelli Noodles",
 				category: "noodlebowls",
-				price: 8.25,
+				price: 8.75,
 				options: [
 					"Charbroiled sliced pork",
 					"Charbroiled chicken",
-					"Charbroiled beef ($9.25)",
-					"Shrimp ($9.25)",
+					"Charbroiled beef ($9.50)",
+					"Charbroiled Shrimp ($9.50)",
 					"Egg rolls",
 					"Tofu & vegetable"
 				]
@@ -264,7 +262,7 @@ export default [
 			{
 				name: "Combination Noodles",
 				category: "noodlebowls",
-				price: 9.25,
+				price: 9.75,
 				details: "Pork, chicken, shrimp, and egg rolls. Served with lettuce, cucumber, bean sprouts, carrots, green onion, cilantro, peanuts and homemade fish sauce"
 			}
 		]
@@ -287,51 +285,36 @@ export default [
 				name: "Shaking beef",
 				category: "housespecials",
 				price: {
-					"Steamed rice": 11.99,
+					"Steamed rice": 12.49,
 					"Fried rice": 13.99,
 					"Egg noodles": 13.99,
 				},
 				details: "Vietnamese popular dish called \"Shaking Beef \" cooked in our special sauce. Served with cilantro, green, red peppers, and sweet white onion. A fresh sliced lime, salt and black pepper for dipping sauce."
 			},
 			{
-				name: "Shaking chicken",
-				category: "housespecials",
-				price: {
-					"Steamed rice": 11.99,
-					"Fried rice": 13.99,
-					"Egg noodles": 13.99,
-				},
-				details: "Vietnamese popular dish called \"Shaking Beef\" cooked in our special sauce. Served with cilantro, green, red peppers, and sweet white onion. A fresh sliced lime, salt and black pepper for dipping sauce."
-			},
-			{
 				name: "House Fried Rice",
 				category: "housespecials",
 				price: 9.25,
 				options: [
-					"Pork",
 					"Chicken",
+					"Pork",
 					"Beef",
 					"Tofu",
 					"Vegetarian",
 				],
-				details: "Hot jasmine fried rice with egg, carrots, green peas, and onion"
+				details: "Jasmine fried rice with egg, bean sprouts, carrots, green peas, and green onion."
 			},
 			{
 				name: "Deluxe fried rice",
 				category: "housespecials",
 				price: 10.25,
-				details: "Hot jasmine fried rice with egg, carrots, green peas, and green onion plus a tasty combination of beef, chicken, pork, and shrimp"
-			},
-			{
-				name: "Charbroiled Shrimp fried rice",
-				category: "housespecials",
-				price: 10.25,
+				details: "Jasmine fried rice with egg, bean sprouts, carrots, green peas, and green onion plus a tasty combination of grilled beef, chicken, pork, and shrimp."
 			},
 			{
 				name: "House Lo Mein",
 				category: "housespecials",
 				price: {
-					"Chicken or Beef": 9.25,
+					"Chicken or Beef": 9.50,
 					"Shrimp or Combo": 11.25,
 				},
 				details: "Lo mein noodles stir fried with your choice of meat, yellow onions, bean sprouts, cabbage, green onions and cilantro."
@@ -340,8 +323,8 @@ export default [
 				name: "Chow Mein",
 				category: "housespecials",
 				price: {
-					"Chicken or Beef": 9.25,
-					"Shrimp or Combo": 11.25,
+					"Chicken or Beef": 11.50,
+					"Shrimp or Combo": 13.25,
 				},
 				details: "Thin egg noodles stir fried with your choice of meat, carrots, broccoli, baby corn, cabbage, green onion, and cilantro."
 			},
@@ -369,7 +352,7 @@ export default [
 					"Grilled Pork",
 					"Grilled Beef",
 					"Grilled Chicken",
-					"Beef pork belly, ham, and pate",
+					"Avocado",
 					"Fried tofu",
 					"Fried eggs (3)"
 				],
@@ -385,13 +368,13 @@ export default [
 			{
 				name: "Kid's meal",
 				category: "kidsmeal",
-				price: 5.25,
+				price: 5.50,
 				options: [
 					"Well done lean meat noodle soup",
 					"White chicken meat noodle soup",
-					"Steamed rice with grilled pork",
-					"Steamed rice with grilled chicken",
-					"Steamed rice with grilled beef",
+					"Steamed rice with grill pork",
+					"Steamed rice with grill chicken",
+					"Steamed rice with grill beef",
 					"Chicken nuggets with french fries"
 				],
 				details: "Served with an eggroll"
@@ -424,12 +407,23 @@ export default [
 					"Passion Fruit Tea",
 					"Chamoy smoothie ($5.25) - Mango or Strawberry",
 				],
-				details: "Served with tapioca pearls, rainbow jelly, or both"
+				details: "Served with tapioca pearls, rainbow jelly, or combination of both"
 			},
 			{
 				name: "Soft Drinks (Can)",
 				category: "drinks",
-				price: 1.35
+				price: 1.50,
+				options: [
+					'Coke',
+					'Diet Coke',
+					'Sprite',
+					'Dr Pepper',
+				]
+			},
+			{
+				name: "Bottle water",
+				category: "drinks",
+				price: 1.50,
 			},
 			{
 				name: "Iced tea (free refills)",
@@ -462,7 +456,7 @@ export default [
 				price: 2.99
 			},
 			{
-				name: "Fresh strawberry lemonade",
+				name: "Fresh strawberry and lemonade",
 				category: "drinks",
 				price: 2.99
 			},
@@ -488,11 +482,6 @@ export default [
 				category: "desserts",
 				price: 3.25
 			},
-			{
-				name: "Apple pie eggs rolls",
-				category: "desserts",
-				price: 3.25
-			}
 		]
 	}
 ]
