@@ -5,9 +5,10 @@ import mapstyle from './mapstyle.json';
 import smallLogo from '../../images/navlogo1.png'
 
 
-const MapMarker = () => {
+const MapMarker = (props) => {
   return (
-    <a href="https://www.google.com/maps/search/?api=1&query=536+E+Tidwell+rd" rel="noopener noreferrer" target="_blank">
+    // <a href="https://www.google.com/maps/search/?api=1&query=536+E+Tidwell+rd" rel="noopener noreferrer" target="_blank">
+    <a href={props.addressUrl} rel="noopener noreferrer" target="_blank">
       <div className="map-marker z-depth-2 pulse">
         <div className="marker-text f-2">PHO NOW</div>
         <div className="marker-frame pulse">
@@ -87,6 +88,12 @@ export class Info extends Component {
               options={this.props.options}
             >
               <MapMarker
+                addressUrl={"https://www.google.com/maps/search/?api=1&query=536+E+Tidwell+rd"}
+                lat={this.props.center.lat}
+                lng={this.props.center.lng}
+              />
+              <MapMarker
+                addressUrl={"https://www.google.com/maps/search/?api=1&query=1007+Sugardale+ct+77498"}
                 lat={this.props.center.lat}
                 lng={this.props.center.lng}
               />
