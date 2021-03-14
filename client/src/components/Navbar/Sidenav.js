@@ -19,16 +19,16 @@ export class Sidenav extends Component {
 	handleClick = (e) => {
 		if (e.target.pathname === this.props.activeTab) {
 			this.props.setActiveCategory('all');
-			return e.preventDefault() 
+			return e.preventDefault()
 		}
 		if ($(".page-container").children().length > 1) return e.preventDefault()
-		else {						
+		else {
 			this.props.setActiveCategory('all');
 			this.transitionPage();
 		}
 	}
 
-	handleMenuClick = (e) => {		
+	handleMenuClick = (e) => {
 		let category = $(e.target).data('category');
 		category = category.toLowerCase().replace(/ /g, '')
 		this.props.setActiveCategory(category);
@@ -45,7 +45,7 @@ export class Sidenav extends Component {
 					<Link to="/" className="sidenav-close">
 						<img className="sidenav-img" src={logo} alt="" />
 					</Link>
-					<div className="f-2">
+					<div className="">
 						PHO NOW
 					</div>
 				</h2>
