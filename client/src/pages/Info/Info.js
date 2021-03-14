@@ -65,6 +65,12 @@ export class Info extends Component {
                   </button>
                 </div>
               </a>
+              <div className="info-button-container">
+                <button className="info-button waves-effect waves-light btn z-depth-0 disabled">
+                  <i className="fas fa-utensils" style={{position:'relative', marginRight: 8}}/>
+                  <span>Online carryout not availble</span>
+                </button>
+              </div>
               <div className="f-2 info-title">-----</div>
               <div className="info-title f-2">SPRING/CYPRESSWOOD</div>
               <div className="info-body row">
@@ -77,9 +83,18 @@ export class Info extends Component {
                 <div className="col s8 m12 l8 push-s4 push-l4">Spring, TX, 77388</div>
               </div>
               <a href={cypresswoodGoogleMapsUrl} rel="noopener noreferrer" target="_blank">
-              <div className="info-button-container">
-                  <button className="info-button waves-effect waves-light btn disabled z-depth-0">
-                    <span>Store opening soon</span>
+                <div className="info-button-container">
+                  <button className="info-button waves-effect waves-light btn z-depth-0">
+                    <i className="fas fa-map" style={{position:'relative', marginRight: 8}}/>
+                    <span>Google Maps</span>
+                  </button>
+                </div>
+              </a>
+              <a href={'https://www.clover.com/online-ordering/little-pho-now-spring'} rel="noopener noreferrer" target="_blank">
+                <div className="info-button-container">
+                  <button className="info-button waves-effect waves-light btn z-depth-0">
+                    <i className="fas fa-utensils" style={{position:'relative', marginRight: 8}}/>
+                    <span>Order carryout</span>
                   </button>
                 </div>
               </a>
