@@ -68,7 +68,7 @@ export class Info extends Component {
               <div className="info-button-container">
                 <button className="info-button waves-effect waves-light btn z-depth-0 disabled">
                   <i className="fas fa-utensils" style={{position:'relative', marginRight: 8}}/>
-                  <span>Online carryout not availble</span>
+                  <span>Online carryout not available</span>
                 </button>
               </div>
               <div className="f-2 info-title">-----</div>
